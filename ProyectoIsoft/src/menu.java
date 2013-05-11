@@ -15,7 +15,7 @@ public class menu {
 	 */
 	public static void pruebaFichero(){
 	//1. Creacion de la clase Fichero y la clase ModeloFichero
-		pModelo.Fichero f = new pModelo.Fichero("datos.txt", new pModelo.ModeloFichero(",", "\n}\n"));
+		pModelo.Fichero f = new pModelo.Fichero("src/datos.txt", new pModelo.ModeloFichero(",", "\n}\n"));
 	//2. Muestra el texto sin modificar
 		System.out.println("######Texto#######");
 		System.out.print(f.getText());
