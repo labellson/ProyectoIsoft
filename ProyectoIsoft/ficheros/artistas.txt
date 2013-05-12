@@ -1,0 +1,3 @@
+//TipoDeGrupo,NombreDelGrupo,NombreAntegrante
+solista,killme,primero
+grupo,thefucker,segundo

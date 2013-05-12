@@ -2,7 +2,6 @@ package pModelo;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -17,24 +16,26 @@ public class Fichero {
 	private ModeloFichero mf;
 	
 	/**
-	 * Constructor de la clase Fichero
 	 * @param ruta Cadena de caracteres que menciona la ruta donde se encuentra el archivo a leer 
-	 * @param mf Clase encargada de almacenar valores necesario para iniciar una lectura o escritura, determina el formato*
+	 * @param mf Clase encargada de almacenar valores necesario para iniciar una lectura o escritura, determina el formato
+	 * @throws IOException *
 	 */
-	public Fichero(String ruta, ModeloFichero mf){		
+	public Fichero(String ruta, ModeloFichero mf) throws IOException{		
+		this.ruta=ruta;
 		this.mf = mf;
 		texto = new String();
 		BufferedReader br;
-		try {
+		String[] buffer;
+
 			br = new BufferedReader(new FileReader (new File (ruta)));
 			while(br.ready()){
-				texto += br.readLine();
-				texto += "\n";
+				buffer = br.readLine().split("//");
+				if(!buffer[0].equals("")){
+					texto +=buffer[0]+"\n";
+				}
 			}
 			br.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+
 	}
 	
 	/**
@@ -73,5 +74,9 @@ public class Fichero {
 		//Se llama a la funcion getVariables(), en vez de recoger la variable privada de la clase 
 		//ya que esta puede no estar creada, y ahorramos codigo de la otra funcion
 		return getVariables()[clase][variable];
+	}
+
+	public String getRuta() {
+		return ruta;
 	}
 }

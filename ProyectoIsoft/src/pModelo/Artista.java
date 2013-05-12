@@ -6,5 +6,11 @@ package pModelo;
  *
  */
 public abstract class Artista {
-	//Clase Artista
+	private String nombre;
+	public Artista(String nombre){
+		this.nombre = nombre;
+	}
+	public String getNombre() {
+		return nombre;
+	}
 }
