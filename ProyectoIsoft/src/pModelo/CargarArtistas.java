@@ -38,6 +38,12 @@ public class CargarArtistas {
 		return cargarArtistas;
 	}
 	
+	/**
+	 * Se encarga de cargar y registrar en las clases correspondenties los datos de todas las clases Artistas
+	 * @param ruta lista de strings en la que se especificara la ruta de los ficheros correspondientes, en orden son discografia,cancion,biografia,grupo,solista,artista
+	 * @return Todas los objetos pertenecientes y derivados de la clase Artista
+	 * @throws IOException
+	 */
 	public ArrayList<Artista> getListaArtistas(String[] ruta) throws IOException{
 		ArrayList<Artista> listaArtista = new ArrayList<Artista>();
 		Fichero fDiscografia = new pModelo.Fichero(ruta[0], new pModelo.ModeloFichero(",", "\n"));
@@ -51,7 +57,6 @@ public class CargarArtistas {
 				for(int j=0; j<fSolista.getVariables().length; j++){
 					if(fArtista.getVariables(i, 1).equals(fSolista.getVariables(j, 0))){
 						listaArtista.add(new Solista(fArtista.getVariables(j, 1)));
-						System.out.println(fArtista.getVariables(i, 2)+" se convierte en solista llamado "+fArtista.getVariables(i, 1));
 					}
 				}
 			}else if(fArtista.getVariables(i, 0).equals("grupo")){
@@ -63,21 +68,33 @@ public class CargarArtistas {
 						for(int k=0; k<grupo.size(); k++){
 							if(fArtista.getVariables(i,1).equals(grupo.get(k).getNombre())){
 								estaCreado = true;
-								listaArtista.add(new Grupo(fArtista.getVariables(i, 1)));
-								System.out.println(fArtista.getVariables(i, 2)+" se incorpora al grupo "+fArtista.getVariables(i, 1));
+								getGrupos(listaArtista).get(k).setNombre((fArtista.getVariables(i, 1)));
 							}
 						}
 						if(estaCreado == false){ 
 							Grupo buffer = new Grupo(fArtista.getVariables(i, 1));
 							buffer.addIntegrantes(new Integrante(fArtista.getVariables(i, 2)));
 							listaArtista.add(buffer);
-							System.out.println(fArtista.getVariables(i, 2)+" crea el grupo "+fArtista.getVariables(i, 1));
 						}
 					}
 				}
-			}else{ /*Error*/ System.out.println("ERROR, artista: "+fArtista.getVariables(i, 2)+" no pertenece grupo ni a solista.");}
+			}else{ throw new RuntimeException("Error en la carga de los artistas, "+fArtista.getVariables(i, 2)+" no es un solista ni pertenece a un grupo registrado: "+fArtista.getVariables(i, 0)+"???");}
 			
 		}
+		comprobarNombresGrupos(fGrupo);
 		return listaArtista;
+	}
+	
+	private void comprobarNombresGrupos(Fichero fGrupo){
+		String buffer = new String();
+		for(int i=0; i<fGrupo.getVariables().length; i++){
+			buffer += fGrupo.getVariables(i, 0);
+		}
+		for(int i=0; i<fGrupo.getVariables().length; i++){
+			String buffer2 = buffer.replaceFirst(fGrupo.getVariables(i, 0), "");
+			if(buffer2.contains(fGrupo.getVariables(i, 0))){
+				throw new RuntimeException("Error, 2 grupos con el mismo nombre: "+fGrupo.getVariables(i, 0));
+			}
+		}
 	}
 }
