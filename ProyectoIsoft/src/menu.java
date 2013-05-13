@@ -10,21 +10,29 @@ public class menu {
 	 * @param args
 	 */
 	public static void main(String[] args){
-		//pruebaFichero();
-		String ruta[] = new String[3];
-		ruta[0] = "ficheros/grupos.txt";
-		ruta[1] = "ficheros/solistas.txt";
-		ruta[2] = "ficheros/artistas.txt";
+		String ruta[] = new String[6];
+		ruta[0] = "ficheros/discografia.txt";
+		ruta[1] = "ficheros/canciones.txt";
+		ruta[2] = "ficheros/biografia.txt";
+		ruta[3] = "ficheros/grupos.txt";
+		ruta[4] = "ficheros/solistas.txt";
+		ruta[5] = "ficheros/artistas.txt";
 		pModelo.ListaArtista lArtista = new pModelo.ListaArtista(ruta);
+		try {
+			lArtista.cargarArtistas(ruta);
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		//pruebaFichero(ruta[1]);
 	}
 	/**
 	 * Prueba de lectura del fichero "datos.txt" 
 	 */
-	public static void pruebaFichero(){
+	public static void pruebaFichero(String ruta){
 	//1. Creacion de la clase Fichero y la clase ModeloFichero
 		pModelo.Fichero f;
 		try {
-			f = new pModelo.Fichero("ficheros/artistas.txt", new pModelo.ModeloFichero(",", "\n"));
+			f = new pModelo.Fichero(ruta, new pModelo.ModeloFichero(",", "\n"));
 		//2. Muestra el texto sin modificar
 			System.out.println("######Texto#######");
 			System.out.print(f.getText());
