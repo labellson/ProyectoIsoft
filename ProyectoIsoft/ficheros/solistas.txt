@@ -1,2 +1,3 @@
 killme,200,300;
 please,500,600;
+avatar,%%%,%%%;

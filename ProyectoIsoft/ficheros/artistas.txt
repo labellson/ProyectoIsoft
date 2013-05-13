@@ -1,3 +1,6 @@
 //TipoDeGrupo,NombreDelGrupo,NombreAntegrante
 solista,killme,primero
 grupo,thefucker,segundo
+solista,avatar,tercero
+grupo,spy,cuarto
+grupo,thefucker,quinto

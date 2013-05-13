@@ -32,12 +32,28 @@ public class ListaArtista {
 					for(int j=0; j<fSolista.getVariables().length; j++){
 						if(fArtista.getVariables(i, 1).equals(fSolista.getVariables(j, 0))){
 							listaArtista.add(new Solista(fArtista.getVariables(j, 1)));
+							System.out.println(fArtista.getVariables(i, 2)+" se convierte en solista llamado "+fArtista.getVariables(i, 1));
 						}
 					}
 				}else if(fArtista.getVariables(i, 0).equals("grupo")){
 					for(int j=0; j<fGrupo.getVariables().length; j++){
 						if(fArtista.getVariables(i, 1).equals(fGrupo.getVariables(j, 0))){
 							//Se incluira o creara un nuevo grupo
+							ArrayList<Grupo> grupo = getGrupos();
+							boolean estaCreado = false;
+							for(int k=0; k<grupo.size(); k++){
+								if(fArtista.getVariables(i,1).equals(grupo.get(k).getNombre())){
+									estaCreado = true;
+									listaArtista.add(new Grupo(fArtista.getVariables(i, 1)));
+									System.out.println(fArtista.getVariables(i, 2)+" se incorpora al grupo "+fArtista.getVariables(i, 1));
+								}
+							}
+							if(estaCreado == false){ 
+								Grupo buffer = new Grupo(fArtista.getVariables(i, 1));
+								buffer.addIntegrantes(new Integrante(fArtista.getVariables(i, 2)));
+								listaArtista.add(buffer);
+								System.out.println(fArtista.getVariables(i, 2)+" crea el grupo "+fArtista.getVariables(i, 1));
+							}
 						}
 					}
 				}else{ /*Error*/ System.out.println("ERROR, artista: "+fArtista.getVariables(i, 2)+" no pertenece grupo ni a solista.");}
@@ -46,6 +62,14 @@ public class ListaArtista {
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public ArrayList<Grupo> getGrupos(){
+		ArrayList<Grupo> buffer = new ArrayList<Grupo>();
+		for(int i=0; i<listaArtista.size(); i++){
+			if(listaArtista.get(i).getClass() == Grupo.class) buffer.add((Grupo)listaArtista.get(i));
+		}
+		return buffer;
 	}
 }
 
