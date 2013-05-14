@@ -110,8 +110,8 @@ public class CargarArtistas {
 			buffer += fGrupo.getVariables(i, 0);
 		}
 		for(int i=0; i<fGrupo.getVariables().length; i++){
-			String buffer2 = buffer.replaceFirst(fGrupo.getVariables(i, 0), "");
-			if(buffer2.contains(fGrupo.getVariables(i, 0))){
+			buffer = buffer.replaceFirst(fGrupo.getVariables(i, 0), "");
+			if(buffer.contains(fGrupo.getVariables(i, 0))){
 				Error.setError("Error, 2 grupos con el mismo nombre: "+fGrupo.getVariables(i, 0));
 			}
 		}
