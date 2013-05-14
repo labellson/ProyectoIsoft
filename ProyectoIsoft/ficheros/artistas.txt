@@ -1,0 +1,40 @@
+//TipoDeGrupo,NombreDelGrupo,NombreIntegrante
+solista,Michael Jackson,Michael Joseph Jackson,cantante compositor y bailarin
+solista,Melendi,Ramon Melendi Espina,cantante y guitarrista
+solista,David Guetta,David Pierre Guetta,productor
+solista,Eminem,Marshall Bruce Mathers III,cantante
+solista,Scrillex,Sonny John Moore,productor
+solista,Bruno Mars,Peter Gene Hernandez,cantante compositor y productor musical
+grupo,Linkin Park,Chester Bennington,
+grupo,Linkin Park,Mike Shinoda,
+grupo,Linkin Park,Brad Delson,
+grupo,Linkin Park,Joe Hahn,
+grupo,Linkin Park,Dave Farrel,
+grupo,Linkin Park,Rob Bourdon,
+grupo,Metallica,Kirk Hammett,
+grupo,Metallica,Lars Ulrich,
+grupo,Metallica,James Hetfield,
+grupo,Metallica,Robert Trujillo,
+grupo,AC/DC,Angus Young,
+grupo,AC/DC,Malcolm Young,
+grupo,AC/DC,Brian Johnson,
+grupo,AC/DC,Cliff Williams,
+grupo,AC/DC,Phil Rudd,
+grupo,Extremoduro,Roberto Iniesta,
+grupo,Extremoduro,Itaki Anton,
+grupo,Extremoduro,Miguel Colino,
+grupo,Extremoduro,Joso Ignacio Cantera,
+grupo,Guns N' Roses,Axl Rose,
+grupo,Guns N' Roses,Dizzy Reed,
+grupo,Guns N' Roses,Tommy Stinson,
+grupo,Guns N' Roses,Chris Pitman,
+grupo,Guns N' Roses,Richard Fortus,
+grupo,Guns N' Roses,Frank Ferrer,
+grupo,Guns N' Roses,Ron "Bumblefoot" Thal,
+grupo,Guns N' Roses,DJ Ashba,
+grupo,Los Suaves,Yosi Dominguez,
+grupo,Los Suaves,Alberto Cereijo,
+grupo,Los Suaves,Fernando Calvo,
+grupo,Los Suaves,Charli Dominguez,
+grupo,Los Suaves,Tino Mojon,
+
