@@ -71,12 +71,14 @@ public class CargarArtistas {
 							if(fArtista.getVariables(i,1).equals(grupo.get(k).getNombre())){
 								estaCreado = true;
 								getGrupos(listaArtista).get(k).setNombre((fArtista.getVariables(i, 1)));
+								buscarBiografia(listaArtista.get(k), fBiografia);
 							}
 						}
 						if(estaCreado == false){ 
 							Grupo buffer = new Grupo(fArtista.getVariables(i, 1));
 							buffer.addIntegrantes(new Integrante(fArtista.getVariables(i, 2)));
 							listaArtista.add(buffer);
+							buscarBiografia(listaArtista.get(listaArtista.size()-1), fBiografia);
 						}
 					}
 				}
@@ -94,11 +96,16 @@ public class CargarArtistas {
 	 */
 	private Biografia buscarBiografia(Artista artista, Fichero fBiografia){
 		for(int i=0; i<fBiografia.getVariables().length; i++){
-			if(fBiografia.getVariables(i, 1).equals(artista.getNombre())){
-				return new Biografia(fBiografia.getVariables(i, 1), fBiografia.getVariables(i, 2), fBiografia.getVariables(i, 3), fBiografia.getVariables(i, 4));
+			if(fBiografia.getVariables(i, 0).equals(artista.getNombre())){
+				if(artista.getClass() == Solista.class){
+					return new BiografiaIntegrante(fBiografia.getVariables(i, 0), fBiografia.getVariables(i, 1), fBiografia.getVariables(i, 2), fBiografia.getVariables(i, 3));
+				}else{
+					return new BiografiaGrupo(fBiografia.getVariables(i, 0), fBiografia.getVariables(i, 1), fBiografia.getVariables(i, 2), fBiografia.getVariables(i, 3));
+				}
 			}
 		}
-		throw new RuntimeException("Error, artista "+artista.getNombre()+" no tiene biografia");
+		Error.setError("Error, artista "+artista.getNombre()+" no tiene biografia");
+		return null;
 	}
 	/**
 	 * Comprueba que no haya 2 grupos con el mismo nombre, si los hay, mandara una notificacion

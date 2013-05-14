@@ -1,7 +1,7 @@
 //TipoDeGrupo,NombreDelGrupo,NombreIntegrante
 solista,Michael Jackson,Michael Jackson
 solista,Melendi,Melendi
-grupo,thefucker,segundo
-grupo,spy,cuarto
-grupo,thefucker,quinto
+grupo,Linkin Park,segundo
+grupo,Metallica,cuarto
+grupo,Linkin Park,quinto
 

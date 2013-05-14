@@ -1,6 +1,7 @@
 //integrante/grupo,nombre,fechaNacimiento,lugarNacimiento,descripcion  
 //Si es integrante ,gruposPertenecido,grupoPertenece
 //Si es grupo ,descripcion
-integrante,Michael Jackson,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
-integrante,Melendi,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
-integrante,Michael Jackson,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
+Michael Jackson,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
+Melendi,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
+Metallica,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
+Linkin Park,29 de agosto de 1958,Gary,Indiana-Estados Unidos,conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
