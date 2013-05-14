@@ -1,6 +1,7 @@
-//TipoDeGrupo,NombreDelGrupo,NombreAntegrante
-solista,killme,primero
+//TipoDeGrupo,NombreDelGrupo,NombreIntegrante
+solista,Michael Jackson,Michael Jackson
+solista,Melendi,Melendi
 grupo,thefucker,segundo
-solista,avatar,tercero
 grupo,spy,cuarto
 grupo,thefucker,quinto
+

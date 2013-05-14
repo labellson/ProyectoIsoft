@@ -52,11 +52,13 @@ public class CargarArtistas {
 		Fichero fGrupo = new pModelo.Fichero(ruta[3], new pModelo.ModeloFichero(",", "\n"));
 		Fichero fSolista = new pModelo.Fichero(ruta[4], new pModelo.ModeloFichero(",", "\n"));
 		Fichero fArtista = new pModelo.Fichero(ruta[5], new pModelo.ModeloFichero(",", "\n"));
+		//Inicia el proceso de cargar las variables de los objetos con sus correspondientes ficheros
 		for(int i=0; i<fArtista.getVariables().length; i++){
 			if(fArtista.getVariables(i, 0).equals("solista")){
 				for(int j=0; j<fSolista.getVariables().length; j++){
 					if(fArtista.getVariables(i, 1).equals(fSolista.getVariables(j, 0))){
-						listaArtista.add(new Solista(fArtista.getVariables(j, 1)));
+						listaArtista.add(new Solista(fArtista.getVariables(i, 2)));
+						buscarBiografia(listaArtista.get(listaArtista.size()-1), fBiografia);
 					}
 				}
 			}else if(fArtista.getVariables(i, 0).equals("grupo")){
@@ -85,6 +87,23 @@ public class CargarArtistas {
 		return listaArtista;
 	}
 	
+	/**
+	 * Busca la biografia del artista seleccionado
+	 * @param nombreArtista Nombre del artista al que debe buscar la biografia
+	 * @param fBiografia Fichero donde se guardan todas las biografias
+	 */
+	private Biografia buscarBiografia(Artista artista, Fichero fBiografia){
+		for(int i=0; i<fBiografia.getVariables().length; i++){
+			if(fBiografia.getVariables(i, 1).equals(artista.getNombre())){
+				return new Biografia(fBiografia.getVariables(i, 1), fBiografia.getVariables(i, 2), fBiografia.getVariables(i, 3), fBiografia.getVariables(i, 4));
+			}
+		}
+		throw new RuntimeException("Error, artista "+artista.getNombre()+" no tiene biografia");
+	}
+	/**
+	 * Comprueba que no haya 2 grupos con el mismo nombre, si los hay, mandara una notificacion
+	 * @param fGrupo Fichero donde se guarda la informacion de todos los grupos
+	 */
 	private void comprobarNombresGrupos(Fichero fGrupo){
 		String buffer = new String();
 		for(int i=0; i<fGrupo.getVariables().length; i++){

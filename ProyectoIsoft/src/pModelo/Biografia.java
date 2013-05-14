@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Biografia {
 	private String nombre;
-	private Date fechaNac;
+	private String fechaNac;
 	private String lugarNac;
 	private String descripcion;
 	
-	public Biografia(String nombre, Date fechaNac, String lugarNac, String descripcion){
+	public Biografia(String nombre, String fechaNac, String lugarNac, String descripcion){
 		this.nombre = nombre;
 		this.fechaNac = fechaNac;
 		this.lugarNac = lugarNac;
@@ -27,7 +27,7 @@ public class Biografia {
 		return nombre;
 	}
 
-	public Date getFechaNac() {
+	public String getFechaNac() {
 		return fechaNac;
 	}
 

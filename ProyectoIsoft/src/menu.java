@@ -1,5 +1,4 @@
 import java.io.IOException;
-
 	/**
 	 * Clase inicial con funcion main, utilizada para iniciar el modelo MVC 
 	 * (Tambien usada para hacer pruebas con todas las clases)
