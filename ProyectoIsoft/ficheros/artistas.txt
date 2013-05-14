@@ -1,40 +1,40 @@
 //TipoDeGrupo,NombreDelGrupo,NombreIntegrante
 solista,Michael Jackson,Michael Joseph Jackson,cantante compositor y bailarin
-solista,Melendi,Ramon Melendi Espina,cantante y guitarrista
+solista,Melendi,Ramon Melendi Espina,cantante y guitarra
 solista,David Guetta,David Pierre Guetta,productor
 solista,Eminem,Marshall Bruce Mathers III,cantante
 solista,Scrillex,Sonny John Moore,productor
 solista,Bruno Mars,Peter Gene Hernandez,cantante compositor y productor musical
-grupo,Linkin Park,Chester Bennington,
-grupo,Linkin Park,Mike Shinoda,
-grupo,Linkin Park,Brad Delson,
-grupo,Linkin Park,Joe Hahn,
-grupo,Linkin Park,Dave Farrel,
-grupo,Linkin Park,Rob Bourdon,
-grupo,Metallica,Kirk Hammett,
-grupo,Metallica,Lars Ulrich,
-grupo,Metallica,James Hetfield,
-grupo,Metallica,Robert Trujillo,
-grupo,AC/DC,Angus Young,
-grupo,AC/DC,Malcolm Young,
-grupo,AC/DC,Brian Johnson,
-grupo,AC/DC,Cliff Williams,
-grupo,AC/DC,Phil Rudd,
-grupo,Extremoduro,Roberto Iniesta,
-grupo,Extremoduro,Itaki Anton,
-grupo,Extremoduro,Miguel Colino,
-grupo,Extremoduro,Joso Ignacio Cantera,
-grupo,Guns N' Roses,Axl Rose,
-grupo,Guns N' Roses,Dizzy Reed,
-grupo,Guns N' Roses,Tommy Stinson,
-grupo,Guns N' Roses,Chris Pitman,
-grupo,Guns N' Roses,Richard Fortus,
-grupo,Guns N' Roses,Frank Ferrer,
-grupo,Guns N' Roses,Ron "Bumblefoot" Thal,
-grupo,Guns N' Roses,DJ Ashba,
-grupo,Los Suaves,Yosi Dominguez,
-grupo,Los Suaves,Alberto Cereijo,
-grupo,Los Suaves,Fernando Calvo,
-grupo,Los Suaves,Charli Dominguez,
-grupo,Los Suaves,Tino Mojon,
+grupo,Linkin Park,Chester Bennington,vocalista
+grupo,Linkin Park,Mike Shinoda,guitarra
+grupo,Linkin Park,Brad Delson,guitarra
+grupo,Linkin Park,Joe Hahn,tornamesa
+grupo,Linkin Park,Dave Farrel,bateria y guitarra electrica
+grupo,Linkin Park,Rob Bourdon,bateria y piano
+grupo,Metallica,Kirk Hammett,vocal y guitarra
+grupo,Metallica,Lars Ulrich,vocal y bateria
+grupo,Metallica,James Hetfield,vocal guitarra y bateria
+grupo,Metallica,Robert Trujillo,vocal bajo y guitarra
+grupo,AC/DC,Angus Young,guitarra electrica
+grupo,AC/DC,Malcolm Young,vocal  guitarra electrica
+grupo,AC/DC,Brian Johnson,vocal
+grupo,AC/DC,Cliff Williams,vocal, bajo y guitarra
+grupo,AC/DC,Phil Rudd,bateria y percusion
+grupo,Extremoduro,Roberto Iniesta,vocal y guitarra
+grupo,Extremoduro,Itaki Anton,guitarra y bajo
+grupo,Extremoduro,Miguel Colino,bajo
+grupo,Extremoduro,Joso Ignacio Cantera,bateria
+grupo,Guns N' Roses,Axl Rose,vocal piano y guitarra
+grupo,Guns N' Roses,Dizzy Reed,piano teclado y sintetizador
+grupo,Guns N' Roses,Tommy Stinson,bajo
+grupo,Guns N' Roses,Chris Pitman,multi-instrumental y sintetizador
+grupo,Guns N' Roses,Richard Fortus,Multiinstrumentista
+grupo,Guns N' Roses,Frank Ferrer,bateria
+grupo,Guns N' Roses,Ron "Bumblefoot" Thal,vocal guitarra electrica y bateria
+grupo,Guns N' Roses,DJ Ashba,Multiinstrumentista
+grupo,Los Suaves,Yosi Dominguez,vocal, guitarra
+grupo,Los Suaves,Alberto Cereijo,guitarra
+grupo,Los Suaves,Fernando Calvo,guitarra
+grupo,Los Suaves,Charli Dominguez,guitarra
+grupo,Los Suaves,Tino Mojon,bateria
 
