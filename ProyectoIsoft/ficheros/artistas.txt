@@ -1,7 +1,40 @@
 //TipoDeGrupo,NombreDelGrupo,NombreIntegrante
-solista,Michael Jackson,Michael Jackson
-solista,Melendi,Melendi
-grupo,Linkin Park,segundo
-grupo,Metallica,cuarto
-grupo,Linkin Park,quinto
+solista,Michael Jackson,Michael Joseph Jackson
+solista,Melendi,Ramón Melendi Espina
+solista,David Guetta,David Pierre Guetta
+solista,Eminem,Marshall Bruce Mathers III
+solista,Scrillex,Sonny John Moore
+solista,Bruno Mars,Peter Gene Hernández
+grupo,Linkin Park,Chester Bennington
+grupo,Linkin Park,Mike Shinoda
+grupo,Linkin Park,Brad Delson
+grupo,Linkin Park,Joe Hahn
+grupo,Linkin Park,Dave Farrel
+grupo,Linkin Park,Rob Bourdon
+grupo,Metallica,Kirk Hammett
+grupo,Metallica,Lars Ulrich
+grupo,Metallica,James Hetfield
+grupo,Metallica,Robert Trujillo
+grupo,AC/DC,Angus Young
+grupo,AC/DC,Malcolm Young
+grupo,AC/DC,Brian Johnson
+grupo,AC/DC,Cliff Williams
+grupo,AC/DC,Phil Rudd
+grupo,Extremoduro,Roberto Iniesta
+grupo,Extremoduro,Iñaki Antón
+grupo,Extremoduro,Miguel Colino
+grupo,Extremoduro,José Ignacio Cantera
+grupo,Guns N' Roses,Axl Rose
+grupo,Guns N' Roses,Dizzy Reed
+grupo,Guns N' Roses,Tommy Stinson
+grupo,Guns N' Roses,Chris Pitman
+grupo,Guns N' Roses,Richard Fortus
+grupo,Guns N' Roses,Frank Ferrer
+grupo,Guns N' Roses,Ron "Bumblefoot" Thal
+grupo,Guns N' Roses,DJ Ashba
+grupo,Los Suaves,Yosi Domínguez
+grupo,Los Suaves,Alberto Cereijo
+grupo,Los Suaves,Fernando Calvo
+grupo,Los Suaves,Charli Dominguez
+grupo,Los Suaves,Tino Mojón
 

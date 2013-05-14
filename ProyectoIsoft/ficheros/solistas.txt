@@ -1,5 +1,7 @@
 //NombreGrupo
-killme,200,300;
-please,500,600;
-Melendi,%%%,%%%;
-Michael Jackson,&&&,&&&;
+Melendi
+Michael Jackson
+David Guetta
+Eminem
+Skrillex
+Bruno Mars
