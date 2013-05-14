@@ -8,6 +8,7 @@ import java.util.ArrayList;
  */
 public class ListaArtista {
 	private ArrayList<Artista> listaArtista;
+	
 	/**
 	 * ListaArtista necesita una cadena de caracteres especificando la ruta de el fichero
 	 * con la informacion de los artistas
@@ -16,6 +17,7 @@ public class ListaArtista {
 	public ListaArtista(String[] ruta){
 		listaArtista = new ArrayList<Artista>();
 	}
+	
 	/**
 	 * Carga los datos de los artistas, posiblemente se modifique y se cree una clase propia*
 	 * @param ruta Lista de rutas, donde se encuentran los ficheros a cargar los datos
@@ -25,6 +27,10 @@ public class ListaArtista {
 		listaArtista = CargarArtistas.getSingelton().getListaArtistas(ruta);
 	}
 	
+	/**
+	 * Devuelve la lista de artistas
+	 * @return
+	 */
 	public ArrayList<Artista> getArtistas(){
 		return listaArtista;
 	}

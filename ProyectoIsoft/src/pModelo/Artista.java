@@ -13,9 +13,19 @@ public abstract class Artista {
 	public Artista(String nombre){
 		this.nombre = nombre;
 	}
+	
+	/**
+	 * Retorna el nombre del artista (solista o grupo)
+	 * @return
+	 */
 	public String getNombre() {
 		return nombre;
 	}
+	
+	/**
+	 * Modifica el nombre del artista.
+	 * @param nombre el nuevo nombre del artista
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

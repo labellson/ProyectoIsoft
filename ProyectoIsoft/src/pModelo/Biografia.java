@@ -2,7 +2,11 @@ package pModelo;
 
 import java.util.Date;
 
-public class Biografia {
+/**
+ * Clase Abstracta que deriva en BiografiaIntegrante y BiografiaGrupo
+ * @author Francisco , Daniel , Ruben , Iban
+ */
+public abstract class Biografia {
 	private String nombre;
 	private String fechaNac;
 	private String lugarNac;

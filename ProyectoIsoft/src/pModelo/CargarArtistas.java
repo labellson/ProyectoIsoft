@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 /**
  * Se encarga de cargar los artistas con todos sus datos, nombre, grupo/solista al que pertenecen, discografia etc..
+ * Utiliza las clases Fichero y ModeloFichero para cargar estos datos desde los ficheros.
+ * Es una clase Singelton que solo se crea en la carga de archivos desde un controlador
  * @author Francisco , Daniel , Ruben , Iban
- *
  */
 public class CargarArtistas {
 	private static CargarArtistas cargarArtistas;
@@ -46,6 +47,9 @@ public class CargarArtistas {
 	 */
 	public ArrayList<Artista> getListaArtistas(String[] ruta) throws IOException{
 		ArrayList<Artista> listaArtista = new ArrayList<Artista>();
+		//En la carga de ficheros es necesario mandar un objeto especifico para esa clase llamado ModeloFichero
+		//En este caso esa clase esta diciendo que las variables de una mismo objeto (ej:nombreArtista,nombreCancion) 
+		//van separadas por una coma y estos objetos (ej:artista,grupo,album) van separados por un salto de linea
 		Fichero fDiscografia = new pModelo.Fichero(ruta[0], new pModelo.ModeloFichero(",", "\n"));
 		Fichero fCancion = new pModelo.Fichero(ruta[1], new pModelo.ModeloFichero(",", "\n"));
 		Fichero fBiografia = new pModelo.Fichero(ruta[2], new pModelo.ModeloFichero(",", "\n"));

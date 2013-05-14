@@ -6,7 +6,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Clase encargada de la lectura y escritura de un archivo
+ * Clase que mediante una ruta, un modelo de fichero(explicado en su propia clase) y opcionalmente una cadena de caracteres
+ * la cual indicara en la lectura del fichero partes que se consideran comentarios y no se almacenan, por defecto es "//".
+ * Es capaz de extraer inicialmente el texto completo del fichero elegido, posteriormente dividido en una matriz de String,
+ * un ejemplo es verlo pensando que en el fichero se encuentras varias clases, con varias variables cada una.
+ * ej. grafico String[posClase][posVariable]
  * @author Francisco , Daniel , Ruben , Iban
  */
 public class Fichero {
@@ -17,6 +21,8 @@ public class Fichero {
 	private ModeloFichero mf;
 	
 	/**
+	 * Constructor que se encarga de la primera fase de la carga del fichero, ignora la parte de comentarios y las lineas
+	 * vacias y extrae todo lo demas, dejando el texto aun sin separar en variables
 	 * @param ruta Cadena de caracteres que menciona la ruta donde se encuentra el archivo a leer 
 	 * @param mf Clase encargada de almacenar valores necesario para iniciar una lectura o escritura, determina el formato
 	 * @param comentario Cadena de caracter que ignorara desde que es encontrada hasta un nuevo salto de linea el texto
@@ -41,6 +47,12 @@ public class Fichero {
 
 	}
 	
+	/**
+	 * Constructor opcional en el cual el String comentario por defecto es "//"
+	 * @param ruta
+	 * @param mf
+	 * @throws IOException
+	 */
 	public Fichero(String ruta, ModeloFichero mf) throws IOException{		
 		this(ruta,mf,"//");
 	}
@@ -82,7 +94,11 @@ public class Fichero {
 		//ya que esta puede no estar creada, y ahorramos codigo de la otra funcion
 		return getVariables()[clase][variable];
 	}
-
+	
+	/**
+	 * Se usa para adquirir la ruta actual del fichero
+	 * @return ruta
+	 */
 	public String getRuta() {
 		return ruta;
 	}
