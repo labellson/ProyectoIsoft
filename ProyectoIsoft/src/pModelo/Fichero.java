@@ -13,14 +13,17 @@ public class Fichero {
 	private String ruta;
 	private String texto;
 	private String[][] variable;
+	private String comentario;
 	private ModeloFichero mf;
 	
 	/**
 	 * @param ruta Cadena de caracteres que menciona la ruta donde se encuentra el archivo a leer 
 	 * @param mf Clase encargada de almacenar valores necesario para iniciar una lectura o escritura, determina el formato
+	 * @param comentario Cadena de caracter que ignorara desde que es encontrada hasta un nuevo salto de linea el texto
 	 * @throws IOException *
 	 */
-	public Fichero(String ruta, ModeloFichero mf) throws IOException{		
+	public Fichero(String ruta, ModeloFichero mf, String comentario) throws IOException{		
+		this.comentario = comentario;
 		this.ruta=ruta;
 		this.mf = mf;
 		texto = new String();
@@ -36,6 +39,10 @@ public class Fichero {
 			}
 			br.close();
 
+	}
+	
+	public Fichero(String ruta, ModeloFichero mf) throws IOException{		
+		this(ruta,mf,"//");
 	}
 	
 	/**

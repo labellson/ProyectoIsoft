@@ -14,7 +14,6 @@ public class ListaArtista {
 	 * @param ruta
 	 */
 	public ListaArtista(String[] ruta){
-		//Cuando se inicie listaArtista, cargara los datos de los artistas de la base de datos
 		listaArtista = new ArrayList<Artista>();
 	}
 	/**
@@ -24,6 +23,10 @@ public class ListaArtista {
 	 */
 	public void cargarArtistas(String ruta[]) throws IOException{
 		listaArtista = CargarArtistas.getSingelton().getListaArtistas(ruta);
+	}
+	
+	public ArrayList<Artista> getArtistas(){
+		return listaArtista;
 	}
 }
 

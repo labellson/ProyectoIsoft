@@ -27,6 +27,10 @@ public class menu {
 		while(Error.getSize() != 0){
 			System.out.println(Error.extraerError());
 		}
+		for(int i=0; i<lArtista.getArtistas().size(); i++){
+			if(lArtista.getArtistas().get(i).getClass() == Solista.class)
+			System.out.println(lArtista.getArtistas().get(i).getNombre());
+		}
 		//pruebaFichero(ruta[1]);
 	}
 	/**
