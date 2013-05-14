@@ -1,3 +1,4 @@
+package pModelo;
 import java.io.IOException;
 	/**
 	 * Clase inicial con funcion main, utilizada para iniciar el modelo MVC 
@@ -21,6 +22,10 @@ public class menu {
 			lArtista.cargarArtistas(ruta);
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
+		}
+		//Errores
+		while(Error.getSize() != 0){
+			System.out.println(Error.extraerError());
 		}
 		//pruebaFichero(ruta[1]);
 	}
