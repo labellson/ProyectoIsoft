@@ -57,7 +57,7 @@ public class CargarArtistas {
 			if(fArtista.getVariables(i, 0).equals("solista")){
 				for(int j=0; j<fSolista.getVariables().length; j++){
 					if(fArtista.getVariables(i, 1).equals(fSolista.getVariables(j, 0))){
-						listaArtista.add(new Solista(fArtista.getVariables(i, 2)));
+						listaArtista.add(new Solista(fArtista.getVariables(i, 2),fArtista.getVariables(i, 3)));
 						buscarBiografia(listaArtista.get(listaArtista.size()-1), fBiografia);
 					}
 				}
@@ -76,7 +76,7 @@ public class CargarArtistas {
 						}
 						if(estaCreado == false){ 
 							Grupo buffer = new Grupo(fArtista.getVariables(i, 1));
-							buffer.addIntegrantes(new Integrante(fArtista.getVariables(i, 2)));
+							buffer.addIntegrantes(new Integrante(fArtista.getVariables(i, 2),fArtista.getVariables(i, 3)));
 							listaArtista.add(buffer);
 							buscarBiografia(listaArtista.get(listaArtista.size()-1), fBiografia);
 						}
