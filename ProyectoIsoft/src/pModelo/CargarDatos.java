@@ -41,4 +41,23 @@ public class CargarDatos{
 		}
 		
 	}
+	/**
+	 * Este metodo devolvera un ArrayList<Cancion> que cargara de el fichero datos
+	 * @param f de la clase fichero
+	 * @param numArtista el artista en el que nos encontramos en el array
+	 * @param i indica el offset en el que nos encontramos en el array justo despues de un album
+	 * @return ArrayList <Cancion>
+	 */
+	private ArrayList<Cancion> cargarCancion(Fichero f, int numArtista, int i){
+		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
+		while(f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
+			listaCancion.add(new Cancion(f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1), f.getVariable(numArtista, i, 2)));
+			i++;
+		}
+		return listaCancion;
+	}
+	
+	private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
+		
+	}
 }
