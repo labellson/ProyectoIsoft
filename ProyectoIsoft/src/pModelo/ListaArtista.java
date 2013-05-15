@@ -14,7 +14,6 @@ public class ListaArtista {
 		return singelton;
 	}
 	/**
-	 * 
 	 * @param nombre
 	 * @return
 	 */
