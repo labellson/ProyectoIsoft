@@ -3,6 +3,11 @@ package pModelo;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author francisco
+ *
+ */
 public class CargarDatos{
 	private static CargarDatos cargarArtistas;
 	private CargarDatos(){
@@ -39,6 +44,7 @@ public class CargarDatos{
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}
+		//Creamos 
 		
 	}
 }

@@ -74,7 +74,6 @@ public class Fichero {
 			texto = texto.split("}")[1];
 			texto = texto.replaceFirst("\n", "");
 			mf = new ModeloFichero(finalVar, finalClase, finalBloque, formato, bandera,texto.split(finalBloque).length);
-			
 		}
 	}
 	
@@ -97,8 +96,9 @@ public class Fichero {
 			for(int j=0; j<buffer.split(mf.getFinalClase()).length; j++){
 				variable[i][j] = new String[mf.getFormato()[j].length];
 				buffer2 = buffer.split(mf.getFinalClase())[j];
-				for(int k=0; k<mf.getFormato()[j].length; k++){	
+				for(int k=0; k<mf.; k++){	
 					buffer3 = buffer2.split(":");
+					System.out.println(i+":"+j+":"+k+"-->");
 					variable[i][j][k] = buffer3[1].split(mf.getFinalVar())[k];
 					if(bandera[i][j] == null)bandera[i][j] = buffer3[0];
 				}
