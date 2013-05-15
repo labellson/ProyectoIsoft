@@ -13,7 +13,7 @@ public class menu {
 		
 		
 		String ruta = "ficheros/datos.txt";
-		//pruebaFichero(ruta);
+		pruebaFichero(ruta);
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
@@ -32,6 +32,7 @@ public class menu {
 			Fichero f = new Fichero(ruta, ",", "\n", ";\n");
 			System.out.println(f.getVariable("Michael Joseph Jackson", "Artista", "nombre"));
 			System.out.println(f.getVariable("michael Joseph Jackson", "Artista", "Posicion"));
+			System.out.println(f.getVariable(0, 3, 1));
 			System.out.println(f.getVariable(0, "BiografiaGrupo", "fechaNacimiento"));
 			System.out.println(f.getVariable(1, "Artista", "nombre"));
 			System.out.println(f.getVariable(1, "Artista", "posicion"));

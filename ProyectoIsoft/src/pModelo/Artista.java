@@ -1,4 +1,5 @@
 package pModelo;
+import java.util.ArrayList;
 
 /**
  * Clase encargada de almacenar todos los datos de su Artista asignado.
@@ -7,7 +8,7 @@ package pModelo;
  */
 public abstract class Artista {
 	private String nombre;
-	private ListaAlbum lAlbumes;
+	private ArrayList<Album> lAlbum;
 	private Biografia bio;
 	private String genero;
 	
