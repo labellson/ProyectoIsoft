@@ -48,16 +48,17 @@ public class CargarDatos{
 	 * @param i indica el offset en el que nos encontramos en el array justo despues de un album
 	 * @return ArrayList <Cancion>
 	 */
-	private ArrayList<Cancion> cargarCancion(Fichero f, int numArtista, int i){
+	public ArrayList<Cancion> cargarCancion(Fichero f, int numArtista, int i){
 		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
-		while(f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
+		while(i <= f.getBanderas(numArtista).length && f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
 			listaCancion.add(new Cancion(f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1), f.getVariable(numArtista, i, 2)));
 			i++;
+			if(f.getBanderas(numArtista).length >= i) break;
 		}
 		return listaCancion;
 	}
 	
-	private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
-		
-	}
+	/*private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
+		ArrayList<Album> listaA
+	}*/
 }

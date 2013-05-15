@@ -13,7 +13,7 @@ public class menu {
 		
 		
 		String ruta = "ficheros/datos.txt";
-		pruebaFichero(ruta);
+		//pruebaFichero(ruta);
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
