@@ -9,7 +9,12 @@ public abstract class Artista {
 	private String nombre;
 	private ListaAlbum lAlbumes;
 	private Biografia bio;
+	private String genero;
 	
+	public String getGenero() {
+		return genero;
+	}
+
 	public Artista(String nombre){
 		this.nombre = nombre;
 	}
