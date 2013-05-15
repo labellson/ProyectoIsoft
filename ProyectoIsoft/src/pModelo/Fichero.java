@@ -16,7 +16,8 @@ import java.io.IOException;
 public class Fichero {
 	private String ruta;
 	private String texto;
-	private String[][] variable;
+	private String[][][] variable;
+	private String[][] bandera;
 	private String comentario;
 	private ModeloFichero mf;
 	
@@ -28,77 +29,122 @@ public class Fichero {
 	 * @param comentario Cadena de caracter que ignorara desde que es encontrada hasta un nuevo salto de linea el texto
 	 * @throws IOException *
 	 */
-	public Fichero(String ruta, ModeloFichero mf, String comentario) throws IOException{		
-		this.comentario = comentario;
+	
+	public Fichero(String ruta, String finalVar, String finalClase, String finalBloque) throws IOException{		
 		this.ruta=ruta;
-		this.mf = mf;
 		texto = new String();
-		BufferedReader br;
+		cargarTexto();
+		cargarModelo(finalVar, finalClase, finalBloque);
+		crearVariables();
+		nombrarBloques();
+	}
+	
+	private void cargarTexto() throws IOException{
+		BufferedReader br = new BufferedReader(new FileReader (new File (ruta)));
 		String[] buffer;
-
-			br = new BufferedReader(new FileReader (new File (ruta)));
-			while(br.ready()){
-				buffer = br.readLine().split("//");
-				if(!buffer[0].equals("")){
-					texto +=buffer[0]+"\n";
-				}
-			}
-			br.close();
-
-	}
-	
-	/**
-	 * Constructor opcional en el cual el String comentario por defecto es "//"
-	 * @param ruta
-	 * @param mf
-	 * @throws IOException
-	 */
-	public Fichero(String ruta, ModeloFichero mf) throws IOException{		
-		this(ruta,mf,"//");
-	}
-	
-	/**
-	 * Retorna el texto cargado del fichero sin modificar, el usuario necesitara gestionarlo 
-	 * para recuperar las variables introducidas
-	 * @return El texto del fichero elegido
-	 */
-	public String getText(){
-		return texto;
-	}
-	
-	/**
-	 * Se encarga de cargar las variables del texto, si aun no han sido creadas y las
-	 * retorna, facilitando al usuario su posterior gestion.
-	 * @return las variables del texto separadas en una matriz de String[Clase][Variable]
-	 */
-	public String[][] getVariables(){
-		String[] buffer;
-		if(variable == null){
-			buffer = texto.split(mf.getFinalClase());
-			variable = new String[buffer.length][];
-			for(int i=0; i < buffer.length; i++){
-				variable[i] = buffer[i].split(mf.getFinalVar());
+		while(br.ready()){
+			buffer = br.readLine().split("//");
+			if(!buffer[0].equals("")){
+				texto +=buffer[0]+"\n";
 			}
 		}
-		return variable;
+		br.close();	
 	}
 	
-	/**
-	 * Se encarga de cargar y/o retornar la variable seleccionada del texto
-	 * @param clase El conjunto al que pertenece la variable, vease la clase getVariables()
-	 * @param variable El numero ordenado al que pertenece esa variable en la clase, vease la clase getVariables()
-	 * @return la variable seleccionada del fichero
-	 */
-	public String getVariables(int clase, int variable){
-		//Se llama a la funcion getVariables(), en vez de recoger la variable privada de la clase 
-		//ya que esta puede no estar creada, y ahorramos codigo de la otra funcion
-		return getVariables()[clase][variable];
+	private void cargarModelo(String finalVar, String finalClase, String finalBloque) throws IOException{
+		if(!texto.contains("}")){
+			throw new RuntimeException("No se encuentra un modelo en los parametros de Fichero ni en el fichero");
+		}else{
+			String modelo = texto.split("}")[0];
+			String lineas[] = modelo.split("\n");
+			String formatoBanderas[];
+			String variables[];
+			
+			String formato[][] = new String[lineas.length][];
+			String bandera[] = new String[lineas.length];
+			for(int i=0; i<lineas.length; i++){
+				bandera[i] = lineas[i].split(":")[0];
+				formatoBanderas = lineas[i].split(":");
+				variables = formatoBanderas[1].split(",");
+				formato[i] = variables;
+				for(int j=0; j<variables.length; j++){
+					formato[i][j] = variables[j];
+				}
+			}
+			texto = texto.split("}")[1];
+			texto = texto.replaceFirst("\n", "");
+			mf = new ModeloFichero(finalVar, finalClase, finalBloque, formato, bandera,texto.split(finalBloque).length);
+			
+		}
 	}
 	
-	/**
-	 * Se usa para adquirir la ruta actual del fichero
-	 * @return ruta
-	 */
+	private void nombrarBloques(){
+		String buffer[] = texto.split(mf.getFinalBloque());
+		for(int i=0; i<buffer.length; i++){
+			buffer[i] = getVariable(i,0,0);
+		}
+		mf.setNombreBloque(buffer);
+	}
+	
+	private void crearVariables(){
+		variable = new String[mf.getSizeBloques()][mf.getBandera().length][];
+		String buffer,buffer2;
+		String[] buffer3;
+		bandera = new String[mf.getSizeBloques()][];
+		for(int i=0; i<mf.getSizeBloques();i++){
+			buffer = texto.split(mf.getFinalBloque())[i];
+			bandera[i] = new String[buffer.split(mf.getFinalClase()).length];
+			for(int j=0; j<buffer.split(mf.getFinalClase()).length; j++){
+				variable[i][j] = new String[mf.getFormato()[j].length];
+				buffer2 = buffer.split(mf.getFinalClase())[j];
+				for(int k=0; k<mf.getFormato()[j].length; k++){	
+					buffer3 = buffer2.split(":");
+					variable[i][j][k] = buffer3[1].split(mf.getFinalVar())[k];
+					if(bandera[i][j] == null)bandera[i][j] = buffer3[0];
+				}
+			}
+		}
+	}
+	
+	public String getVariable(String bloque, String tipo, String variable){
+		for(int i=0; i<mf.getSizeBloques();i++){
+			if(bloque.equalsIgnoreCase(mf.getNombreBloque()[i])){
+				return getVariable(i,tipo,variable);
+			}
+		}
+		Error.setError("No se ha podido cargar la variable:"+bloque+":"+tipo+":"+variable);
+		return null;
+	}
+	
+	public String getVariable(int bloque, String tipo, String variable){
+		for(int i=0; i<bandera[bloque].length;i++){
+			if(tipo.equalsIgnoreCase(bandera[bloque][i])){
+				for(int j=0; j<mf.getBandera().length; j++){
+					if(bandera[bloque][i].equalsIgnoreCase(mf.getBandera()[j])){
+						for(int k=0; k<mf.getFormato()[j].length; k++){
+							if(variable.equalsIgnoreCase(mf.getFormato()[j][k])){
+								return getVariable(bloque,i,k);
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		Error.setError("No se ha podido cargar la variable:"+bloque+":"+tipo+":"+variable);
+		return null;
+	}
+	
+	public String getVariable(int bloque, int clase, int variable){
+		return this.variable[bloque][clase][variable];
+	}
+	public String[] getBanderas(int bloque){
+		return bandera[bloque];
+	}
+	public ModeloFichero getMF(){ 
+		return mf; 
+	}
+	
 	public String getRuta() {
 		return ruta;
 	}
