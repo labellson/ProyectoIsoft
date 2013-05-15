@@ -29,5 +29,14 @@ public abstract class Artista {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+	public Biografia getBiografia() {
+		return bio;
+	}
+
+	public void setBiografia(Biografia bio) {
+		this.bio = bio;
+	}
+	
 	
 }
