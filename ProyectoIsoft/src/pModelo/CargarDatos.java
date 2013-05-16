@@ -60,8 +60,17 @@ public class CargarDatos{
 		}
 		return listaCancion;
 	}
-	
-	/*private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
-		ArrayList<Album> listaA
-	}*/
+	/**
+	 * Este metodo devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
+	 * @param f Fichero
+	 * @param numArtista el artista en el que nos encontramos en el array
+	 * * @param i indica el offset en el que nos encontramos en el array
+	 * @return ArrayList<Album>
+	 */
+	private ArrayList<Album> cargarAlbum(Fichero f, int numArtista, int i){
+		ArrayList<Album> listaAlbum = new ArrayList<Album>();
+		while(i < f.getBanderas(numArtista).length){
+			
+		}
+	}
 }
