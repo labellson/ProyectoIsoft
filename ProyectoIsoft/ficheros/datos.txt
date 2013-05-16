@@ -10,6 +10,8 @@ Artista:Michael Joseph Jackson,cantante compositor y bailarin
 BiografiaGrupo:29/8/1958,Gary/Indiana/Estados Unidos,Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
 Album:Cerdos Salvajes,16/11/1993
 Cancion:Te quiero puta,3,putita mia
-Cancion:Villarebuznos,3,El ataque de los borregos;
+Cancion:Villarebuznos,3,El ataque de los borregos
+Album:Galaxy,11/11/11
+Cancion:Truño,3,Truños como puños;
 Artista:Ramon Melendi Espina,cantante y guitarra
 BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;

@@ -23,8 +23,10 @@ public class CargarDatos{
 		}
 		ArrayList<Album> albums = cargarAlbum(f, 0, 0);
 		System.out.println("NombreAlbum: "+albums.get(0).getNombre()+" Fecha: "+albums.get(0).getFecha());
-		System.out.println("Nombre: "+albums.get(0).getCanciones().get(0).getNombre()+" Letra: "+albums.get(0).getCanciones().get(0).getDuracion()+" Duracion: "+albums.get(0).getCanciones().get(0).getDuracion());
-		System.out.println("Nombre: "+albums.get(0).getCanciones().get(1).getNombre()+" Letra: "+albums.get(0).getCanciones().get(1).getDuracion()+" Duracion: "+albums.get(0).getCanciones().get(1).getDuracion());
+		System.out.println("Nombre: "+albums.get(0).getCanciones().get(0).getNombre()+" Letra: "+albums.get(0).getCanciones().get(0).getLetra()+" Duracion: "+albums.get(0).getCanciones().get(0).getDuracion());
+		System.out.println("Nombre: "+albums.get(0).getCanciones().get(1).getNombre()+" Letra: "+albums.get(0).getCanciones().get(1).getLetra()+" Duracion: "+albums.get(0).getCanciones().get(1).getDuracion());
+		System.out.println("NombreAlbum: "+albums.get(1).getNombre()+" Fecha: "+albums.get(0).getFecha());
+		System.out.println("Nombre: "+albums.get(0).getCanciones().get(1).getNombre()+" Letra: "+albums.get(1).getCanciones().get(0).getLetra()+" Duracion: "+albums.get(1).getCanciones().get(0).getDuracion());
 	}
 	
 	private void cargarArtista(Fichero f, int numArtista) throws IOException{
@@ -70,7 +72,6 @@ public class CargarDatos{
 	private ArrayList<Album> cargarAlbum(Fichero f, int numArtista, int i){
 		ArrayList<Album> listaAlbum = new ArrayList<Album>();
 		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
-		ArrayList<String>listas;
 		while(i < f.getBanderas(numArtista).length){
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Album")){
 				listaCancion = cargarCancion(f, numArtista, i+1);
