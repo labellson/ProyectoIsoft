@@ -11,11 +11,23 @@ public class Album {
 	
 	private ArrayList<Cancion> Canciones;
 	private String Nombre;
-	private Date fecha;
+	private String fecha;
 	
-	public Album(ArrayList<Cancion> pCanciones, String pNombre, Date pfecha){
+	public Album(ArrayList<Cancion> pCanciones, String pNombre, String pfecha){
 		Canciones = pCanciones;
 		Nombre = pNombre;
 		fecha = pfecha;
+	}
+
+	public ArrayList<Cancion> getCanciones() {
+		return Canciones;
+	}
+
+	public String getNombre() {
+		return Nombre;
+	}
+
+	public String getFecha() {
+		return fecha;
 	}
 }
