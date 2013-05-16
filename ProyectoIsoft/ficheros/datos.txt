@@ -23,5 +23,5 @@ BiografiaSolista:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el I
 Grupo:Linkin Park
 BiografiaGrupo:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
 
-Integrante:Chester Bennington,vocalista,linking park
+Integrante:Chester Bennington,vocalista,linkin park
 BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;

@@ -23,12 +23,6 @@ public class CargarDatos{
 			cargarAlbum(f, i, 0);
 			cargarArtista(f,i);
 		}
-		ListaAlbum albums = ListaAlbum.getSingelton();
-		System.out.println("NombreAlbum: "+albums.get(0).getNombre()+" Fecha: "+albums.get(0).getFecha());
-		System.out.println("Nombre: "+albums.get(0).getCanciones().get(0).getNombre()+" Letra: "+albums.get(0).getCanciones().get(0).getLetra()+" Duracion: "+albums.get(0).getCanciones().get(0).getDuracion());
-		System.out.println("Nombre: "+albums.get(0).getCanciones().get(1).getNombre()+" Letra: "+albums.get(0).getCanciones().get(1).getLetra()+" Duracion: "+albums.get(0).getCanciones().get(1).getDuracion());
-		System.out.println("NombreAlbum: "+albums.get(1).getNombre()+" Fecha: "+albums.get(0).getFecha());
-		System.out.println("Nombre: "+albums.get(0).getCanciones().get(1).getNombre()+" Letra: "+albums.get(1).getCanciones().get(0).getLetra()+" Duracion: "+albums.get(1).getCanciones().get(0).getDuracion());
 	}
 	
 	private void cargarBiografia(Fichero f, int numArtista) throws IOException{
@@ -101,9 +95,13 @@ public class CargarDatos{
 		}else if(grupo){
 			ListaArtista.getSingelton().add(new Grupo(f.getVariable(numArtista, "grupo", "nombre"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(integrante){
+			/*
 			for(int i=0; i<ListaArtista.getSingelton().get().size(); i++){
-				if(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "nombre")));
-			}
+				if(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")) != (Integer) null){
+					((Grupo)ListaArtista.getSingelton().get(i)).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
+				}
+			}*/
+			((Grupo)ListaArtista.getSingelton().get(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")))).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}

@@ -1,5 +1,6 @@
 package pModelo;
 import java.io.IOException;
+import java.io.ObjectInputStream.GetField;
 	/**
 	 * Clase inicial con funcion main, utilizada para iniciar el modelo MVC 
 	 * (Tambien usada para hacer pruebas con todas las clases)
@@ -16,8 +17,9 @@ public class menu {
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
-			System.out.println(ListaArtista.getSingelton().get(1).getNombre());
-			System.out.println(ListaArtista.getSingelton().get(1).getBiografia().getDescripcion());
+			//System.out.println(ListaArtista.getSingelton().get(2).getNombre());
+			//System.out.println(ListaArtista.getSingelton().get(2).getBiografia().getDescripcion());
+			System.out.println(((Grupo)ListaArtista.getSingelton().get(2)).getIntentegrantes(0).getNombre());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

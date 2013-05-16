@@ -19,4 +19,8 @@ public class ListaIntegrantes {
 	public void addIntegrantes(Integrante integrante){
 		lIntegrantes.add(integrante);
 	}
+	
+	public Integrante getIntegrantes(int indice){
+		return lIntegrantes.get(indice);
+	}
 }

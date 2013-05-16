@@ -17,8 +17,12 @@ public class Grupo extends Artista{
 	 * Añade un integrante al grupo
 	 * @param integrante Nuevo integrante en el grupo
 	 */
-	void addIntegrantes(Integrante integrante){
+	public void addIntegrantes(Integrante integrante){
 		lIntegrantes.addIntegrantes(integrante);
+	}
+	
+	public Integrante getIntentegrantes(int indice){
+		return lIntegrantes.getIntegrantes(indice);
 	}
 
 }

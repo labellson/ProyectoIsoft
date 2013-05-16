@@ -26,10 +26,10 @@ public class ListaArtista {
 		return listaArtista;
 	}
 	
-	public boolean compararNombre(String nombre){
+	public int compararNombre(String nombre){
 		for(int i=0; i<listaArtista.size(); i++){
-			if(listaArtista.get(i).getNombre().equalsIgnoreCase(nombre)) return true;
+			if(listaArtista.get(i).getNombre().equalsIgnoreCase(nombre)) return i;
 		}
-		return false;
+		return (Integer) null;
 	}
 }
