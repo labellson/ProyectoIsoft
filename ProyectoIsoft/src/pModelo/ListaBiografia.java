@@ -7,7 +7,7 @@ public class ListaBiografia {
 	private ArrayList<Biografia> biografia;
 	
 	private ListaBiografia(){
-		
+		biografia = new ArrayList<Biografia>();
 	}
 	
 	public static ListaBiografia getSingelton(){
@@ -19,6 +19,10 @@ public class ListaBiografia {
 	
 	public void addBiografia(Biografia bio){
 		biografia.add(bio);
+	}
+	
+	public ArrayList<Biografia> get(){
+		return biografia;
 	}
 	
 	public Biografia getBiografia(int num){

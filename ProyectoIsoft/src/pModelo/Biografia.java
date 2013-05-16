@@ -6,7 +6,7 @@ import java.util.Date;
  * Clase Abstracta que deriva en BiografiaIntegrante y BiografiaGrupo
  * @author Francisco , Daniel , Ruben , Iban
  */
-public abstract class Biografia {
+public abstract class Biografia{
 	private String nombre;
 	private String fechaNac;
 	private String lugarNac;
