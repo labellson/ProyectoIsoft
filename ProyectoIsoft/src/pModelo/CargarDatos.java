@@ -61,7 +61,7 @@ public class CargarDatos{
 		return listaCancion;
 	}
 	/**
-	 * Este fucker devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
+	 * Este metodo devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
 	 * @param f Fichero
 	 * @param numArtista el artista en el que nos encontramos en el array
 	 * * @param i indica el offset en el que nos encontramos en el array
@@ -74,8 +74,7 @@ public class CargarDatos{
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Album")){
 				listaCancion = cargarCancion(f, numArtista, i+1);
 				Album album = new Album(listaCancion, f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1));
-				listaAlbum.add(album);
-				i = listaCancion.size() +1;
+				return null;
 			}else{
 				i++;
 			}
