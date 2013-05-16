@@ -75,8 +75,7 @@ public class CargarDatos{
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Album")){
 				listaCancion = cargarCancion(f, numArtista, i+1);
 				Album album = new Album(listaCancion, f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1));
-				listaAlbum.add(album);
-				i = listaCancion.size() +1;
+				return null;
 			}else{
 				i++;
 			}
