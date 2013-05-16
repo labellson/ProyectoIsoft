@@ -39,9 +39,9 @@ public class CargarDatos{
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("BiografiaGrupo")) bioGrupo = true;
 		}
 		if(bioIntegrante){
-			Biografia bio = new BiografiaIntegrante(f.getVariable(numArtista, "artista", "nombre"), f.getVariable(numArtista, "biografiaIntegrante", "fechaNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "lugarNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "descripcion"));
+			Biografia bio = new BiografiaIntegrante(f.getVariable(numArtista, "solista", "nombre"), f.getVariable(numArtista, "biografiaIntegrante", "fechaNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "lugarNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "descripcion"));
 		}else if(bioGrupo){
-			Biografia bio = new BiografiaGrupo(f.getVariable(numArtista, "artista", "nombre"), f.getVariable(numArtista, "biografiaGrupo", "fechaNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "lugarNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "descripcion"));
+			Biografia bio = new BiografiaGrupo(f.getVariable(numArtista, "grupo", "nombre"), f.getVariable(numArtista, "biografiaGrupo", "fechaNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "lugarNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "descripcion"));
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}
@@ -78,7 +78,6 @@ public class CargarDatos{
 				Album album = new Album(listaCancion, f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1));
 				listaAlbum.add(album);
 				i += listaCancion.size() +1;
-				System.out.println(i);
 			}else{
 				i++;
 				
