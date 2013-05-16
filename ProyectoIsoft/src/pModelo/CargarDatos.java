@@ -17,7 +17,7 @@ public class CargarDatos{
 	}
 	
 	public void cargar(String ruta) throws IOException{
-		Fichero f = new Fichero(ruta, ",", "\n", ";\n");
+		Fichero f = new Fichero(ruta, "'", "\n", ";\n");
 		for(int i=0; i<f.getMF().getSizeBloques(); i++){
 			cargarBiografia(f,i);
 			cargarAlbum(f, i, 0);
@@ -95,12 +95,6 @@ public class CargarDatos{
 		}else if(grupo){
 			ListaArtista.getSingelton().add(new Grupo(f.getVariable(numArtista, "grupo", "nombre"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(integrante){
-			/*
-			for(int i=0; i<ListaArtista.getSingelton().get().size(); i++){
-				if(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")) != (Integer) null){
-					((Grupo)ListaArtista.getSingelton().get(i)).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
-				}
-			}*/
 			((Grupo)ListaArtista.getSingelton().get(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")))).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");

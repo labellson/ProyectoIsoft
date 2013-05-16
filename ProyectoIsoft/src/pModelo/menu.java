@@ -13,13 +13,12 @@ public class menu {
 	public static void main(String[] args){
 		
 		String ruta = "ficheros/datos.txt";
+		
 		//pruebaFichero(ruta);
+		pruebaClases(ruta);  //Muestra los nombres de los solistas, los grupos y los integrantes de este
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
-			//System.out.println(ListaArtista.getSingelton().get(2).getNombre());
-			//System.out.println(ListaArtista.getSingelton().get(2).getBiografia().getDescripcion());
-			System.out.println(((Grupo)ListaArtista.getSingelton().get(2)).getIntentegrantes(0).getNombre());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -40,6 +39,25 @@ public class menu {
 			System.out.println(f.getVariable(1, "Artista", "nombre"));
 			System.out.println(f.getVariable(1, "Artista", "posicion"));
 			System.out.println("fecha: "+f.getVariable("Ramon melendi espina", "BiografiaIntegrante", "fechaNacimiento"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void pruebaClases(String ruta){
+		try {
+			CargarDatos.getSingelton().cargar(ruta);
+			for(int i=0; i<ListaArtista.getSingelton().get().size();i++){
+				Artista buffer = ListaArtista.getSingelton().get(i);
+				if(buffer.getClass() == Grupo.class){
+					System.out.println(ListaArtista.getSingelton().get(i).getNombre());
+					for(int j=0; j<((Grupo)buffer).getSize(); j++){
+						System.out.println("\t"+((Grupo)ListaArtista.getSingelton().get(i)).getIntentegrantes(j).getNombre());
+					}
+				}else{
+					System.out.println(ListaArtista.getSingelton().get(i).getNombre());
+				}
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

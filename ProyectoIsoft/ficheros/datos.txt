@@ -9,19 +9,49 @@ Album:Nombre,fecha
 Cancion:nombre,duracion,letra}
 
 
-Solista:Michael Joseph Jackson,cantante compositor y bailarin
-BiografiaSolista:29/8/1958,Gary/Indiana/Estados Unidos,Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
-Album:Cerdos Salvajes,16/11/1993
-Cancion:Te quiero puta,3,putita mia
-Cancion:Villarebuznos,3,El ataque de los borregos
-Album:Galaxy,11/11/11
-Cancion:TruÃ±o,3,TruÃ±os como puÃ±os;
+Solista:Michael Joseph Jackson'cantante compositor y bailarin
+BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
+Album:Cerdos Salvajes'16/11/1993
+Cancion:Te quiero puta'3'putita mia
+Cancion:Villarebuznos'3'El ataque de los borregos
+Album:Galaxy'11/11/11
+Cancion:TruÃ±o'3'TruÃ±os como puÃ±os;
 
-Solista:Ramon Melendi Espina,cantante y guitarra
-BiografiaSolista:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
+Solista:Ramon Melendi Espina'cantante y guitarra
+BiografiaSolista:21/1/1979'Oviedo/Asturias/España'En su juventud estudió en el IES Alfonso II y conoció al piloto de fórmula 1 Fernando Alonso a quien dedicó una canción que llevaba por título El Nano.Tiene gran gancho entre adolescentes;
+
+Solista:David Guetta'Productor
+BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroquí de confesion judia.7 Inició su carrera musical a los 17 años como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en «Broad» una discoteca de Les Halles en el centro de Paris. En esa época los DJ mezclaban la música en las discotecas escondidos del publico;
+
+Solista:Marshall Bruce Mathers III'cantante
+BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discográfico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtió en el segundo álbum más vendido de hip hop en la historia solo detrás de Life After Death de The Notorious B.I.G. y el más rápido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.;
+
+Solista:Sonny John Moore'productor
+BiografiaSolista:21/1/1979'Oviedo/Asturias/España'Sonny John Moore (n. 15 de enero de 1988 - Los Ángeles - California) más conocido por su nombre artistico Skrillex. Es un productor estadounidense de música electrónica de los géneros dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.;
+
+Solista:Peter Gene Hernandez'cantante compositor y productor musical
+BiografiaSolista:8/10/1985'Honolulu/Hawai/Estados Unidos'Peter Gene Hernandez (nacido el 8 de octubre de 1985) 3 mas conocido por su nombre artistico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la via materna y puertorriqueña por la via paterna. Criado en Honolulu - Hawai por una familia de musicos, Mars empezo a hacer musica a una edad temprana (a los 2 años). Tras actuar en diversos espectaculos musicales en su ciudad natal durante toda su juventud decidio seguir una carrera musical y se traslado a Los Angeles despues de graduarse de la escuela secundaria. Mars comenzo a producir canciones para otros artistas al unirse al equipo de produccion The Smeezingtons.;
 
 Grupo:Linkin Park
-BiografiaGrupo:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
+BiografiaGrupo:??/??/1996'Oviedo/Asturias/Espana'Linkin Park es una banda estadounidense de rock procedente de Agoura Hills - California. Formada en 1996;
 
-Integrante:Chester Bennington,vocalista,linkin park
-BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
+Grupo:Metallica
+BiografiaGrupo:??/??/1981'Los Angeles/California/Estados Unidos'Metallica es una banda de thrash metal originaria de Los Angeles pero con base en San Francisco desde febrero de 1983. Fue fundada en 1981 en Los Angeles por el danes Lars Ulrich y James Hetfield a los que se les unirian Lloyd Grant y Ron McGovney;
+
+Grupo:AC/DC
+BiografiaGrupo:??/??/1993'Sídney/Nueva Gales del Sur/Australia'AC/DC es un grupo de hard rock que se formó en Sídney (Australia) en 1973 por los hermanos escoceses Malcolm y Angus Young.;
+
+Grupo:Extremoduro
+BiografiaGrupo:??/??/1987'Plasencia/Extremadura/Espana'Extremoduro es un grupo español de rock fundado en Plasencia en 1987. Ellos mismos han definido su estilo como "rock transgresivo" aunque se le suele catalogar como rock urbano.Es considerada por numerosas revistas de música como una de las mejores bandas de rock en español de la historia.;
+
+Grupo:Guns N Roses
+BiografiaGrupo:??/??/1985'Los Angeles/California/Estados Unidos'Guns N' Roses es una banda estadounidense de hard rock que se formó en Hollywood, Los Ángeles (California) en 1985. El grupo, encabezado por el líder y fundador de la banda Axl Rose, ha pasado por una línea de numerosos cambios y controversias desde su creación.;
+
+Grupo:Los Suaves
+BiografiaGrupo:??/??/1980'Orense/Galicia/Espana'Los Suaves, grupo de hard rock, heavy metal y rock urbano nacido en Orense (Galicia, España), en los años ochenta. Fue fundado por los hermanos Charli Domínguez,Yosi Domínguez y Javier Domínguez, que desempeñaban las labores de bajista, vocalista/letrista y batería, respectivamente.;
+
+Integrante:Chester Bennington'vocalista'linkin park
+BiografiaIntegrante:20/3/1976''Chester Charles Bennington (nacido el 20 de marzo del 1976 en Phoenix) es un cantante, compositor y actor estadounidense, vocalista principal de la banda de rock alternativo, Linkin Park.;
+
+Integrante:Mike Shinoda'guitarra'linkin park
+BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji «Mike» Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un músico y productor discográfico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;

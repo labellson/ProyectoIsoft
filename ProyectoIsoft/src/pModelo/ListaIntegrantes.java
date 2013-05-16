@@ -23,4 +23,8 @@ public class ListaIntegrantes {
 	public Integrante getIntegrantes(int indice){
 		return lIntegrantes.get(indice);
 	}
+	
+	public int getSize(){
+		return lIntegrantes.size();
+	}
 }

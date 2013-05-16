@@ -24,5 +24,9 @@ public class Grupo extends Artista{
 	public Integrante getIntentegrantes(int indice){
 		return lIntegrantes.getIntegrantes(indice);
 	}
+	
+	public int getSize(){
+		return lIntegrantes.getSize();
+	}
 
 }
