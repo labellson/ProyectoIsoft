@@ -14,4 +14,22 @@ public class ListaArtista {
 		return singelton;
 	}
 	
+	public void add(Artista artista){
+		listaArtista.add(artista);
+	}
+	
+	public Artista get(int indice){
+		return listaArtista.get(indice);
+	}
+	
+	public ArrayList<Artista> get(){
+		return listaArtista;
+	}
+	
+	public boolean compararNombre(String nombre){
+		for(int i=0; i<listaArtista.size(); i++){
+			if(listaArtista.get(i).getNombre().equalsIgnoreCase(nombre)) return true;
+		}
+		return false;
+	}
 }

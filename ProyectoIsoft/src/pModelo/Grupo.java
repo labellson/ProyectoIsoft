@@ -6,8 +6,8 @@ package pModelo;
  */
 public class Grupo extends Artista{
 	private ListaIntegrantes lIntegrantes;
-	public Grupo(String nombre) {
-		super(nombre);
+	public Grupo(String nombre, Biografia bio, ListaAlbum lAlbum) {
+		super(nombre,bio,lAlbum);
 		lIntegrantes = new ListaIntegrantes();
 	}
 	

@@ -6,8 +6,8 @@ package pModelo;
  */
 public class Integrante extends Artista{
 	private String posicion;
-	public Integrante(String nombre, String posicion){
-		super(nombre);
+	public Integrante(String nombre, String posicion, Biografia bio, ListaAlbum lAlbum){
+		super(nombre,bio,lAlbum);
 		this.posicion = posicion;
 	}
 }

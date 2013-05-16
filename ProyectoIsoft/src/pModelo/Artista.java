@@ -8,16 +8,18 @@ import java.util.ArrayList;
  */
 public abstract class Artista {
 	private String nombre;
-	private ArrayList<Album> lAlbum;
 	private Biografia bio;
+	private ListaAlbum lAlbum;
 	private String genero;
 	
 	public String getGenero() {
 		return genero;
 	}
 
-	public Artista(String nombre){
+	public Artista(String nombre, Biografia bio, ListaAlbum lAlbum){
 		this.nombre = nombre;
+		this.bio = bio;
+		this.lAlbum = lAlbum;
 	}
 	
 	/**

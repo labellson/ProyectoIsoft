@@ -1,6 +1,7 @@
 //Fichero de datos
 Solista:nombre,posicion
 Grupo:nombre,posicion
+Integrante:nombre,posicion,grupo
 BiografiaGrupo:fechaNacimiento,lugarNacimiento,descripcion
 BiografiaIntegrante:fechaNacimiento,lugarNacimiento,descripcion
 Album:Nombre,fecha
@@ -14,5 +15,12 @@ Cancion:Te quiero puta,3,putita mia
 Cancion:Villarebuznos,3,El ataque de los borregos
 Album:Galaxy,11/11/11
 Cancion:Truño,3,Truños como puños;
+
 Solista:Ramon Melendi Espina,cantante y guitarra
+BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
+
+Grupo:Linkin Park
+BiografiaGrupo:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
+
+Integrante:Chester Bennington,vocalista,linking park
 BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;
