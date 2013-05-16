@@ -36,12 +36,16 @@ public class CargarDatos{
 		//Comprobamos si es biografia interna o biografia grupo y crearla
 		boolean bioIntegrante=false;
 		boolean bioGrupo=false;
+		boolean bioSolista=false;
 		for(int i=0; i<f.getBanderas(numArtista).length; i++){
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("BiografiaIntegrante")) bioIntegrante = true;
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("BiografiaGrupo")) bioGrupo = true;
+			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("BiografiaSolista")) bioSolista = true;
 		}
 		if(bioIntegrante){
-			Biografia bio = new BiografiaIntegrante(f.getVariable(numArtista, "solista", "nombre"), f.getVariable(numArtista, "biografiaIntegrante", "fechaNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "lugarNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "descripcion"));
+			Biografia bio = new BiografiaIntegrante(f.getVariable(numArtista, "integrante", "nombre"), f.getVariable(numArtista, "biografiaIntegrante", "fechaNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "lugarNacimiento"), f.getVariable(numArtista, "biografiaIntegrante", "descripcion"));
+		}else if(bioSolista){
+			Biografia bio = new BiografiaIntegrante(f.getVariable(numArtista, "solista", "nombre"), f.getVariable(numArtista, "biografiaSolista", "fechaNacimiento"), f.getVariable(numArtista, "biografiaSolista", "lugarNacimiento"), f.getVariable(numArtista, "biografiaSolista", "descripcion"));
 		}else if(bioGrupo){
 			Biografia bio = new BiografiaGrupo(f.getVariable(numArtista, "grupo", "nombre"), f.getVariable(numArtista, "biografiaGrupo", "fechaNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "lugarNacimiento"), f.getVariable(numArtista, "biografiaGrupo", "descripcion"));
 		}else{
