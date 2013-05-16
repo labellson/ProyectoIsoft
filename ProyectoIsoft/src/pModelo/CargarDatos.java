@@ -70,6 +70,7 @@ public class CargarDatos{
 	private ArrayList<Album> cargarAlbum(Fichero f, int numArtista, int i){
 		ArrayList<Album> listaAlbum = new ArrayList<Album>();
 		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
+		ArrayList<String>listas;
 		while(i < f.getBanderas(numArtista).length){
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Album")){
 				listaCancion = cargarCancion(f, numArtista, i+1);
