@@ -22,6 +22,10 @@ public class ListaAlbum {
 		return lAlbum.get(indice);
 	}
 	
+	public ArrayList<Album> get(){
+		return lAlbum;
+	}
+	
 	public void freeSingelton(){
 		singelton = null;
 	}

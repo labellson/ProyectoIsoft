@@ -16,6 +16,8 @@ public class menu {
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
+			System.out.println(ListaArtista.getSingelton().get(1).getNombre());
+			System.out.println(ListaArtista.getSingelton().get(1).getBiografia().getDescripcion());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
