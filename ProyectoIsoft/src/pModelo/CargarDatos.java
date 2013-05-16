@@ -61,11 +61,6 @@ public class CargarDatos{
 		return listaCancion;
 	}
 
-	
-	/*private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
-		ArrayList<Album> listaA
-	}*/
-
 	/**
 	 * Este metodo devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
 	 * @param f Fichero
@@ -79,5 +74,5 @@ public class CargarDatos{
 			
 		}
 	}
-
 }
+>>>>>>> branch 'master' of https://github.com/labellson/ProyectoIsoft.git
