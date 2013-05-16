@@ -11,7 +11,6 @@ public class menu {
 	 */
 	public static void main(String[] args){
 		
-		
 		String ruta = "ficheros/datos.txt";
 		//pruebaFichero(ruta);
 		
