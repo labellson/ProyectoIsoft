@@ -3,11 +3,6 @@ package pModelo;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * 
- * @author francisco
- *
- */
 public class CargarDatos{
 	private static CargarDatos cargarArtistas;
 	private CargarDatos(){
@@ -26,6 +21,10 @@ public class CargarDatos{
 		for(int i=0; i<f.getMF().getSizeBloques(); i++){
 			cargarArtista(f,i);
 		}
+		ArrayList<Cancion> can = cargarCancion(f, 0, 2);
+		System.out.println(can.size());
+		System.out.println("Nombre: "+can.get(0).getNombre()+" Letra: "+can.get(0).getLetra()+" Duracion: "+can.get(0).getDuracion());
+		System.out.println("Nombre: "+can.get(1).getNombre()+" Letra: "+can.get(1).getLetra()+" Duracion: "+can.get(1).getDuracion());
 	}
 	
 	private void cargarArtista(Fichero f, int numArtista) throws IOException{
@@ -44,7 +43,25 @@ public class CargarDatos{
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}
-		//Creamos 
 		
 	}
+	/**
+	 * Este metodo devolvera un ArrayList<Cancion> que cargara de el fichero datos
+	 * @param f de la clase fichero
+	 * @param numArtista el artista en el que nos encontramos en el array
+	 * @param i indica el offset en el que nos encontramos en el array justo despues de un album
+	 * @return ArrayList <Cancion>
+	 */
+	public ArrayList<Cancion> cargarCancion(Fichero f, int numArtista, int i){
+		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
+		while(i < f.getBanderas(numArtista).length && f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
+			listaCancion.add(new Cancion(f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1), f.getVariable(numArtista, i, 2)));
+			i++;
+		}
+		return listaCancion;
+	}
+	
+	/*private ArrayList<Album> cargarAlbum(Fichero f, int numArtista){
+		ArrayList<Album> listaA
+	}*/
 }

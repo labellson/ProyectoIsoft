@@ -1,16 +1,13 @@
 //Fichero de datos
-//Cancion:nombre,fecha
-//Cancion:nombre2,fecha;
 Artista:nombre,posicion
 BiografiaGrupo:fechaNacimiento,lugarNacimiento,descripcion
 BiografiaIntegrante:fechaNacimiento,lugarNacimiento,descripcion
-Cancion:nombre,fecha}
+Cancion:nombre,duracion,letra}
 
 
-
-BiografiaGrupo:29/8/1958,Gary/Indiana/Estados Unidos,Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música pop y sus variantes. Conocido como el «Rey del Pop»,Michael Jackson,,Michael Jackson
-Artista:Michael Joseph Jackson,cantante compositor y bailarin;
+Artista:Michael Joseph Jackson,cantante compositor y bailarin
+BiografiaGrupo:29/8/1958,Gary/Indiana/Estados Unidos,Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
+Cancion:Te quiero puta,putita mia,3
+Cancion:Villarebuznos,El ataque de los borregos,3;
 Artista:Ramon Melendi Espina,cantante y guitarra
-
-Album:cancion1/cancion2/cancion3,ggg,hhh
-BiografiaIntegrante:21/1/1979,Oviedo/Asturias/España,En su juventud estudió en el IES Alfonso II y conoció al piloto de fórmula 1 Fernando Alonso, a quien dedicó una canción que llevaba por título El Nano.Tiene gran gancho entre adolescentes;
+BiografiaIntegrante:21/1/1979,Oviedo/Asturias/Espana,En su juventud estudio en el IES Alfonso II y conocio al piloto de formula 1 Fernando Alonso, a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes;

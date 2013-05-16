@@ -96,7 +96,7 @@ public class Fichero {
 			for(int j=0; j<buffer.split(mf.getFinalClase()).length; j++){
 				variable[i][j] = new String[mf.getFormato()[j].length];
 				buffer2 = buffer.split(mf.getFinalClase())[j];
-				for(int k=0; k<mf.; k++){	
+				for(int k=0; k<mf.getSizeBloques(); k++){	
 					buffer3 = buffer2.split(":");
 					System.out.println(i+":"+j+":"+k+"-->");
 					variable[i][j][k] = buffer3[1].split(mf.getFinalVar())[k];
