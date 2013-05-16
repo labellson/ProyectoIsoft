@@ -61,7 +61,7 @@ public class CargarDatos{
 		return listaCancion;
 	}
 	/**
-	 * Este fucker devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
+	 * Este metodo devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
 	 * @param f Fichero
 	 * @param numArtista el artista en el que nos encontramos en el array
 	 * * @param i indica el offset en el que nos encontramos en el array
@@ -78,7 +78,6 @@ public class CargarDatos{
 				i = listaCancion.size() +1;
 			}else{
 				i++;
-				return null;
 			}
 		}
 		return listaAlbum;
