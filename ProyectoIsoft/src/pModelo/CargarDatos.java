@@ -78,6 +78,7 @@ public class CargarDatos{
 				i = listaCancion.size() +1;
 			}else{
 				i++;
+				return null;
 			}
 		}
 		return listaAlbum;
