@@ -1,21 +1,26 @@
 package pVista;
 
+import java.awt.BorderLayout;
+import java.awt.Container;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JList;
 import javax.swing.JTextPane;
 import javax.swing.SpringLayout;
+import javax.swing.JComboBox;
+import javax.swing.JScrollBar;
+import javax.swing.ScrollPaneConstants;
 
 public class Principal extends JFrame {
 	private JLabel lblNewLabel;
-	private JTextField textField;
 	private JButton btnBuscar;
 	private JLabel lblIntegrantes;
 	private JList list;
-	private JLabel lblPosicionEnEl;
-	private JTextField textField_1;
 	private JList list_1;
 	private JLabel lblDiscos;
 	private JList list_2;
@@ -23,6 +28,9 @@ public class Principal extends JFrame {
 	private JLabel lblBiografia;
 	private JTextPane biografia;
 	private SpringLayout springLayout;
+	private JComboBox comboBox;
+	private JScrollBar scrollBar;
+	private JScrollPane scrollPane;
 
 	/**
 	 * Launch the application.
@@ -31,8 +39,13 @@ public class Principal extends JFrame {
 		initGUI();
 	}
 	private void initGUI() {
+		setVisible(true);
 		setBounds(100, 100, 505, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		springLayout = new SpringLayout();
+		JPanel contentPane = new JPanel();
+		
+		setContentPane(contentPane);
 		getContentPane().setLayout(springLayout);
 		
 		lblNewLabel = new JLabel("Artista");
@@ -40,40 +53,16 @@ public class Principal extends JFrame {
 		springLayout.putConstraint(SpringLayout.WEST, lblNewLabel, 10, SpringLayout.WEST, getContentPane());
 		getContentPane().add(lblNewLabel);
 		
-		textField = new JTextField();
-		springLayout.putConstraint(SpringLayout.NORTH, textField, 14, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, textField, 52, SpringLayout.WEST, getContentPane());
-		textField.setColumns(10);
-		getContentPane().add(textField);
-		
 		btnBuscar = new JButton("Buscar");
-		springLayout.putConstraint(SpringLayout.NORTH, btnBuscar, 11, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, btnBuscar, 144, SpringLayout.WEST, getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, btnBuscar, 272, SpringLayout.WEST, getContentPane());
+		springLayout.putConstraint(SpringLayout.NORTH, btnBuscar, -4, SpringLayout.NORTH, lblNewLabel);
+		springLayout.putConstraint(SpringLayout.WEST, btnBuscar, 226, SpringLayout.EAST, lblNewLabel);
+		springLayout.putConstraint(SpringLayout.EAST, btnBuscar, -93, SpringLayout.EAST, contentPane);
 		getContentPane().add(btnBuscar);
 		
 		lblIntegrantes = new JLabel("Integrantes");
 		springLayout.putConstraint(SpringLayout.NORTH, lblIntegrantes, 52, SpringLayout.NORTH, getContentPane());
 		springLayout.putConstraint(SpringLayout.WEST, lblIntegrantes, 20, SpringLayout.WEST, getContentPane());
 		getContentPane().add(lblIntegrantes);
-		
-		list = new JList();
-		springLayout.putConstraint(SpringLayout.NORTH, list, 72, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, list, 20, SpringLayout.WEST, getContentPane());
-		springLayout.putConstraint(SpringLayout.SOUTH, list, 190, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, list, 150, SpringLayout.WEST, getContentPane());
-		getContentPane().add(list);
-		
-		lblPosicionEnEl = new JLabel("Posicion");
-		springLayout.putConstraint(SpringLayout.NORTH, lblPosicionEnEl, 209, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, lblPosicionEnEl, 20, SpringLayout.WEST, getContentPane());
-		getContentPane().add(lblPosicionEnEl);
-		
-		textField_1 = new JTextField();
-		springLayout.putConstraint(SpringLayout.NORTH, textField_1, 229, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, textField_1, 20, SpringLayout.WEST, getContentPane());
-		textField_1.setColumns(10);
-		getContentPane().add(textField_1);
 		
 		lblCancionesDelDisco = new JLabel("Canciones");
 		springLayout.putConstraint(SpringLayout.NORTH, lblCancionesDelDisco, 209, SpringLayout.NORTH, getContentPane());
@@ -95,10 +84,9 @@ public class Principal extends JFrame {
 		getContentPane().add(lblDiscos);
 		
 		list_2 = new JList();
-		springLayout.putConstraint(SpringLayout.NORTH, list_2, 231, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, list_2, 160, SpringLayout.WEST, getContentPane());
-		springLayout.putConstraint(SpringLayout.SOUTH, list_2, 349, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, list_2, 312, SpringLayout.WEST, getContentPane());
+		springLayout.putConstraint(SpringLayout.NORTH, list_2, 8, SpringLayout.SOUTH, lblCancionesDelDisco);
+		springLayout.putConstraint(SpringLayout.WEST, list_2, 160, SpringLayout.WEST, contentPane);
+		springLayout.putConstraint(SpringLayout.SOUTH, list_2, 283, SpringLayout.NORTH, contentPane);
 		getContentPane().add(list_2);
 		
 		lblBiografia = new JLabel("Biografia");
@@ -107,10 +95,74 @@ public class Principal extends JFrame {
 		getContentPane().add(lblBiografia);
 		
 		biografia = new JTextPane();
+		springLayout.putConstraint(SpringLayout.EAST, list_2, -18, SpringLayout.WEST, biografia);
 		springLayout.putConstraint(SpringLayout.NORTH, biografia, 72, SpringLayout.NORTH, getContentPane());
 		springLayout.putConstraint(SpringLayout.WEST, biografia, 330, SpringLayout.WEST, getContentPane());
 		springLayout.putConstraint(SpringLayout.SOUTH, biografia, 349, SpringLayout.NORTH, getContentPane());
 		springLayout.putConstraint(SpringLayout.EAST, biografia, 472, SpringLayout.WEST, getContentPane());
 		getContentPane().add(biografia);
+		
+		comboBox = new JComboBox();
+		springLayout.putConstraint(SpringLayout.WEST, comboBox, 0, SpringLayout.WEST, lblIntegrantes);
+		springLayout.putConstraint(SpringLayout.SOUTH, comboBox, -26, SpringLayout.SOUTH, contentPane);
+		springLayout.putConstraint(SpringLayout.EAST, comboBox, -279, SpringLayout.EAST, contentPane);
+		comboBox.setEditable(true);
+		getContentPane().add(comboBox);
+		
+		scrollPane = new JScrollPane();
+		springLayout.putConstraint(SpringLayout.NORTH, scrollPane, 11, SpringLayout.SOUTH, lblIntegrantes);
+		springLayout.putConstraint(SpringLayout.WEST, scrollPane, 10, SpringLayout.WEST, contentPane);
+		springLayout.putConstraint(SpringLayout.SOUTH, scrollPane, -159, SpringLayout.SOUTH, contentPane);
+		springLayout.putConstraint(SpringLayout.EAST, scrollPane, -6, SpringLayout.WEST, list_1);
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		contentPane.add(scrollPane);
+		
+		list = new JList();
+		scrollPane.setViewportView(list);
+		springLayout.putConstraint(SpringLayout.WEST, list, 24, SpringLayout.WEST, contentPane);
+		springLayout.putConstraint(SpringLayout.SOUTH, list, 317, SpringLayout.NORTH, contentPane);
+		springLayout.putConstraint(SpringLayout.EAST, list, 0, SpringLayout.EAST, lblIntegrantes);
+		
+
+		
+		contentPane.updateUI();
+		
+		
+	}
+	public JLabel getLblNewLabel() {
+		return lblNewLabel;
+	}
+	public JButton getBtnBuscar() {
+		return btnBuscar;
+	}
+	public JLabel getLblIntegrantes() {
+		return lblIntegrantes;
+	}
+	public JList getList() {
+		return list;
+	}
+	public JList getList_1() {
+		return list_1;
+	}
+	public JLabel getLblDiscos() {
+		return lblDiscos;
+	}
+	public JList getList_2() {
+		return list_2;
+	}
+	public JLabel getLblCancionesDelDisco() {
+		return lblCancionesDelDisco;
+	}
+	public JLabel getLblBiografia() {
+		return lblBiografia;
+	}
+	public JTextPane getBiografia() {
+		return biografia;
+	}
+	public SpringLayout getSpringLayout() {
+		return springLayout;
+	}
+	public JComboBox getComboBox() {
+		return comboBox;
 	}
 }

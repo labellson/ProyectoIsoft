@@ -15,7 +15,7 @@ public class menu {
 		String ruta = "ficheros/datos.txt";
 		
 		//pruebaFichero(ruta);
-		pruebaClases(ruta);  //Muestra los nombres de los solistas, los grupos y los integrantes de este
+		//pruebaClases(ruta);  //Muestra los nombres de los solistas, los grupos y los integrantes de este
 		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
@@ -26,7 +26,7 @@ public class menu {
 			System.out.println(Error.extraerError());
 		}
 		
-		pControlador.prueba2 controlador = new pControlador.prueba2();
+		pControlador.Principal controlador = new pControlador.Principal();
 	}
 	/**
 	 * Prueba de lectura del fichero "datos.txt" 
@@ -49,17 +49,7 @@ public class menu {
 	public static void pruebaClases(String ruta){
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
-			for(int i=0; i<ListaArtista.getSingelton().get().size();i++){
-				Artista buffer = ListaArtista.getSingelton().get(i);
-				if(buffer.getClass() == Grupo.class){
-					System.out.println(ListaArtista.getSingelton().get(i).getNombre());
-					for(int j=0; j<((Grupo)buffer).getSize(); j++){
-						System.out.println("\t"+((Grupo)ListaArtista.getSingelton().get(i)).getIntentegrantes(j).getNombre());
-					}
-				}else{
-					System.out.println(ListaArtista.getSingelton().get(i).getNombre());
-				}
-			}
+			System.out.println(ListaArtista.getSingelton().get(1).getlAlbum().size());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

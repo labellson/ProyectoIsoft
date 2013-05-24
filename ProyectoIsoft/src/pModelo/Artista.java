@@ -19,7 +19,8 @@ public abstract class Artista {
 	public Artista(String nombre, Biografia bio, ArrayList<Album> lAlbum){
 		this.nombre = nombre;
 		this.bio = bio;
-		this.lAlbum = lAlbum;
+		this.lAlbum = new ArrayList<Album>();
+		this.lAlbum.addAll(lAlbum);
 	}
 	
 	/**
@@ -45,6 +46,15 @@ public abstract class Artista {
 	public void setBiografia(Biografia bio) {
 		this.bio = bio;
 	}
+
+	public Biografia getBio() {
+		return bio;
+	}
+
+	public ArrayList<Album> getlAlbum() {
+		return lAlbum;
+	}
+	
 	
 	
 }

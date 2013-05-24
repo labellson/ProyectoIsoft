@@ -99,5 +99,6 @@ public class CargarDatos{
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}
+		ListaAlbum.getSingelton().get().clear();
 	}
 }

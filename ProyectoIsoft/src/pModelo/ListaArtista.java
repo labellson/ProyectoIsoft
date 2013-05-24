@@ -30,6 +30,6 @@ public class ListaArtista {
 		for(int i=0; i<listaArtista.size(); i++){
 			if(listaArtista.get(i).getNombre().equalsIgnoreCase(nombre)) return i;
 		}
-		return (Integer) null;
+		return -1;
 	}
 }

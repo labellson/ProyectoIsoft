@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Francisco , Daniel , Ruben , Iban
  */
 public class Solista extends Integrante{
-
+	
 	public Solista(String nombre, String posicion, Biografia bio, ArrayList<Album> lAlbum){
 		super(nombre, posicion, bio, lAlbum);
 	}
