@@ -25,6 +25,8 @@ public class menu {
 		for(int i=0; i<Error.getSize(); i++){
 			System.out.println(Error.extraerError());
 		}
+		
+		pControlador.prueba2 controlador = new pControlador.prueba2();
 	}
 	/**
 	 * Prueba de lectura del fichero "datos.txt" 
