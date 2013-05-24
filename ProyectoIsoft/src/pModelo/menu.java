@@ -26,7 +26,7 @@ public class menu {
 			System.out.println(Error.extraerError());
 		}
 		
-		pControlador.Principal controlador = new pControlador.Principal();
+		//pControlador.Principal controlador = new pControlador.Principal();
 	}
 	/**
 	 * Prueba de lectura del fichero "datos.txt" 
