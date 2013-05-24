@@ -33,7 +33,7 @@ public class Principal extends JDialog {
 	private JList list_2;
 	private JLabel lblCancionesDelDisco;
 	private JLabel lblBiografia;
-	private JTextPane textPane;
+	private JTextPane biografia;
 
 	/**
 	 * Launch the application.
@@ -42,7 +42,7 @@ public class Principal extends JDialog {
 		initGUI();
 	}
 	private void initGUI() {
-		setBounds(100, 100, 570, 470);
+		setBounds(100, 100, 505, 400);
 		GroupLayout groupLayout = new GroupLayout(getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -52,75 +52,64 @@ public class Principal extends JDialog {
 							.addGap(10)
 							.addComponent(getLblNewLabel())
 							.addGap(10)
-							.addComponent(getTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(10)
+							.addComponent(getTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(getBtnBuscar(), GroupLayout.PREFERRED_SIZE, 128, GroupLayout.PREFERRED_SIZE))
 						.addGroup(groupLayout.createSequentialGroup()
+							.addGap(20)
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+								.addComponent(getLblIntegrantes())
+								.addComponent(getList(), GroupLayout.PREFERRED_SIZE, 130, GroupLayout.PREFERRED_SIZE)
+								.addComponent(getTextField_1(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addComponent(getLblPosicionEnEl()))
+							.addGap(10)
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+								.addComponent(getLblCancionesDelDisco(), GroupLayout.PREFERRED_SIZE, 88, GroupLayout.PREFERRED_SIZE)
+								.addComponent(getList_1(), GroupLayout.PREFERRED_SIZE, 150, GroupLayout.PREFERRED_SIZE)
+								.addComponent(getLblDiscos(), GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+								.addComponent(getList_2(), GroupLayout.PREFERRED_SIZE, 152, GroupLayout.PREFERRED_SIZE))
 							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
 								.addGroup(groupLayout.createSequentialGroup()
-									.addGap(10)
-									.addComponent(getList(), GroupLayout.PREFERRED_SIZE, 130, GroupLayout.PREFERRED_SIZE)
-									.addGap(21)
-									.addComponent(getList_1(), GroupLayout.PREFERRED_SIZE, 150, GroupLayout.PREFERRED_SIZE))
+									.addGap(22)
+									.addComponent(getLblBiografia()))
 								.addGroup(groupLayout.createSequentialGroup()
-									.addGap(40)
-									.addComponent(getLblIntegrantes())
-									.addGap(61)
-									.addComponent(getLblDiscos(), GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
-								.addGroup(groupLayout.createSequentialGroup()
-									.addGap(161)
-									.addComponent(getLblCancionesDelDisco(), GroupLayout.PREFERRED_SIZE, 166, GroupLayout.PREFERRED_SIZE))
-								.addGroup(groupLayout.createSequentialGroup()
-									.addGap(31)
-									.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-										.addComponent(getTextField_1(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-										.addComponent(getLblPosicionEnEl()))
-									.addGap(35)
-									.addComponent(getList_2(), GroupLayout.PREFERRED_SIZE, 152, GroupLayout.PREFERRED_SIZE)))
-							.addGap(34)
-							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-								.addComponent(getTextPane(), GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
-								.addComponent(getLblBiografia()))))
-					.addGap(437))
+									.addGap(18)
+									.addComponent(getBiografia(), GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)))))
+					.addGap(593))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addGap(11)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(3)
-							.addComponent(getLblNewLabel()))
-						.addComponent(getTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(6)
-					.addComponent(getBtnBuscar())
+						.addGroup(Alignment.TRAILING, groupLayout.createParallelGroup(Alignment.LEADING)
+							.addGroup(groupLayout.createSequentialGroup()
+								.addGap(3)
+								.addComponent(getLblNewLabel()))
+							.addComponent(getTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+						.addComponent(getBtnBuscar()))
 					.addGap(18)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout.createSequentialGroup()
-							.addGap(1)
-							.addComponent(getLblIntegrantes()))
+						.addComponent(getLblIntegrantes())
 						.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 							.addComponent(getLblDiscos())
 							.addComponent(getLblBiografia())))
-					.addGap(5)
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
 						.addGroup(groupLayout.createSequentialGroup()
-							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-								.addGroup(groupLayout.createSequentialGroup()
-									.addGap(1)
-									.addComponent(getList(), GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE))
+							.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+								.addComponent(getList(), GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE)
 								.addComponent(getList_1(), GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE))
-							.addGap(11)
-							.addComponent(getLblCancionesDelDisco())
-							.addGap(6)
-							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
-								.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
-									.addComponent(getLblPosicionEnEl())
-									.addPreferredGap(ComponentPlacement.RELATED)
-									.addComponent(getTextField_1(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addGap(19)
+							.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+								.addComponent(getLblPosicionEnEl())
+								.addComponent(getLblCancionesDelDisco()))
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
+								.addComponent(getTextField_1(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 								.addComponent(getList_2(), GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE)))
-						.addComponent(getTextPane())))
+						.addComponent(getBiografia()))
+					.addGap(75))
 		);
 		getContentPane().setLayout(groupLayout);
 	}
@@ -157,7 +146,7 @@ public class Principal extends JDialog {
 	}
 	private JLabel getLblPosicionEnEl() {
 		if (lblPosicionEnEl == null) {
-			lblPosicionEnEl = new JLabel("Posicion en el grupo");
+			lblPosicionEnEl = new JLabel("Posicion");
 		}
 		return lblPosicionEnEl;
 	}
@@ -188,7 +177,7 @@ public class Principal extends JDialog {
 	}
 	private JLabel getLblCancionesDelDisco() {
 		if (lblCancionesDelDisco == null) {
-			lblCancionesDelDisco = new JLabel("Canciones del disco:");
+			lblCancionesDelDisco = new JLabel("Canciones");
 		}
 		return lblCancionesDelDisco;
 	}
@@ -198,10 +187,10 @@ public class Principal extends JDialog {
 		}
 		return lblBiografia;
 	}
-	private JTextPane getTextPane() {
-		if (textPane == null) {
-			textPane = new JTextPane();
+	private JTextPane getBiografia() {
+		if (biografia == null) {
+			biografia = new JTextPane();
 		}
-		return textPane;
+		return biografia;
 	}
 }
