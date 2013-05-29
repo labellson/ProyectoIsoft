@@ -87,20 +87,13 @@ public class Principal extends JFrame {
 		springLayout.putConstraint(SpringLayout.NORTH, list_2, 8, SpringLayout.SOUTH, lblCancionesDelDisco);
 		springLayout.putConstraint(SpringLayout.WEST, list_2, 160, SpringLayout.WEST, contentPane);
 		springLayout.putConstraint(SpringLayout.SOUTH, list_2, 283, SpringLayout.NORTH, contentPane);
+		springLayout.putConstraint(SpringLayout.EAST, list_2, -177, SpringLayout.EAST, contentPane);
 		getContentPane().add(list_2);
 		
 		lblBiografia = new JLabel("Biografia");
 		springLayout.putConstraint(SpringLayout.NORTH, lblBiografia, 52, SpringLayout.NORTH, getContentPane());
 		springLayout.putConstraint(SpringLayout.WEST, lblBiografia, 334, SpringLayout.WEST, getContentPane());
 		getContentPane().add(lblBiografia);
-		
-		biografia = new JTextPane();
-		springLayout.putConstraint(SpringLayout.EAST, list_2, -18, SpringLayout.WEST, biografia);
-		springLayout.putConstraint(SpringLayout.NORTH, biografia, 72, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.WEST, biografia, 330, SpringLayout.WEST, getContentPane());
-		springLayout.putConstraint(SpringLayout.SOUTH, biografia, 349, SpringLayout.NORTH, getContentPane());
-		springLayout.putConstraint(SpringLayout.EAST, biografia, 472, SpringLayout.WEST, getContentPane());
-		getContentPane().add(biografia);
 		
 		comboBox = new JComboBox();
 		springLayout.putConstraint(SpringLayout.WEST, comboBox, 0, SpringLayout.WEST, lblIntegrantes);
@@ -122,6 +115,20 @@ public class Principal extends JFrame {
 		springLayout.putConstraint(SpringLayout.WEST, list, 24, SpringLayout.WEST, contentPane);
 		springLayout.putConstraint(SpringLayout.SOUTH, list, 317, SpringLayout.NORTH, contentPane);
 		springLayout.putConstraint(SpringLayout.EAST, list, 0, SpringLayout.EAST, lblIntegrantes);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		springLayout.putConstraint(SpringLayout.NORTH, scrollPane_1, 0, SpringLayout.NORTH, scrollPane);
+		springLayout.putConstraint(SpringLayout.WEST, scrollPane_1, 22, SpringLayout.EAST, list_2);
+		springLayout.putConstraint(SpringLayout.SOUTH, scrollPane_1, 0, SpringLayout.SOUTH, comboBox);
+		springLayout.putConstraint(SpringLayout.EAST, scrollPane_1, 462, SpringLayout.WEST, contentPane);
+		contentPane.add(scrollPane_1);
+		
+		biografia = new JTextPane();
+		scrollPane_1.setViewportView(biografia);
+		springLayout.putConstraint(SpringLayout.NORTH, biografia, 0, SpringLayout.NORTH, list_1);
+		springLayout.putConstraint(SpringLayout.WEST, biografia, 22, SpringLayout.EAST, list_2);
+		springLayout.putConstraint(SpringLayout.SOUTH, biografia, 407, SpringLayout.NORTH, contentPane);
+		springLayout.putConstraint(SpringLayout.EAST, biografia, 462, SpringLayout.WEST, contentPane);
 		
 
 		
