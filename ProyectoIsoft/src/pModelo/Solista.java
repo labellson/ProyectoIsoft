@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class Solista extends Integrante{
 	
-	public Solista(String nombre, String posicion, Biografia bio, ArrayList<Album> lAlbum){
+	public Solista(String nombre, String[] posicion, Biografia bio, ArrayList<Album> lAlbum){
 		super(nombre, posicion, bio, lAlbum);
 	}
 }
