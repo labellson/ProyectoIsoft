@@ -102,8 +102,6 @@ public class Principal implements ActionListener, ListSelectionListener{
 					vista.getList_3().setModel(dListModel);
 				}
 			}else if(e.getSource() == vista.getList_2()){
-				System.out.println("Discos "+vista.getList_1().getSelectedIndex());
-				System.out.println("Canciones "+vista.getList_2().getSelectedIndex());
 				vista.getTextPane().setText(artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
 			}
 		}catch(Exception exception){

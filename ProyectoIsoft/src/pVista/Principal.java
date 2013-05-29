@@ -120,7 +120,7 @@ public class Principal extends JFrame {
 		list_1 = new JList();
 		scrollPane_2.setViewportView(list_1);
 		
-		JLabel lblBiografiaArtista = new JLabel("Biografia Artista");
+		JLabel lblBiografiaArtista = new JLabel("Biografia Integrante");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, lblBiografiaArtista, 52, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, lblBiografiaArtista, 588, SpringLayout.WEST, contentPane);
 		contentPane.add(lblBiografiaArtista);
