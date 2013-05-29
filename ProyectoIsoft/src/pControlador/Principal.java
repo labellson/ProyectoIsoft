@@ -32,12 +32,17 @@ public class Principal implements ActionListener, ListSelectionListener{
 		vista.getComboBox().addActionListener(this);
 		vista.getList_1().addListSelectionListener(this);
 		vista.getList().addListSelectionListener(this);
+		vista.getList_2().addListSelectionListener(this);
 		vista.getComboBox().setSelectedIndex(0);
 		vista.getList_1().setSelectedIndex(0);
+		vista.getList().setSelectedIndex(0);
+		vista.getList_2().setSelectedIndex(0);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == vista.getComboBox()){
 			vista.getList_1().removeListSelectionListener(this);
+			vista.getList().removeListSelectionListener(this);
+			vista.getList_2().removeListSelectionListener(this);
 			int indice = pModelo.ListaArtista.getSingelton().compararNombre((String) vista.getComboBox().getSelectedItem());
 			artistActual = pModelo.ListaArtista.getSingelton().get(indice);
 			if(indice == -1) return;
@@ -58,8 +63,12 @@ public class Principal implements ActionListener, ListSelectionListener{
 			}
 			vista.getList_1().setModel(dListModelDiscos);
 			vista.getList_1().addListSelectionListener(this);
+			vista.getList_2().addListSelectionListener(this);
 			vista.getList_1().setSelectedIndex(0);
+			vista.getList_2().setSelectedIndex(0);
+			vista.getList().addListSelectionListener(this);
 			
+			vista.getList().setSelectedIndex(0);
 			//Biografia
 			vista.getBiografia().setText(artistActual.getBiografia().getDescripcion());
 		}
@@ -90,7 +99,8 @@ public class Principal implements ActionListener, ListSelectionListener{
 					}
 					vista.getList_3().setModel(dListModel);
 				}
-				//8844478845
+			}else if(e.getSource() == vista.getList_2()){
+				vista.getTextPane().setText(artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
 			}
 		}catch(Exception exception){
 			exception.printStackTrace();
