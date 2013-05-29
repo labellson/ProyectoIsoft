@@ -78,6 +78,7 @@ public class CargarDatos{
 				i++;
 				
 			}
+			ListaCancion.getSingelton().get().clear();
 		}
 	}
 	

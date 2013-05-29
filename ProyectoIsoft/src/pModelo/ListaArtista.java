@@ -22,7 +22,7 @@ public class ListaArtista {
 		return listaArtista.get(indice);
 	}
 	
-	public ArrayList<Artista> get(){
+	public ArrayList<Artista> getlistaArtista(){
 		return listaArtista;
 	}
 	

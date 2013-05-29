@@ -14,7 +14,8 @@ public class Album {
 	private String fecha;
 	
 	public Album(ArrayList<Cancion> pCanciones, String pNombre, String pfecha){
-		Canciones = pCanciones;
+		Canciones = new ArrayList<Cancion>();
+		Canciones.addAll(pCanciones);
 		Nombre = pNombre;
 		fecha = pfecha;
 	}
