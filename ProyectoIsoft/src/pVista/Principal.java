@@ -45,7 +45,7 @@ public class Principal extends JFrame {
 	}
 	private void initGUI() {
 		setVisible(true);
-		setTitle("Que pasa nano?");
+		setTitle("TicketMaster");
 		setBounds(100, 100, 800, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JPanel contentPane = new JPanel();

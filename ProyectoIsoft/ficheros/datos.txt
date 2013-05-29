@@ -12,10 +12,11 @@ Cancion:nombre,duracion,letra}
 Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan'Michael Jackson
 BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
 Album:Cerdos Salvajes'16/11/1993
-Cancion:Te quiero puta'3'putita mia
+Cancion:Naranja Electrica'3'Txispas txispas del todo a cien
 Cancion:Villarebuznos'3'El ataque de los borregos
 Album:Galaxy'11/11/11
-Cancion:Truno'3'Trunos como punos;
+Cancion:Abrakadabra'3'Ideas macabras con las cabras
+Cancion:El cencerro de mi tia'756'Tengo una vaca lechera, no es una vaca cualquiera, me da leche merengada hay que vaca mas salada tolon tolon, tolon tolon...;
 
 Solista:Ramon Melendi Espina'Cantante/Guitarra'Melendi
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'En su juventud estudiaba en el IES Alfonso II y conocia al piloto de formula 1 Fernando Alonso a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes
