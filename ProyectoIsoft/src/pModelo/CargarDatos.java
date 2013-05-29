@@ -92,7 +92,7 @@ public class CargarDatos{
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Integrante")) integrante = true;
 		}
 		if(solista){
-			ListaArtista.getSingelton().add(new Solista(f.getVariable(numArtista, "solista", "nombre"),f.getVariable(numArtista, "solista", "posicion").split("/"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
+			ListaArtista.getSingelton().add(new Solista(f.getVariable(numArtista, "solista", "nombre"), f.getVariable(numArtista, "solista", "artistico"),f.getVariable(numArtista, "solista", "posicion").split("/"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(grupo){
 			ListaArtista.getSingelton().add(new Grupo(f.getVariable(numArtista, "grupo", "nombre"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(integrante){

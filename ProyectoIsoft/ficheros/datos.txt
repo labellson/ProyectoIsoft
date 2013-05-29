@@ -9,7 +9,7 @@ Album:Nombre,fecha
 Cancion:nombre,duracion,letra}
 
 //***Solistas***
-Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan
+Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan'Michael Jackson
 BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
 Album:Cerdos Salvajes'16/11/1993
 Cancion:Te quiero puta'3'putita mia
@@ -17,7 +17,7 @@ Cancion:Villarebuznos'3'El ataque de los borregos
 Album:Galaxy'11/11/11
 Cancion:Truno'3'Trunos como punos;
 
-Solista:Ramon Melendi Espina'Cantante/Guitarra'Kanoute
+Solista:Ramon Melendi Espina'Cantante/Guitarra'Melendi
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'En su juventud estudiaba en el IES Alfonso II y conocia al piloto de formula 1 Fernando Alonso a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes
 Album:El canuto que mas disfruto'15/10/2010
 Cancion:Yo y las drogas'2'Esta es la historia que os voy a contar, erase una vez que se era una hoja de maria
@@ -26,7 +26,7 @@ Album:Borracho en el avion'10/10/2006
 Cancion:Poper time'3'Al oeste en madrid crecia vivia sin hacer mucho caso a la policia, trabajaba de jardinero para fumarme todo lo que crecia
 Cancion:Vodka Energy'4'El unico limite que tienes, es los chupitos que te puedas tomar;
 
-Solista:David Guetta'Productor'Mofetas
+Solista:David Guetta'Productor'Guetta
 BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroqui de confesion judia.7 Inicio su carrera musical a los 17 anos como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en �Broad� una discoteca de Les Halles en el centro de Paris. En esa Epoca los DJ mezclaban la musica en las discotecas escondidos del publico
 Album:El que lo peta'12/9/2010
 Cancion:Mis memorias rom'5'Read Only Memory, Read Only Memory.....Read Only Memory
@@ -36,7 +36,7 @@ Cancion:opa a los chino'3' kodowisau mohonika
 Cancion:BorderColor'2'RGB.235,175,156, size.8;
 
 
-Solista:Marshall Bruce Mathers III'Cantante'Bruces Piscis
+Solista:Marshall Bruce Mathers III'Cantante'Eminem
 BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discografico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtio en el segundo album mas vendido de hip hop en la historia solo detras de Life After Death de The Notorious B.I.G. y el mas rapido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.
 Album:Me pegaban de pequeño'3/5/1999
 Cancion:Ahora sufriras las consecuencias'4'Pum Pum Pum...eso por pegarme de pequeño
@@ -45,7 +45,7 @@ Album:Me cago en el Marca'2/12/2010
 Cancion:Fantasmas'3'Tiriri ri ri ri, tiririririri.... Ghosbuster
 Cancion:Area del Rector'6'Rebujito=Exponencial de ro Rebujito al cuadrado;
 
-Solista:Sonny John Moore'Productor'VelociRaptor
+Solista:Sonny John Moore'Productor'Bruno Mars
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'Sonny John Moore (n. 15 de enero de 1988 - Los Angeles - California) mas conocido por su nombre artistico Skrillex. Es un productor estadounidense de musica electronica de los generos dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.
 Album:The first of Skrillex'12/03/2002
 Cancion:The first of the year'3'Call 911 now
