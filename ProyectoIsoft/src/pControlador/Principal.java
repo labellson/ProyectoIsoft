@@ -101,6 +101,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 				}
 			}else if(e.getSource() == vista.getList_2()){
 				vista.getTextPane().setText(artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
+				//Aqui da el error
 			}
 		}catch(Exception exception){
 			exception.printStackTrace();
