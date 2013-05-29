@@ -18,16 +18,16 @@ Album:Galaxy'11/11/11
 Cancion:Truno'3'Trunos como punos;
 
 Solista:Ramon Melendi Espina'cantante y guitarra'Kanoute
-BiografiaSolista:21/1/1979'Oviedo/Asturias/España'En su juventud estudió en el IES Alfonso II y conoció al piloto de fórmula 1 Fernando Alonso a quien dedicó una canción que llevaba por título El Nano.Tiene gran gancho entre adolescentes
+BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'En su juventud estudiaba en el IES Alfonso II y conocia al piloto de formula 1 Fernando Alonso a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes
 Album:El canuto que mas disfruto'15/10/2010
 Cancion:Yo y las drogas'2'Esta es la historia que os voy a contar, erase una vez que se era una hoja de maria
-Cancion:Las drogas y yo'3'Todo es multicolor, dragones sobrevuelan el cielo y los enanos elfos me acompañan al bar
+Cancion:Las drogas y yo'3'Todo es multicolor, dragones sobrevuelan el cielo y los enanos elfos me acompanan al bar
 Album:Borracho en el avion'10/10/2006
 Cancion:Poper time'3'Al oeste en madrid crecia vivia sin hacer mucho caso a la policia, trabajaba de jardinero para fumarme todo lo que crecia
 Cancion:Vodka Energy'4'El unico limite que tienes, es los chupitos que te puedas tomar;
 
 Solista:David Guetta'Productor'Mofetas
-BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroquí de confesion judia.7 Inició su carrera musical a los 17 años como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en «Broad» una discoteca de Les Halles en el centro de Paris. En esa época los DJ mezclaban la música en las discotecas escondidos del publico
+BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroqui de confesion judia.7 Inicio su carrera musical a los 17 anos como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en �Broad� una discoteca de Les Halles en el centro de Paris. En esa Epoca los DJ mezclaban la musica en las discotecas escondidos del publico
 Album:El que lo peta'12/9/2010
 Cancion:Mis memorias rom'5'Read Only Memory, Read Only Memory.....Read Only Memory
 Cancion:Siroco Radical'4'Pimba Pimba Pimba Pimba
@@ -37,7 +37,7 @@ Cancion:BorderColor'2'RGB.235,175,156, size.8;
 
 
 Solista:Marshall Bruce Mathers III'cantante'Bruces Piscis
-BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discográfico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtió en el segundo álbum más vendido de hip hop en la historia solo detrás de Life After Death de The Notorious B.I.G. y el más rápido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.
+BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discografico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtio en el segundo album mas vendido de hip hop en la historia solo detras de Life After Death de The Notorious B.I.G. y el mas rapido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.
 Album:Me pegaban de pequeño'3/5/1999
 Cancion:Ahora sufriras las consecuencias'4'Pum Pum Pum...eso por pegarme de pequeño
 Cancion:Mochila Firefox'3'Del pita pita Chrome
@@ -45,15 +45,14 @@ Album:Me cago en el Marca'2/12/2010
 Cancion:Fantasmas'3'Tiriri ri ri ri, tiririririri.... Ghosbuster
 Cancion:Area del Rector'6'Rebujito=Exponencial de ro Rebujito al cuadrado;
 
-
 Solista:Sonny John Moore'productor'VelociRaptor
-BiografiaSolista:21/1/1979'Oviedo/Asturias/España'Sonny John Moore (n. 15 de enero de 1988 - Los Ángeles - California) más conocido por su nombre artistico Skrillex. Es un productor estadounidense de música electrónica de los géneros dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.
+BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'Sonny John Moore (n. 15 de enero de 1988 - Los Angeles - California) mas conocido por su nombre artistico Skrillex. Es un productor estadounidense de musica electronica de los generos dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.
 Album:The first of Skrillex'12/03/2002
 Cancion:The first of the year'3'Call 911 now
 Cancion:Los elefantes de la cacharreria'5'El circo de los horrores, mas gustoso que un dia fructuoso pam pam pam;
 
 Solista:Peter Gene Hernandez'cantante compositor y productor musical'Oraculo
-BiografiaSolista:8/10/1985'Honolulu/Hawai/Estados Unidos'Peter Gene Hernandez (nacido el 8 de octubre de 1985) 3 mas conocido por su nombre artistico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la via materna y puertorriqueña por la via paterna. Criado en Honolulu - Hawai por una familia de musicos, Mars empezo a hacer musica a una edad temprana (a los 2 años). Tras actuar en diversos espectaculos musicales en su ciudad natal durante toda su juventud decidio seguir una carrera musical y se traslado a Los Angeles despues de graduarse de la escuela secundaria. Mars comenzo a producir canciones para otros artistas al unirse al equipo de produccion The Smeezingtons.
+BiografiaSolista:8/10/1985'Honolulu/Hawai/Estados Unidos'Peter Gene Hernandez (nacido el 8 de octubre de 1985) 3 mas conocido por su nombre artistico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la via materna y puertorriquena por la via paterna. Criado en Honolulu - Hawai por una familia de musicos, Mars empezo a hacer musica a una edad temprana (a los 2 anos). Tras actuar en diversos espectaculos musicales en su ciudad natal durante toda su juventud decidio seguir una carrera musical y se traslado a Los Angeles despues de graduarse de la escuela secundaria. Mars comenzo a producir canciones para otros artistas al unirse al equipo de produccion The Smeezingtons.
 Album:Array de dependencias'15/08/2003
 Cancion:Violacion de segmento'2'ArrayIndexOutBoundException
 Cancion:Party Flow'4'Te quiero tocar, ouh yea....Perreo en el party, perreo en el pa pa pa;
@@ -77,22 +76,22 @@ Cancion:Me siento mal'3'Le di la vuelta a la silla y me siento bien
 Cancion:El tiempo'2'El tiempo sin ti, solo seria empo;
 
 Grupo:AC/DC
-BiografiaGrupo:02/03/1645'Sídney/Nueva Gales del Sur/Australia'AC/DC es un grupo de hard rock que se formó en Sídney (Australia) en 1973 por los hermanos escoceses Malcolm y Angus Young.
+BiografiaGrupo:02/03/1645'Sidney/Nueva Gales del Sur/Australia'AC/DC es un grupo de hard rock que se formo en Sidney (Australia) en 1973 por los hermanos escoceses Malcolm y Angus Young.
 Album:The Fuckers'02/06/1666
 Cancion:Mi amigo Jesucristo'3'La droga el vino, y vino la droga
-Cancion:Una mujer en cada puerto'4'Tiraros a la mar, y la mar se quedo preñada;
+Cancion:Una mujer en cada puerto'4'Tiraros a la mar, y la mar se quedo prenada;
 
 
 Grupo:Extremoduro
-BiografiaGrupo:15/09/1987'Plasencia/Extremadura/Espana'Extremoduro es un grupo español de rock fundado en Plasencia en 1987. Ellos mismos han definido su estilo como "rock transgresivo" aunque se le suele catalogar como rock urbano.Es considerada por numerosas revistas de música como una de las mejores bandas de rock en español de la historia.
+BiografiaGrupo:15/09/1987'Plasencia/Extremadura/Espana'Extremoduro es un grupo espanol de rock fundado en Plasencia en 1987. Ellos mismos han definido su estilo como "rock transgresivo" aunque se le suele catalogar como rock urbano.Es considerada por numerosas revistas de musica como una de las mejores bandas de rock en espanol de la historia.
 Album:DealExtreme'09/06/1999
 Cancion:Extremo y duro'4'Dale mas gasolina, toma mas gasolina ... Dani murio intoxicado
 Cancion:Vacuna'3'Que te vacunen y que tu base de datos haya sido actualizada;
 
 Grupo:Guns N Roses
-BiografiaGrupo:15/08/1985'Los Angeles/California/Estados Unidos'Guns N' Roses es una banda estadounidense de hard rock que se formó en Hollywood, Los Ángeles (California) en 1985. El grupo, encabezado por el líder y fundador de la banda Axl Rose, ha pasado por una línea de numerosos cambios y controversias desde su creación.
+BiografiaGrupo:15/08/1985'Los Angeles/California/Estados Unidos'Guns N Roses es una banda estadounidense de hard rock que se formo en Hollywood, Los Angeles (California) en 1985. El grupo, encabezado por el lider y fundador de la banda Axl Rose, ha pasado por una linea de numerosos cambios y controversias desde su creacion.
 Album:Gansos rosas'08/07/2005
-Cancion:Un elefante'3'Un elefante se balanceaba sobre la tela de una araña y como veia que no se caia fueron llamara a otro elefante
+Cancion:Un elefante'3'Un elefante se balanceaba sobre la tela de una arana y como veia que no se caia fueron llamara a otro elefante
 Cancion:The IT crow'3'Pinchando voy, pinchando vengo, vengo, vengo;
 
 //***Integrantes***
@@ -100,14 +99,14 @@ Integrante:Chester Bennington'vocalista'linkin park
 BiografiaIntegrante:20/3/1976'Phoenix/Arizona/Estados Unidos'Chester Charles Bennington (nacido el 20 de marzo del 1976 en Phoenix) es un cantante, compositor y actor estadounidense, vocalista principal de la banda de rock alternativo, Linkin Park.;
 
 Integrante:Mike Shinoda'guitarra'linkin park
-BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji «Mike» Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un músico y productor discográfico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;
+BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji �Mike� Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un musico y productor discografico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;
 
 Integrante:Joe Hahn'tornamesa'linkin park
-BiografiaIntegrante:15/3/1977'Dallas/Texas/Estados Unidos'Joseph Hahn, conocido también como Joe Hahn, Chairman Hahn o Mr. Hahn (nacido el 15 de marzo del 1977 en Dallas) es conocido por su papel de DJ en la banda Linkin Park. Joe tiene un alter ego llamado Remy.;
+BiografiaIntegrante:15/3/1977'Dallas/Texas/Estados Unidos'Joseph Hahn, conocido tambien como Joe Hahn, Chairman Hahn o Mr. Hahn (nacido el 15 de marzo del 1977 en Dallas) es conocido por su papel de DJ en la banda Linkin Park. Joe tiene un alter ego llamado Remy.;
 
 Integrante:Bradford Phillip Delson'guitarra/bajo/teclado'linkin park
-BiografiaIntegrante:01/12/1977'Agoura Hills/California/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista líder de la banda de Nu metal y Rock alternativo, Linkin Park. También es el A&R de Machine Shop Recordings.;
-
+BiografiaIntegrante:01/12/1977'Agoura Hills/California/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista lider de la banda de Nu metal y Rock alternativo, Linkin Park. Tambien es el A&R de Machine Shop Recordings.;
+//Aqui
 Integrante:Rob Bourdon'bateria/piano'linkin park
 BiografiaIntegrante:20/01/1979'Calabasas/California/Estados Unidos'Robert Gregory Bourdon (20 de enero de 1979) es el batería de la banda de rock Linkin Park. También es el miembro más joven de la banda.;
 
@@ -115,13 +114,13 @@ Integrante:David Farrell'bateria/guitarra electrica,'linkin park
 BiografiaIntegrante:08/02/1977'Plymouth/Massachusetts/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista líder de la banda de Nu metal y Rock alternativo, Linkin Park. También es el A&R de Machine Shop Recordings.;
 
 Integrante:James Alan Hetfield'vocalista/guitarra/piano'metallica
-BiografiaIntegrante:03/08/1963'Downey/California/Estados Unidos'James Alan Hetfield (3 de agosto de 1963, Downey, Los Ángeles, California) es un músico estadounidense conocido por ser el vocalista y guitarrista rítmico de la banda de "thrash metal" Metallica, además de ser su compositor principal y co-fundador. Ademas obtuvo el lugar N°87 en la lista "Top 100 Greatest Guitarist" por la revista Rolling Stone;
+BiografiaIntegrante:03/08/1963'Downey/California/Estados Unidos'James Alan Hetfield (3 de agosto de 1963, Downey, Los Angeles, California) es un músico estadounidense conocido por ser el vocalista y guitarrista rítmico de la banda de "thrash metal" Metallica, además de ser su compositor principal y co-fundador. Ademas obtuvo el lugar N°87 en la lista "Top 100 Greatest Guitarist" por la revista Rolling Stone;
 
 Integrante:Lars Ulrich'vocalista/bateria'metallica
 BiografiaIntegrante:26/12/1963'Gentofte/Dinamarca'Lars Ulrich es un músico danés conocido principalmente por ser el baterista, compositor, fundador y colíder (junto a James Hetfield) de la banda de thrash metal Metallica.;
 
 Integrante:Kirk Hammett'vocalista/guitarra/bajo'metallica
-BiografiaIntegrante:18/11/1962'Los Ángeles/California/Estados Unidos'Kirk Hammett (18 de noviembre de 1962, San Francisco, Estados Unidos) guitarrista de la banda de thrash metal y heavy metal Metallica. Sustituyó al anterior guitarrista Dave Mustaine, después de que éste tuviera problemas con la banda y fuera expulsado de Metallica. Está considerado como el noveno mejor guitarrista del momento según la revista Total Guitar y numero 11 según una lista de la revista Rolling Stone;
+BiografiaIntegrante:18/11/1962'Los Angeles/California/Estados Unidos'Kirk Hammett (18 de noviembre de 1962, San Francisco, Estados Unidos) guitarrista de la banda de thrash metal y heavy metal Metallica. Sustituyó al anterior guitarrista Dave Mustaine, después de que éste tuviera problemas con la banda y fuera expulsado de Metallica. Está considerado como el noveno mejor guitarrista del momento según la revista Total Guitar y numero 11 según una lista de la revista Rolling Stone;
 
 Integrante:Robert Trujillo'vocalista/bajo/guitarra/violin'metallica
 BiografiaIntegrante:22/10/1964'Santa Monica/California/Estados Unidos'Roberto Agustín Miguel Santiago Samuel Trujillo Veracruz, mejor conocido como Robert Trujillo (23 de octubre de 1964 - California, Estados Unidos) es un músico estadounidense de ascendencia mexicana, actualmente bajista de la banda Metallica.;
