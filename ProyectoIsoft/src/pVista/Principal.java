@@ -32,7 +32,6 @@ public class Principal extends JFrame {
 	private JScrollPane scrollPane_2;
 	private JScrollPane scrollPane_3;
 	private JScrollPane scrollPane_4;
-	private JList list_4;
 	private JLabel lblNewLabel_1;
 	private JScrollPane scrollPane_5;
 	private JList list_3;
@@ -142,8 +141,9 @@ public class Principal extends JFrame {
 		sl_contentPane.putConstraint(SpringLayout.EAST, scrollPane_4, 774, SpringLayout.WEST, contentPane);
 		contentPane.add(scrollPane_4);
 		
-		list_4 = new JList();
-		scrollPane_4.setViewportView(list_4);
+		JTextPane textPane_1 = new JTextPane();
+		textPane_1.setEditable(false);
+		scrollPane_4.setViewportView(textPane_1);
 		
 		lblNewLabel_1 = new JLabel("Posicion");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, lblNewLabel_1, 297, SpringLayout.NORTH, contentPane);
@@ -159,6 +159,23 @@ public class Principal extends JFrame {
 		
 		list_3 = new JList();
 		scrollPane_5.setViewportView(list_3);
+		
+		JLabel lblLetra = new JLabel("Letra");
+		sl_contentPane.putConstraint(SpringLayout.NORTH, lblLetra, 6, SpringLayout.SOUTH, scrollPane_1);
+		sl_contentPane.putConstraint(SpringLayout.WEST, lblLetra, 0, SpringLayout.WEST, lblBiografia);
+		contentPane.add(lblLetra);
+		
+		JScrollPane scrollPane_6 = new JScrollPane();
+		sl_contentPane.putConstraint(SpringLayout.NORTH, scrollPane_6, 6, SpringLayout.SOUTH, lblLetra);
+		sl_contentPane.putConstraint(SpringLayout.WEST, scrollPane_6, 0, SpringLayout.WEST, lblBiografia);
+		sl_contentPane.putConstraint(SpringLayout.SOUTH, scrollPane_6, 0, SpringLayout.SOUTH, lblNewLabel);
+		sl_contentPane.putConstraint(SpringLayout.EAST, scrollPane_6, 0, SpringLayout.EAST, scrollPane_1);
+		contentPane.add(scrollPane_6);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setEditable(false);
+		scrollPane_6.setViewportView(textPane);
+		
 
 		
 		contentPane.updateUI();
