@@ -77,6 +77,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 	public void valueChanged(ListSelectionEvent e) {
 		try{
 			if(e.getSource() == vista.getList_1()){
+				vista.getList_2().removeListSelectionListener(this); //hacer esto para que no de problemas el listener de letra
 				int indiceDisco = (int) vista.getList_1().getSelectedIndex();
 				DefaultListModel<String> dListModel = new DefaultListModel<String>();
 				ArrayList<Cancion> cancionD = artistActual.getlAlbum().get(indiceDisco).getCanciones();
@@ -84,6 +85,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 					dListModel.addElement(cancion.getNombre());
 				}
 				vista.getList_2().setModel(dListModel);
+				vista.getList_2().addListSelectionListener(this); //volver a añadir el listener
 			}else if(e.getSource() == vista.getList()){
 				DefaultListModel<String> dListModel = new DefaultListModel<String>();
 				if(artistActual instanceof Grupo){
@@ -100,6 +102,8 @@ public class Principal implements ActionListener, ListSelectionListener{
 					vista.getList_3().setModel(dListModel);
 				}
 			}else if(e.getSource() == vista.getList_2()){
+				System.out.println("Discos "+vista.getList_1().getSelectedIndex());
+				System.out.println("Canciones "+vista.getList_2().getSelectedIndex());
 				vista.getTextPane().setText(artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
 			}
 		}catch(Exception exception){
