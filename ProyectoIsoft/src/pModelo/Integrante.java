@@ -7,9 +7,11 @@ import java.util.ArrayList;
  * @author Francisco , Daniel , Ruben , Iban
  */
 public class Integrante extends Artista{
-	private String posicion;
-	public Integrante(String nombre, String posicion, Biografia bio, ArrayList<Album> lAlbum){
+	private ArrayList<String> lPosicion;
+	public Integrante(String nombre, ArrayList<String> posicion, Biografia bio, ArrayList<Album> lAlbum){
 		super(nombre,bio,lAlbum);
-		this.posicion = posicion;
+		this.lPosicion = new ArrayList<String>();
+		this.lPosicion.addAll(posicion);
+		posicion.clear();
 	}
 }
