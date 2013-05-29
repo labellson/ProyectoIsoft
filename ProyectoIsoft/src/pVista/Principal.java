@@ -196,4 +196,7 @@ public class Principal extends JFrame {
 	public JComboBox getComboBox() {
 		return comboBox;
 	}
+	public JList getList_3() {
+		return list_3;
+	}
 }

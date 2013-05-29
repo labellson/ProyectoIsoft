@@ -1,6 +1,7 @@
 package pControlador;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import javax.swing.ListModel;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 
+import pModelo.Integrante;
 import pModelo.Artista;
 import pModelo.Cancion;
 import pModelo.Grupo;
@@ -29,6 +31,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 		}
 		vista.getComboBox().addActionListener(this);
 		vista.getList_1().addListSelectionListener(this);
+		vista.getList().addListSelectionListener(this);
 		vista.getComboBox().setSelectedIndex(0);
 		vista.getList_1().setSelectedIndex(0);
 	}
@@ -72,7 +75,22 @@ public class Principal implements ActionListener, ListSelectionListener{
 					dListModel.addElement(cancion.getNombre());
 				}
 				vista.getList_2().setModel(dListModel);
-			}	
+			}else if(e.getSource() == vista.getList()){
+				DefaultListModel<String> dListModel = new DefaultListModel<String>();
+				if(artistActual instanceof Grupo){
+					ArrayList <String> posiciones = ((Grupo) artistActual).getIntentegrantes(vista.getList().getSelectedIndex()).getlPosicion();
+					for(String posicion : posiciones){
+						dListModel.addElement(posicion);
+					}
+					vista.getList_3().setModel(dListModel);
+				}else{
+					ArrayList <String> posiciones = ((Integrante) artistActual).getlPosicion();
+					for(String posicion : posiciones){
+						dListModel.addElement(posicion);
+					}
+					vista.getList_3().setModel(dListModel);
+				}
+			}
 		}catch(Exception exception){
 			exception.printStackTrace();
 		}

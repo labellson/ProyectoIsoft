@@ -27,7 +27,7 @@ Cancion:Poper time'3'Al oeste en madrid crecia vivia sin hacer mucho caso a la p
 Cancion:Vodka Energy'4'El unico limite que tienes, es los chupitos que te puedas tomar;
 
 Solista:David Guetta'Productor'Mofetas
-BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroqui de confesion judia.7 Inicio su carrera musical a los 17 anos como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en «Broad» una discoteca de Les Halles en el centro de Paris. En esa Epoca los DJ mezclaban la musica en las discotecas escondidos del publico
+BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroqui de confesion judia.7 Inicio su carrera musical a los 17 anos como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en ï¿½Broadï¿½ una discoteca de Les Halles en el centro de Paris. En esa Epoca los DJ mezclaban la musica en las discotecas escondidos del publico
 Album:El que lo peta'12/9/2010
 Cancion:Mis memorias rom'5'Read Only Memory, Read Only Memory.....Read Only Memory
 Cancion:Siroco Radical'4'Pimba Pimba Pimba Pimba
@@ -99,7 +99,7 @@ Integrante:Chester Bennington'Vocalista'linkin park
 BiografiaIntegrante:20/3/1976'Phoenix/Arizona/Estados Unidos'Chester Charles Bennington (nacido el 20 de marzo del 1976 en Phoenix) es un cantante, compositor y actor estadounidense, vocalista principal de la banda de rock alternativo, Linkin Park.;
 
 Integrante:Mike Shinoda'Guitarra'linkin park
-BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji «Mike» Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un musico y productor discografico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;
+BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji ï¿½Mikeï¿½ Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un musico y productor discografico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;
 
 Integrante:Joe Hahn'Tornamesa'linkin park
 BiografiaIntegrante:15/3/1977'Dallas/Texas/Estados Unidos'Joseph Hahn, conocido tambien como Joe Hahn, Chairman Hahn o Mr. Hahn (nacido el 15 de marzo del 1977 en Dallas) es conocido por su papel de DJ en la banda Linkin Park. Joe tiene un alter ego llamado Remy.;
@@ -110,7 +110,7 @@ BiografiaIntegrante:01/12/1977'Agoura Hills/California/Estados Unidos'Bradford P
 Integrante:Rob Bourdon'Bateria/Piano'linkin park
 BiografiaIntegrante:20/01/1979'Calabasas/California/Estados Unidos'Robert Gregory Bourdon (20 de enero de 1979) es el baterÃ­a de la banda de rock Linkin Park. TambiÃ©n es el miembro mÃ¡s joven de la banda.;
 
-Integrante:David Farrell'Bateria/Guitarra electrica,'linkin park
+Integrante:David Farrell'Bateria/Guitarra electrica'linkin park
 BiografiaIntegrante:08/02/1977'Plymouth/Massachusetts/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista lÃ­der de la banda de Nu metal y Rock alternativo, Linkin Park. TambiÃ©n es el A&R de Machine Shop Recordings.;
 
 Integrante:James Alan Hetfield'Vocalista/Guitarra/Piano'metallica
