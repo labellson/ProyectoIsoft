@@ -92,11 +92,11 @@ public class CargarDatos{
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Integrante")) integrante = true;
 		}
 		if(solista){
-			ListaArtista.getSingelton().add(new Solista(f.getVariable(numArtista, "solista", "nombre"),f.getVariable(numArtista, "solista", "posicion").split(","),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
+			ListaArtista.getSingelton().add(new Solista(f.getVariable(numArtista, "solista", "nombre"),f.getVariable(numArtista, "solista", "posicion").split("/"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(grupo){
 			ListaArtista.getSingelton().add(new Grupo(f.getVariable(numArtista, "grupo", "nombre"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else if(integrante){
-			((Grupo)ListaArtista.getSingelton().get(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")))).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion").split(","),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
+			((Grupo)ListaArtista.getSingelton().get(ListaArtista.getSingelton().compararNombre(f.getVariable(numArtista, "integrante", "grupo")))).addIntegrantes(new Integrante(f.getVariable(numArtista, "integrante", "nombre"),f.getVariable(numArtista, "integrante", "posicion").split("/"),ListaBiografia.getSingelton().getBiografia(numArtista),ListaAlbum.getSingelton().get()));
 		}else{
 			Error.setError("Integrante "+f.getVariable(numArtista, "artista", "nombre")+" no es solista ni pertenece a un grupo");
 		}

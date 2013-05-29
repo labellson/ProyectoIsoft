@@ -9,7 +9,7 @@ Album:Nombre,fecha
 Cancion:nombre,duracion,letra}
 
 //***Solistas***
-Solista:Michael Joseph Jackson'cantante compositor y bailarin'ThrillerMan
+Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan
 BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop,Michael Jackson,,Michael Jackson
 Album:Cerdos Salvajes'16/11/1993
 Cancion:Te quiero puta'3'putita mia
@@ -17,7 +17,7 @@ Cancion:Villarebuznos'3'El ataque de los borregos
 Album:Galaxy'11/11/11
 Cancion:Truno'3'Trunos como punos;
 
-Solista:Ramon Melendi Espina'cantante y guitarra'Kanoute
+Solista:Ramon Melendi Espina'Cantante/Guitarra'Kanoute
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'En su juventud estudiaba en el IES Alfonso II y conocia al piloto de formula 1 Fernando Alonso a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes
 Album:El canuto que mas disfruto'15/10/2010
 Cancion:Yo y las drogas'2'Esta es la historia que os voy a contar, erase una vez que se era una hoja de maria
@@ -36,7 +36,7 @@ Cancion:opa a los chino'3' kodowisau mohonika
 Cancion:BorderColor'2'RGB.235,175,156, size.8;
 
 
-Solista:Marshall Bruce Mathers III'cantante'Bruces Piscis
+Solista:Marshall Bruce Mathers III'Cantante'Bruces Piscis
 BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discografico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtio en el segundo album mas vendido de hip hop en la historia solo detras de Life After Death de The Notorious B.I.G. y el mas rapido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.
 Album:Me pegaban de pequeño'3/5/1999
 Cancion:Ahora sufriras las consecuencias'4'Pum Pum Pum...eso por pegarme de pequeño
@@ -45,13 +45,13 @@ Album:Me cago en el Marca'2/12/2010
 Cancion:Fantasmas'3'Tiriri ri ri ri, tiririririri.... Ghosbuster
 Cancion:Area del Rector'6'Rebujito=Exponencial de ro Rebujito al cuadrado;
 
-Solista:Sonny John Moore'productor'VelociRaptor
+Solista:Sonny John Moore'Productor'VelociRaptor
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'Sonny John Moore (n. 15 de enero de 1988 - Los Angeles - California) mas conocido por su nombre artistico Skrillex. Es un productor estadounidense de musica electronica de los generos dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.
 Album:The first of Skrillex'12/03/2002
 Cancion:The first of the year'3'Call 911 now
 Cancion:Los elefantes de la cacharreria'5'El circo de los horrores, mas gustoso que un dia fructuoso pam pam pam;
 
-Solista:Peter Gene Hernandez'cantante compositor y productor musical'Oraculo
+Solista:Peter Gene Hernandez'Cantante/Compositor/Productor musical'Oraculo
 BiografiaSolista:8/10/1985'Honolulu/Hawai/Estados Unidos'Peter Gene Hernandez (nacido el 8 de octubre de 1985) 3 mas conocido por su nombre artistico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la via materna y puertorriquena por la via paterna. Criado en Honolulu - Hawai por una familia de musicos, Mars empezo a hacer musica a una edad temprana (a los 2 anos). Tras actuar en diversos espectaculos musicales en su ciudad natal durante toda su juventud decidio seguir una carrera musical y se traslado a Los Angeles despues de graduarse de la escuela secundaria. Mars comenzo a producir canciones para otros artistas al unirse al equipo de produccion The Smeezingtons.
 Album:Array de dependencias'15/08/2003
 Cancion:Violacion de segmento'2'ArrayIndexOutBoundException
@@ -95,70 +95,70 @@ Cancion:Un elefante'3'Un elefante se balanceaba sobre la tela de una arana y com
 Cancion:The IT crow'3'Pinchando voy, pinchando vengo, vengo, vengo;
 
 //***Integrantes***
-Integrante:Chester Bennington'vocalista'linkin park
+Integrante:Chester Bennington'Vocalista'linkin park
 BiografiaIntegrante:20/3/1976'Phoenix/Arizona/Estados Unidos'Chester Charles Bennington (nacido el 20 de marzo del 1976 en Phoenix) es un cantante, compositor y actor estadounidense, vocalista principal de la banda de rock alternativo, Linkin Park.;
 
-Integrante:Mike Shinoda'guitarra'linkin park
+Integrante:Mike Shinoda'Guitarra'linkin park
 BiografiaIntegrante:11/2/1977'Agoura Hills/California/Estados Unidos'Michael Kenji �Mike� Shinoda (n. Agoura Hills, California, 11 de febrero de 1977)1 es un musico y productor discografico estadounidense, integrante de las bandas Linkin Park y Fort Minor.;
 
-Integrante:Joe Hahn'tornamesa'linkin park
+Integrante:Joe Hahn'Tornamesa'linkin park
 BiografiaIntegrante:15/3/1977'Dallas/Texas/Estados Unidos'Joseph Hahn, conocido tambien como Joe Hahn, Chairman Hahn o Mr. Hahn (nacido el 15 de marzo del 1977 en Dallas) es conocido por su papel de DJ en la banda Linkin Park. Joe tiene un alter ego llamado Remy.;
 
-Integrante:Bradford Phillip Delson'guitarra/bajo/teclado'linkin park
+Integrante:Bradford Phillip Delson'Guitarra/Bajo/Teclado'linkin park
 BiografiaIntegrante:01/12/1977'Agoura Hills/California/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista lider de la banda de Nu metal y Rock alternativo, Linkin Park. Tambien es el A&R de Machine Shop Recordings.;
 //Aqui
-Integrante:Rob Bourdon'bateria/piano'linkin park
+Integrante:Rob Bourdon'Bateria/Piano'linkin park
 BiografiaIntegrante:20/01/1979'Calabasas/California/Estados Unidos'Robert Gregory Bourdon (20 de enero de 1979) es el batería de la banda de rock Linkin Park. También es el miembro más joven de la banda.;
 
-Integrante:David Farrell'bateria/guitarra electrica,'linkin park
+Integrante:David Farrell'Bateria/Guitarra electrica,'linkin park
 BiografiaIntegrante:08/02/1977'Plymouth/Massachusetts/Estados Unidos'Bradford Phillip Delson, conocido como "BBB (Big Bad Brad)" (1 de diciembre de 1977), es el guitarrista líder de la banda de Nu metal y Rock alternativo, Linkin Park. También es el A&R de Machine Shop Recordings.;
 
-Integrante:James Alan Hetfield'vocalista/guitarra/piano'metallica
+Integrante:James Alan Hetfield'Vocalista/Guitarra/Piano'metallica
 BiografiaIntegrante:03/08/1963'Downey/California/Estados Unidos'James Alan Hetfield (3 de agosto de 1963, Downey, Los Angeles, California) es un músico estadounidense conocido por ser el vocalista y guitarrista rítmico de la banda de "thrash metal" Metallica, además de ser su compositor principal y co-fundador. Ademas obtuvo el lugar N°87 en la lista "Top 100 Greatest Guitarist" por la revista Rolling Stone;
 
-Integrante:Lars Ulrich'vocalista/bateria'metallica
+Integrante:Lars Ulrich'Vocalista/Bateria'metallica
 BiografiaIntegrante:26/12/1963'Gentofte/Dinamarca'Lars Ulrich es un músico danés conocido principalmente por ser el baterista, compositor, fundador y colíder (junto a James Hetfield) de la banda de thrash metal Metallica.;
 
-Integrante:Kirk Hammett'vocalista/guitarra/bajo'metallica
+Integrante:Kirk Hammett'Vocalista/Guitarra/Bajo'metallica
 BiografiaIntegrante:18/11/1962'Los Angeles/California/Estados Unidos'Kirk Hammett (18 de noviembre de 1962, San Francisco, Estados Unidos) guitarrista de la banda de thrash metal y heavy metal Metallica. Sustituyó al anterior guitarrista Dave Mustaine, después de que éste tuviera problemas con la banda y fuera expulsado de Metallica. Está considerado como el noveno mejor guitarrista del momento según la revista Total Guitar y numero 11 según una lista de la revista Rolling Stone;
 
-Integrante:Robert Trujillo'vocalista/bajo/guitarra/violin'metallica
+Integrante:Robert Trujillo'Vocalista/Bajo/Guitarra/Violin'metallica
 BiografiaIntegrante:22/10/1964'Santa Monica/California/Estados Unidos'Roberto Agustín Miguel Santiago Samuel Trujillo Veracruz, mejor conocido como Robert Trujillo (23 de octubre de 1964 - California, Estados Unidos) es un músico estadounidense de ascendencia mexicana, actualmente bajista de la banda Metallica.;
 
-Integrante:Angus Young'guitarra electrica'ac/dc
+Integrante:Angus Young'Guitarra electrica'ac/dc
 BiografiaIntegrante:31/03/1955'Glasgow/Escocia'Angus Young, nacido el 31 de marzo de 1955 en Glasgow, Escocia, es conocido por ser uno de los miembros fundadores y el principal guitarrista del grupo AC/DC, aparte de ser el único miembro que ha permanecido en la banda desde su inicio junto con su hermano Malcolm Young;
 
-Integrante:Malcolm Young'voz/guitarra electrica'ac/dc
+Integrante:Malcolm Young'Vocalista/Guitarra electrica'ac/dc
 BiografiaIntegrante:06/01/1953'Glasgow/Escocia'Malcolm Mitchell Young (n. Glasgow, Escocia; 6 de enero de 1953) es un músico conocido por ser de los miembros fundadores junto con su hermano Angus Young del grupo AC/DC, del cual es guitarrista rítmico.;
 
-Integrante:Brian Johnson'voz'ac/dc
+Integrante:Brian Johnson'Vocalista'ac/dc
 BiografiaIntegrante:05/10/1947'Newcastle/Inglaterra'Brian Johnson (nacido el 5 de octubre de 1947 en Newcastle) es el actual vocalista de AC/DC el sucesor de Bon Scott y previamente de Geordie. Su primer álbum como vocalista de AC/DC fue Back In Black. Tenía una voz innovadora en las bandas de rock de aquella época. Está situado en el puesto número 39 en la lista de los 100 mejores vocalistas de metal de todos los tiempos de la revista Hit Parader.;
 
-Integrante:Cliff Williams'voz/guitarra/bajo electrico'ac/dc
+Integrante:Cliff Williams'Vocalista/Guitarra/Bajo electrico'ac/dc
 BiografiaIntegrante:14/12/1949'Romford/Inglaterra'Clifford Williams (nacido el 14 de diciembre de 1949 en Romford, Inglaterra), es un bajista británico, más conocido por ser miembro de la banda de hard rock AC/DC. Es el padre de Erin Williams, actriz y modelo, más conocida como Erin Lucas.;
 
-Integrante:Phil Rudd'bateria'ac/dc
+Integrante:Phil Rudd'Bateria'ac/dc
 BiografiaIntegrante:19/05/1954'Melbourne/Australia'Phil Rudd es un baterista de Hard Rock nacido en Melbourne, Australia. Conocido por ser el batería de AC/DC, es considerado el baterista original de la banda; junto con Cliff Williams y los hermanos Young conforma la formación clásica del grupo. Su etapa en AC/DC comprende desde 1975 a 1983, y posteriormente desde 1994 hasta la actualidad.;
 
-Integrante:Roberto Iniesta'voz,guitarra'extremoduro
+Integrante:Roberto Iniesta'Vocalista,Guitarra'extremoduro
 BiografiaIntegrante:16/05/1962'Plasencia/Extremadura/Espana'Roberto Iniesta Ojea, «Robe» (Plasencia, 16 de mayo de 1962) es un compositor, escritor, cantante y guitarrista español, conocido por ser el fundador e imagen del grupo de rock Extremoduro.;
 
-Integrante:Iñaki Anton Gonzalez'guitarra'extremoduro
-BiografiaIntegrante:03/08/1964'Bilbao/Vizcaya/Espana'Iñaki Antón González (Bilbao el 3 de agosto de 1964), conocido como simplemente Iñaki Antón o con el apodo de Uoho, es un músico y productor de rock español. Fue guitarrista de la desaparecida banda Platero y Tú y en la actualidad lo es de Extremoduro e Inconscientes. Como productor, trabaja en la discográfica creada por él mismo Muxik.;
+Integrante:Inaki Anton Gonzalez'Guitarra'extremoduro
+BiografiaIntegrante:03/08/1964'Bilbao/Vizcaya/Espana'Inaki Antchon Gonzalez (Bilbao el 3 de agosto de 1964), conocido como simplemente Iñaki Antón o con el apodo de Uoho, es un músico y productor de rock español. Fue guitarrista de la desaparecida banda Platero y Tú y en la actualidad lo es de Extremoduro e Inconscientes. Como productor, trabaja en la discográfica creada por él mismo Muxik.;
 
-Integrante:Miguel Colino'bajo'extremoduro
+Integrante:Miguel Colino'Bajo'extremoduro
 BiografiaIntegrante:13/04/1964'Portugalete/España'Miguel Colino es un bajista de rock, miembro de las bandas Extremoduro e Inconscientes. En 2001 se une a Extremoduro, banda en la que ya militaban Roberto Iniesta, "Robe" (líder, compositor, guitarrista y vocalista), Iñaki "Uoho" Antón (productor y guitarrista, por entonces también de Platero y Tú) y el batería José Ignacio Cantera;
 
-Integrante:Jose Ignacio Cantera'bateria'extremoduro
+Integrante:Jose Ignacio Cantera'Bateria'extremoduro
 BiografiaIntegrante:??/??/19??'España'José Ignacio Cantera es un batería español de rock, miembro de las bandas Extremoduro e Inconscientes. En 1997 se une a Extremoduro, banda en la que ya militaban Roberto Iniesta, "Robe" (líder, compositor, guitarrista y vocalista) e Iñaki "Uoho" Antón (productor y guitarrista, por entonces también de Platero y Tú).;
 
-Integrante:Axl Rose'voz/piano/guitarra'guns n roses
+Integrante:Axl Rose'Vocalista/Piano/Guitarra'guns n roses
 BiografiaIntegrante:06/02/1962'Lafayette/Indiana/Estados Unidos'Axl Rose (nacido William Bruce Rose Junior; después William Bruce Bailey; Lafayette, Indiana, Estados Unidos, es un cantante, compositor y músico estadounidense. Mayormente conocido por ser el cantautor del grupo estadounidense Guns N' Roses, con el que tuvo un gran éxito a finales los años '80 y principios de los '90, antes de desaparecer de la vista del público durante varios años.;
 
-Integrante:Dizzy Reed'piano/teclado/sintetizador'guns n roses
+Integrante:Dizzy Reed'Piano/Teclado/Sintetizador'guns n roses
 BiografiaIntegrante:18/06/1963'Hinsdale/Chicago/Estados Unidos'Dizzy Reed, nacido como Darren Arthur Reed (Hinsdale, Illinois, 18 de junio de 1963) es un teclista estadounidense, miembro de Guns N' Roses desde inicios de 1990 hasta la actualidad. Se incorporó a la banda durante la grabación de Use Your Illusion I y Use Your Illusion II, y ha permanecido en el grupo hasta la actualidad.;
 
-Integrante:Tommy Stinson'bajo'guns n roses
+Integrante:Tommy Stinson'Bajo'guns n roses
 BiografiaIntegrante:06/10/1966'Minneapolis/Minnesota/Estados Unidos'Thomas Stinson (n. 6 de octubre de 1966 en Minneapolis, Minnesota) es un bajista estadounidense, actualmente integrante de la banda de rock Guns N' Roses, liderada por Axl Rose, que además ha integrado las bandas de Dogbreath, The Replacements (entre 1979 y 1991) Bash & Pop, Perfect y Soul Asylum.;
 
 Integrante:Chris Pitman'multi-instrumentalista/compositor'guns n roses
@@ -167,11 +167,11 @@ BiografiaIntegrante:16/11/1961'Kansas City/Missouri/Estados Unidos'Chris Pitman 
 Integrante:Richard Fortus'multi-instrumentalista'guns n roses
 BiografiaIntegrante:17/11/1966'St. Louis/Misuri/Estados Unidos'En el comienzo de su adolescencia decidió dedicarse exclusivamente a la guitarra, inspirado en sus ídolos musicales, tales como Robert Fripp, John McLaughlin, Jeff Beck y Wes Montgomery. Por aquella época, Fortus participó como miembro de la prestigiosa orquesta norteamericana St. Louis Youth Symphony. A los 15 años, Richard ya había decidido que su futuro sería dedicarse a ser músico de rock. Por tal motivo, realizó sus estudios secundarios en la «Escuela de Arte» y posteriormente obtuvo una beca en la Universidad del Sur de Illinois.;
 
-Integrante:Frank Ferrer'bateria'guns n roses
+Integrante:Frank Ferrer'Bateria'guns n roses
 BiografiaIntegrante:??/??/19??'Estados Unidos'Frank Ferrer (n. 25 de marzo de 1966) es un baterista de rock y músico de sesión estadounidense. En octubre de 2006, Ferrer se convirtió en un miembro oficial de la banda estadounidense de hard rock Guns N' Roses, después de servir como sustituto al baterista de la banda Bryan Mantia en varias ocasiones durante la gira de la banda por Europa en el verano de 2006. Ferrer es también miembro de The Psychodelic Furs, así como un ex miembro de Love Spit Love.;
 
-Integrante:Ronald Jay Blumenthal'compositor/guitarra electrica,voz,bateria,bajo'guns n roses
+Integrante:Ronald Jay Blumenthal'Compositor/Guitarra electrica/Vocalista/Bateria/Bajo'guns n roses
 BiografiaIntegrante:25/09/1969'New York City/Estados Unidos'Ron "Bumblefoot" Thal es un guitarrista nacido el 25 de septiembre de 1969, en New York. Posee una vasta carrera como solista y ha ganado bastante popularidad en los últimos años por ser uno de los tres guitarristas principales del legendario grupo de hard rock Guns N' Roses y grabar con ellos el álbum Chinese Democracy.;
 
-Integrante:Daren Jay Ashba'guitarra/compositor'guns n roses
+Integrante:Daren Jay Ashba'Guitarra/Compositor'guns n roses
 BiografiaIntegrante:10/11/1972'Monticello/Indiana/Estados Unidos'Daren Jay Ashba (nacido el 10 de noviembre de 1972 en Monticello, Indiana) es un guitarrista norteamericano compositor y productor de hard rock. Actualmente milita en Sixx:A.M. y Guns N Roses, también conocido por su trabajo anterior en bandas como BulletBoys, y Beautiful Creatures.;
