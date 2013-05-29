@@ -35,6 +35,7 @@ public class Principal extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JScrollPane scrollPane_5;
 	private JList list_3;
+	private JTextPane textPane;
 
 	/**
 	 * Launch the application.
@@ -172,7 +173,7 @@ public class Principal extends JFrame {
 		sl_contentPane.putConstraint(SpringLayout.EAST, scrollPane_6, 0, SpringLayout.EAST, scrollPane_1);
 		contentPane.add(scrollPane_6);
 		
-		JTextPane textPane = new JTextPane();
+		textPane = new JTextPane();
 		textPane.setEditable(false);
 		scrollPane_6.setViewportView(textPane);
 		
@@ -215,5 +216,8 @@ public class Principal extends JFrame {
 	}
 	public JList getList_3() {
 		return list_3;
+	}
+	public JTextPane getTextPane(){
+		return textPane;
 	}
 }
