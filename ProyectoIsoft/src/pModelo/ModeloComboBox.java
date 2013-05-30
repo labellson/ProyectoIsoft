@@ -83,14 +83,15 @@ public class ModeloComboBox extends PlainDocument {
         
         boolean listContainsSelectedItem = true;
         if (item == null) {
-            // no item matches => use the current input as selected item
-            item=getText(0, getLength());
-            listContainsSelectedItem=false;
-        }
+           // no item matches => use the current input as selected item
+           item=getText(0, getLength());
+           listContainsSelectedItem=false;
+        }else{
         setSelectedItem(item);
         setText(item.toString());
         // select the completed part
         if (listContainsSelectedItem) highlightCompletedText(offs+str.length());
+        }
     }
     
     private void setText(String text) {
