@@ -39,6 +39,8 @@ public class Principal implements ActionListener, ListSelectionListener{
 		vista.getList_1().addListSelectionListener(this);
 		vista.getList().addListSelectionListener(this);
 		vista.getList_2().addListSelectionListener(this);
+		vista.getBtnSalir().addActionListener(this);
+		vista.getBtnVotar().addActionListener(this);
 		vista.getComboBox().setSelectedIndex(0);
 		vista.getList_1().setSelectedIndex(0);
 		vista.getList().setSelectedIndex(0);
@@ -82,6 +84,10 @@ public class Principal implements ActionListener, ListSelectionListener{
 			vista.getList().setSelectedIndex(0);
 			//Biografia
 			vista.getBiografia().setText("Nombre:\n"+artistActual.getNombre()+"\n\nLugar de Nacimiento:\n"+artistActual.getBio().getLugarNac()+"\n\nFecha de Nacimiento:\n"+artistActual.getBio().getFechaNac()+"\n\nDescripcion:\n"+artistActual.getBio().getDescripcion());
+		}else if(e.getSource() == vista.getBtnSalir()){
+			vista.dispose();
+		}else if(e.getSource() == vista.getBtnVotar()){
+			
 		}
 	}
 	/**

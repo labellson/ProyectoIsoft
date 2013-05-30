@@ -44,6 +44,8 @@ public class Principal extends JFrame {
 	private JTextPane textPane;
 	private JTextPane textPane_1;
 	private JList list_4;
+	private JButton btnSalir;
+	private JButton btnVotar;
 
 	/**
 	 * Launch the application.
@@ -206,13 +208,13 @@ public class Principal extends JFrame {
 		sl_contentPane.putConstraint(SpringLayout.EAST, lblCancionesPopulares, 732, SpringLayout.WEST, contentPane);
 		contentPane.add(lblCancionesPopulares);
 		
-		JButton btnSalir = new JButton("Salir");
+		btnSalir = new JButton("Salir");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, btnSalir, 518, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, btnSalir, 685, SpringLayout.WEST, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.EAST, btnSalir, 774, SpringLayout.WEST, contentPane);
 		contentPane.add(btnSalir);
 		
-		JButton btnVotar = new JButton("Votar");
+		btnVotar = new JButton("Votar");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, btnVotar, 518, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, btnVotar, 588, SpringLayout.WEST, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.EAST, btnVotar, 677, SpringLayout.WEST, contentPane);
@@ -266,5 +268,14 @@ public class Principal extends JFrame {
 	}
 	public JTextPane getTextPane_1() {
 		return textPane_1;
+	}
+	public JList getList_4() {
+		return list_4;
+	}
+	public JButton getBtnSalir() {
+		return btnSalir;
+	}
+	public JButton getBtnVotar() {
+		return btnVotar;
 	}
 }
