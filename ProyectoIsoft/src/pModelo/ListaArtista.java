@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class ListaArtista {
 	private static ListaArtista singelton;
 	private ArrayList<Artista> listaArtista;
+	private Fichero f;
 	private ListaArtista(){
 		listaArtista = new ArrayList<Artista>();
 	}
@@ -70,5 +71,11 @@ public class ListaArtista {
 			}
 		}
 		return null;
+	}
+	public void setFichero(Fichero f){
+		this.f = f;
+	}
+	public Fichero getFichero(){
+		return f;
 	}
 }

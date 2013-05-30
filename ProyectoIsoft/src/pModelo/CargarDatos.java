@@ -26,6 +26,7 @@ public class CargarDatos{
 	 */
 	public void cargar(String ruta) throws IOException{
 		Fichero f = new Fichero(ruta, "'", "\n", ";\n");
+		ListaArtista.getSingelton().setFichero(f);
 		for(int i=0; i<f.getMF().getSizeBloques(); i++){
 			cargarBiografia(f,i);
 			cargarAlbum(f, i, 0);

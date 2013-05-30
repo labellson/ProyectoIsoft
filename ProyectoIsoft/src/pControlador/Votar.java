@@ -8,6 +8,8 @@ import java.awt.event.FocusListener;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 
+import pModelo.ListaArtista;
+
 public class Votar implements ActionListener{
 	private pVista.Votar vista;
 	public Votar(pVista.Votar vista){
@@ -36,6 +38,7 @@ public class Votar implements ActionListener{
 			int index = vista.getList().getSelectedIndex();
 			if(index != -1){
 				pModelo.ListaCancion.getSingelton().meGusta(index);
+				ListaArtista.getSingelton().getFichero().setVariable("Cancion", pModelo.ListaCancion.getSingelton().get(index).getNombre()+ListaArtista.getSingelton().getFichero().getMF().getFinalVar()+pModelo.ListaCancion.getSingelton().get(index).getDuracion()+ListaArtista.getSingelton().getFichero().getMF().getFinalVar()+pModelo.ListaCancion.getSingelton().get(index).getLetra()+ListaArtista.getSingelton().getFichero().getMF().getFinalVar(), String.valueOf(pModelo.ListaCancion.getSingelton().get(index).getPuntuacion()));
 				updateCanciones();
 			}
 		}else if(e.getSource() == vista.getButton_1()){

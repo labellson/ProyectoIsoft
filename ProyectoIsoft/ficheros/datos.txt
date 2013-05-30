@@ -27,7 +27,7 @@ Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan'Michael 
 BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop, Michael Jackson.
 Album:Cerdos Salvajes'16/11/1993
 Cancion:Naranja Electrica'3'Txispas txispas del todo a cien'130
-Cancion:Villarebuznos'3'El ataque de los borregos'404
+Cancion:Villarebuznos'3'El ataque de los borregos'405
 Album:Galaxy'11/11/11
 Cancion:Abrakadabra'3'Ideas macabras con las cabras'230
 Cancion:El cencerro de mi tia'756'Tengo una vaca lechera, no es una vaca cualquiera, me da leche merengada hay que vaca mas salada tolon tolon, tolon tolon...'-10;
@@ -168,25 +168,4 @@ Integrante:Jose Ignacio Cantera'Bateria'extremoduro
 BiografiaIntegrante:??/??/19??'Espana'Jose Ignacio Cantera es un bateria espanol de rock, miembro de las bandas Extremoduro e Inconscientes. En 1997 se une a Extremoduro, banda en la que ya militaban Roberto Iniesta, "Robe" (lider, compositor, guitarrista y vocalista) e Inaki "Uoho" Anton (productor y guitarrista, por entonces tambien de Platero y Tu).;
 
 Integrante:Axl Rose'Vocalista/Piano/Guitarra'guns n roses
-BiografiaIntegrante:06/02/1962'Lafayette/Indiana/Estados Unidos'Axl Rose (nacido William Bruce Rose Junior; despues William Bruce Bailey; Lafayette, Indiana, Estados Unidos, es un cantante, compositor y musico estadounidense. Mayormente conocido por ser el cantautor del grupo estadounidense Guns N' Roses, con el que tuvo un gran exito a finales los anos '80 y principios de los '90, antes de desaparecer de la vista del publico durante varios anos.;
-
-Integrante:Dizzy Reed'Piano/Teclado/Sintetizador'guns n roses
-BiografiaIntegrante:18/06/1963'Hinsdale/Chicago/Estados Unidos'Dizzy Reed, nacido como Darren Arthur Reed (Hinsdale, Illinois, 18 de junio de 1963) es un teclista estadounidense, miembro de Guns N' Roses desde inicios de 1990 hasta la actualidad. Se incorporó a la banda durante la grabación de Use Your Illusion I y Use Your Illusion II, y ha permanecido en el grupo hasta la actualidad.;
-
-Integrante:Tommy Stinson'Bajo'guns n roses
-BiografiaIntegrante:06/10/1966'Minneapolis/Minnesota/Estados Unidos'Thomas Stinson (n. 6 de octubre de 1966 en Minneapolis, Minnesota) es un bajista estadounidense, actualmente integrante de la banda de rock Guns N' Roses, liderada por Axl Rose, que además ha integrado las bandas de Dogbreath, The Replacements (entre 1979 y 1991) Bash & Pop, Perfect y Soul Asylum.;
-
-Integrante:Chris Pitman'multi-instrumentalista/compositor'guns n roses
-BiografiaIntegrante:16/11/1961'Kansas City/Missouri/Estados Unidos'Chris Pitman es el vocalista y productor discografico de SexTapesTM ademas de ser multi-instrumentista y compositor. En 1998, Pitman se unio a la banda de hard rock Guns N' Roses como compositor, co-productor e instrumentista. Durante los conciertos tambien toca guitarra acustica entre otras tareas. Antes de ser conocido por formar parte de los Guns N' Roses fue miembro fundador de las bandas Replicants, ZAUM y la nominada a un Grammy en 1997, Lusk.;
-
-Integrante:Richard Fortus'multi-instrumentalista'guns n roses
-BiografiaIntegrante:17/11/1966'St. Louis/Misuri/Estados Unidos'En el comienzo de su adolescencia decidio dedicarse exclusivamente a la guitarra, inspirado en sus idolos musicales, tales como Robert Fripp, John McLaughlin, Jeff Beck y Wes Montgomery. Por aquella epoca, Fortus participo como miembro de la prestigiosa orquesta norteamericana St. Louis Youth Symphony. A los 15 anos, Richard ya habia decidido que su futuro seria dedicarse a ser musico de rock. Por tal motivo, realizo sus estudios secundarios en la Escuela de Arte y posteriormente obtuvo una beca en la Universidad del Sur de Illinois.;
-
-Integrante:Frank Ferrer'Bateria'guns n roses
-BiografiaIntegrante:??/??/19??'Estados Unidos'Frank Ferrer (n. 25 de marzo de 1966) es un baterista de rock y musico de sesion estadounidense. En octubre de 2006, Ferrer se convirtio en un miembro oficial de la banda estadounidense de hard rock Guns N' Roses, despues de servir como sustituto al baterista de la banda Bryan Mantia en varias ocasiones durante la gira de la banda por Europa en el verano de 2006. Ferrer es tambien miembro de The Psychodelic Furs, asi como un ex miembro de Love Spit Love.;
-
-Integrante:Ronald Jay Blumenthal'Compositor/Guitarra electrica/Vocalista/Bateria/Bajo'guns n roses
-BiografiaIntegrante:25/09/1969'New York City/Estados Unidos'Ron "Bumblefoot" Thal es un guitarrista nacido el 25 de septiembre de 1969, en New York. Posee una vasta carrera como solista y ha ganado bastante popularidad en los ultimos anos por ser uno de los tres guitarristas principales del legendario grupo de hard rock Guns N' Roses y grabar con ellos el album Chinese Democracy.;
-
-Integrante:Daren Jay Ashba'Guitarra/Compositor'guns n roses
-BiografiaIntegrante:10/11/1972'Monticello/Indiana/Estados Unidos'Daren Jay Ashba (nacido el 10 de noviembre de 1972 en Monticello, Indiana) es un guitarrista norteamericano compositor y productor de hard rock. Actualmente milita en Sixx:A.M. y Guns N Roses, tambien conocido por su trabajo anterior en bandas como BulletBoys, y Beautiful Creatures.;
+BiografiaIntegrante:06/02/1962'Lafayette/Indiana/Estados Unidos'Axl Rose

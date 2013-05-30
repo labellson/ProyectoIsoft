@@ -3,7 +3,9 @@ package pModelo;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Clase que mediante una ruta, un modelo de fichero(explicado en su propia clase) y opcionalmente una cadena de caracteres
@@ -16,6 +18,7 @@ import java.io.IOException;
 public class Fichero {
 	private String ruta;
 	private String texto;
+	private String rawTexto;
 	private String[][][] variable;
 	private String[][] bandera;
 	private String comentario;
@@ -47,8 +50,12 @@ public class Fichero {
 	private void cargarTexto() throws IOException{
 		BufferedReader br = new BufferedReader(new FileReader (new File (ruta)));
 		String[] buffer;
+		rawTexto = "";
+		String buffer3;
 		while(br.ready()){
-			buffer = br.readLine().split("//");
+			buffer3 = br.readLine();
+			rawTexto += buffer3+"\n";
+			buffer = buffer3.split("//");
 			if(!buffer[0].equals("")){
 				texto +=buffer[0]+"\n";
 			}
@@ -180,6 +187,29 @@ public class Fichero {
 	 */
 	public String getVariable(int bloque, int clase, int variable){
 		return this.variable[bloque][clase][variable];
+	}
+	
+	public void setVariable(String clase, String variable, String valor){
+		String[] buffer = rawTexto.split("\n");
+		for(int i=0; i<texto.split("\n").length; i++){
+			String[] buffer2 = buffer[i].split(mf.getFinalVar());
+			String buffer3 = "";
+			for(int j=0; j<buffer2.length-1; j++){
+				buffer3 += buffer2[j]+mf.getFinalVar();
+			}
+			if(buffer3.equalsIgnoreCase((clase+":"+variable))){
+				rawTexto = rawTexto.replace(buffer3+buffer2[buffer2.length-1], buffer3+valor);
+		        try
+		        {
+		        	PrintWriter pw = new PrintWriter(new FileWriter(ruta));
+		        	pw.write(rawTexto);
+		        	pw.close();
+		 
+		        } catch (Exception e) {
+		            e.printStackTrace();
+		        }
+			}
+		}
 	}
 	
 	/**
