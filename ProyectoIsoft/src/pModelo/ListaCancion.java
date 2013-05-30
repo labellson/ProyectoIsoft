@@ -63,7 +63,35 @@ public class ListaCancion {
 	public Cancion get(int indice){
 		return lCancion.get(indice);
 	}
-
+	
+	/**
+	 * Suma 1 a la puntuacion de la cancion y ordena la lista
+	 * @param indice
+	 */
+	public void meGusta(int indice){
+		lCancion.get(indice).setPuntuacion(lCancion.get(indice).getPuntuacion()+1);
+		if(indice == 0) return;
+		if(lCancion.get(indice).getPuntuacion()-1 == lCancion.get(indice-1).getPuntuacion()){
+			Cancion buffer = lCancion.get(indice);
+			lCancion.set(indice, lCancion.get(indice-1));
+			lCancion.set(indice-1, buffer);
+		}
+	}
+	
+	/**
+	 * Resta 1 a la puntuacion de la cancion y ordena la lista
+	 * @param indice
+	 */
+	public void noMeGusta(int indice){
+		lCancion.get(indice).setPuntuacion(lCancion.get(indice).getPuntuacion()-1);
+		if(indice == 0) return;
+		if(lCancion.get(indice).getPuntuacion()+1 == lCancion.get(indice+1).getPuntuacion()){
+			Cancion buffer = lCancion.get(indice);
+			lCancion.set(indice, lCancion.get(indice+1));
+			lCancion.set(indice+1, buffer);
+		}
+	}
+	
 	/**
 	 * Devuelve la lista de canciones
 	 * @return lCancion

@@ -2,6 +2,8 @@ package pControlador;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionListener;
@@ -42,18 +44,13 @@ public class Principal implements ActionListener, ListSelectionListener{
 		vista.getList_2().addListSelectionListener(this);
 		vista.getBtnSalir().addActionListener(this);
 		vista.getBtnVotar().addActionListener(this);
+		vista.getList_4().addListSelectionListener(this);
 		vista.getComboBox().setSelectedIndex(0);
 		vista.getList_1().setSelectedIndex(0);
 		vista.getList().setSelectedIndex(0);
 		vista.getList_2().setSelectedIndex(0);
 		
-		DefaultListModel<String> dListModel = new DefaultListModel<String>();
-		int top=10;
-		if(pModelo.ListaCancion.getSingelton().get().size()<10) top = pModelo.ListaCancion.getSingelton().get().size();
-		for(int i=0; i<top; i++){
-			dListModel.addElement(pModelo.ListaCancion.getSingelton().get().get(i).getNombre()+"\t"+pModelo.ListaCancion.getSingelton().get().get(i).getPuntuacion());
-		}
-		vista.getList_4().setModel(dListModel);
+		updateCanciones();
 	}
 	/**
 	 * Cuando se escribe o se selecciona el nombre de un artista el evento cambiara en la aplicacion el artista.
@@ -63,6 +60,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 			vista.getList_1().removeListSelectionListener(this);
 			vista.getList().removeListSelectionListener(this);
 			vista.getList_2().removeListSelectionListener(this);
+			vista.getList_3().removeListSelectionListener(this);
 			int indice = pModelo.ListaArtista.getSingelton().compararNombre((String) vista.getComboBox().getSelectedItem());
 			artistActual = pModelo.ListaArtista.getSingelton().get(indice);
 			if(indice == -1) return;
@@ -70,6 +68,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 			if(pModelo.Solista.class == artistActual.getClass()){
 				dListModel.addElement(artistActual.getNombre());
 				vista.getTextPane_1().setBackground(Color.lightGray);
+				vista.getTextPane_1().setText("");
 			}else{
 				vista.getTextPane_1().setBackground(Color.white);
 				for(int i=0; i<((pModelo.Grupo)artistActual).getSize();i++){
@@ -86,16 +85,20 @@ public class Principal implements ActionListener, ListSelectionListener{
 			vista.getList_1().setModel(dListModelDiscos);
 			vista.getList_1().addListSelectionListener(this);
 			vista.getList_2().addListSelectionListener(this);
+			vista.getList_3().addListSelectionListener(this);
 			vista.getList_1().setSelectedIndex(0);
 			vista.getList_2().setSelectedIndex(0);
 			vista.getList().addListSelectionListener(this);
 			
 			vista.getList().setSelectedIndex(0);
+			vista.getList_3().setSelectedIndex(0);
 			//Biografia
 			vista.getBiografia().setText("Nombre:\n"+artistActual.getNombre()+"\n\nLugar de Nacimiento:\n"+artistActual.getBio().getLugarNac()+"\n\nFecha de Nacimiento:\n"+artistActual.getBio().getFechaNac()+"\n\nDescripcion:\n"+artistActual.getBio().getDescripcion());
 		}else if(e.getSource() == vista.getBtnSalir()){
 			vista.dispose();
 		}else if(e.getSource() == vista.getBtnVotar()){
+			pVista.Votar votar = new pVista.Votar(vista);
+			updateCanciones();
 			
 		}
 	}
@@ -117,6 +120,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 				}
 				vista.getList_2().setModel(dListModel);
 				vista.getList_2().addListSelectionListener(this); //volver a añadir el listener
+				vista.getList_2().setSelectedIndex(0);
 			}else if(e.getSource() == vista.getList()){
 				DefaultListModel<String> dListModel = new DefaultListModel<String>();
 				if(artistActual instanceof Grupo){
@@ -136,10 +140,28 @@ public class Principal implements ActionListener, ListSelectionListener{
 					vista.getList_3().setModel(dListModel);
 				}
 			}else if(e.getSource() == vista.getList_2()){
-				vista.getTextPane().setText("Duracion:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getDuracion()+" minutos\n\nLetra:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
+				vista.getTextPane().setText("Puntuacion:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getPuntuacion()+"\n\nDuracion:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getDuracion()+" minutos\n\nLetra:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
+			}else if(e.getSource() == vista.getList_4()){
+				int[] buffer = ListaArtista.getSingelton().buscarCancion((String)vista.getList_4().getSelectedValue());
+				if(buffer != null){
+					vista.getComboBox().setSelectedIndex(buffer[0]);
+					vista.getList_1().setSelectedIndex(buffer[1]);
+					vista.getList_2().setSelectedIndex(buffer[2]);
+				}
+				
 			}
 		}catch(Exception exception){
 			exception.printStackTrace();
 		}
+	}
+	
+	private void updateCanciones(){
+		DefaultListModel<String> dListModel = new DefaultListModel<String>();
+		int top=10;
+		if(pModelo.ListaCancion.getSingelton().get().size()<10) top = pModelo.ListaCancion.getSingelton().get().size();
+		for(int i=0; i<top; i++){
+			dListModel.addElement(pModelo.ListaCancion.getSingelton().get().get(i).getNombre());
+		}
+		vista.getList_4().setModel(dListModel);
 	}
 }

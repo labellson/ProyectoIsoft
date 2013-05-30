@@ -54,4 +54,21 @@ public class ListaArtista {
 		}
 		return -1;
 	}
+	
+	public int[] buscarCancion(String nombre){
+		int[] buffer = new int[3];
+		for(int i=0; i<listaArtista.size(); i++){
+			for(int j=0; j<listaArtista.get(i).getlAlbum().size(); j++){
+				for(int k=0; k<listaArtista.get(i).getlAlbum().get(j).getCanciones().size(); k++){
+					if(listaArtista.get(i).getlAlbum().get(j).getCanciones().get(k).getNombre().equals(nombre)){
+						buffer[0] = i;
+						buffer[1] = j;
+						buffer[2] = k;
+						return buffer;
+					}
+				}
+			}
+		}
+		return null;
+	}
 }

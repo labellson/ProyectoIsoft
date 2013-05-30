@@ -48,4 +48,8 @@ public class Cancion {
 		return puntuacion;
 	}
 	
+	public void setPuntuacion(int puntuacion){
+		this.puntuacion = puntuacion;
+	}
+	
 }

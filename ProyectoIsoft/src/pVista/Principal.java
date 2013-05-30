@@ -175,7 +175,7 @@ public class Principal extends JFrame {
 		list_3 = new JList();
 		scrollPane_5.setViewportView(list_3);
 		
-		JLabel lblLetra = new JLabel("Letra");
+		JLabel lblLetra = new JLabel("Informacion Cancion");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, lblLetra, 342, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, lblLetra, 383, SpringLayout.WEST, contentPane);
 		contentPane.add(lblLetra);
