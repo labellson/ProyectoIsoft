@@ -195,28 +195,29 @@ public class Principal extends JFrame {
 		JScrollPane scrollPane_7 = new JScrollPane();
 		sl_contentPane.putConstraint(SpringLayout.NORTH, scrollPane_7, 362, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, scrollPane_7, 588, SpringLayout.WEST, contentPane);
-		sl_contentPane.putConstraint(SpringLayout.SOUTH, scrollPane_7, 499, SpringLayout.NORTH, contentPane);
+		sl_contentPane.putConstraint(SpringLayout.SOUTH, scrollPane_7, -12, SpringLayout.SOUTH, lblNewLabel);
 		sl_contentPane.putConstraint(SpringLayout.EAST, scrollPane_7, 774, SpringLayout.WEST, contentPane);
 		contentPane.add(scrollPane_7);
 		
 		list_4 = new JList();
+		list_4.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		scrollPane_7.setViewportView(list_4);
 		
-		JLabel lblCancionesPopulares = new JLabel("Canciones Populares");
+		JLabel lblCancionesPopulares = new JLabel("Canciones Populares (Top 10)");
 		sl_contentPane.putConstraint(SpringLayout.NORTH, lblCancionesPopulares, 342, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, lblCancionesPopulares, 588, SpringLayout.WEST, contentPane);
-		sl_contentPane.putConstraint(SpringLayout.EAST, lblCancionesPopulares, 732, SpringLayout.WEST, contentPane);
+		sl_contentPane.putConstraint(SpringLayout.EAST, lblCancionesPopulares, 0, SpringLayout.EAST, scrollPane_4);
 		contentPane.add(lblCancionesPopulares);
 		
 		btnSalir = new JButton("Salir");
-		sl_contentPane.putConstraint(SpringLayout.NORTH, btnSalir, 518, SpringLayout.NORTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.WEST, btnSalir, 685, SpringLayout.WEST, contentPane);
-		sl_contentPane.putConstraint(SpringLayout.EAST, btnSalir, 774, SpringLayout.WEST, contentPane);
+		sl_contentPane.putConstraint(SpringLayout.EAST, btnSalir, 0, SpringLayout.EAST, scrollPane_4);
 		contentPane.add(btnSalir);
 		
 		btnVotar = new JButton("Votar");
-		sl_contentPane.putConstraint(SpringLayout.NORTH, btnVotar, 518, SpringLayout.NORTH, contentPane);
-		sl_contentPane.putConstraint(SpringLayout.WEST, btnVotar, 588, SpringLayout.WEST, contentPane);
+		sl_contentPane.putConstraint(SpringLayout.NORTH, btnSalir, 0, SpringLayout.NORTH, btnVotar);
+		sl_contentPane.putConstraint(SpringLayout.WEST, btnVotar, 0, SpringLayout.WEST, lblBiografiaArtista);
+		sl_contentPane.putConstraint(SpringLayout.SOUTH, btnVotar, -10, SpringLayout.SOUTH, contentPane);
 		sl_contentPane.putConstraint(SpringLayout.EAST, btnVotar, 677, SpringLayout.WEST, contentPane);
 		contentPane.add(btnVotar);
 		

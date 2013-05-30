@@ -20,6 +20,7 @@ import pModelo.Grupo;
 import pModelo.ListaArtista;
 import pModelo.ModeloComboBox;
 import pModelo.Solista;
+import pModelo.ListaCancion;
 
 /**
  * En esta clase se encuentran todos los Handlers de eventos que ocurran en la interfaz grafica y modificarla con los datos del modelo.
@@ -45,6 +46,14 @@ public class Principal implements ActionListener, ListSelectionListener{
 		vista.getList_1().setSelectedIndex(0);
 		vista.getList().setSelectedIndex(0);
 		vista.getList_2().setSelectedIndex(0);
+		
+		DefaultListModel<String> dListModel = new DefaultListModel<String>();
+		int top=10;
+		if(pModelo.ListaCancion.getSingelton().get().size()<10) top = pModelo.ListaCancion.getSingelton().get().size();
+		for(int i=0; i<top; i++){
+			dListModel.addElement(pModelo.ListaCancion.getSingelton().get().get(i).getNombre()+"\t"+pModelo.ListaCancion.getSingelton().get().get(i).getPuntuacion());
+		}
+		vista.getList_4().setModel(dListModel);
 	}
 	/**
 	 * Cuando se escribe o se selecciona el nombre de un artista el evento cambiara en la aplicacion el artista.

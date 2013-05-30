@@ -68,7 +68,7 @@ public class CargarDatos{
 	 */
 	private void cargarCancion(Fichero f, int numArtista, int i){
 		while(i < f.getBanderas(numArtista).length && f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
-			ListaCancion.getSingelton().add(new Cancion(f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1), f.getVariable(numArtista, i, 2)));
+			ListaCancion.getSingelton().add(new Cancion(f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1), f.getVariable(numArtista, i, 2), Integer.parseInt(f.getVariable(numArtista, i, 3))));
 			i++;
 		}
 	}
@@ -89,7 +89,7 @@ public class CargarDatos{
 				i++;
 				
 			}
-			ListaCancion.getSingelton().finAlbum();
+			//ListaCancion.getSingelton().finAlbum();
 			//ListaCancion.getSingelton().get().clear();
 		}
 	}

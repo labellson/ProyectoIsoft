@@ -9,13 +9,10 @@ import java.util.ArrayList;
 public class ListaCancion {
   private static ListaCancion singelton;
 	private ArrayList<Cancion> lCancion;
-	private int indice;
-	private int maxIndice;
+	private ArrayList<Integer> lIndex;
 
 	private ListaCancion(){
 		lCancion = new ArrayList<Cancion>();
-		indice = 0;
-		maxIndice = 0;
 	}
 	/**
 	 * Devuelve la clase ListaCancion
@@ -28,12 +25,35 @@ public class ListaCancion {
 		return singelton;
 	}
 	/**
-	 * Añade una cancion a la lista de canciones
+	 * Añade una cancion a la lista de canciones y ordena la lista
 	 * @param cancion
 	 */
 	public void add(Cancion cancion){
-		lCancion.add(cancion);
-		maxIndice++;
+		int index = ordenar(cancion);
+		if(index == -1){
+			index = lCancion.size();
+			lCancion.add(cancion);
+		}else{
+			lCancion.add(index, cancion);
+		}
+		if(lIndex == null) lIndex = new ArrayList(); 
+		for(int i=0; i<lIndex.size(); i++){
+			if(index <= lIndex.get(i)) lIndex.set(0, lIndex.get(i)+1);
+		}
+		lIndex.add(index);
+	}
+	
+	/**
+	 * retorna las canciondes de ese album
+	 * @return canciones del album
+	 */
+	public ArrayList<Cancion> getDeAlbum(){
+		ArrayList<Cancion> cancionesDeAlbum = new ArrayList<Cancion>();
+		for(int i=0; i<lIndex.size(); i++){
+			cancionesDeAlbum.add(lCancion.get(lIndex.get(i)));
+		}
+		lIndex = null;
+		return cancionesDeAlbum;
 	}
 	/**
 	 * Devuelve la cancion a la que le corresponde el indice
@@ -43,14 +63,7 @@ public class ListaCancion {
 	public Cancion get(int indice){
 		return lCancion.get(indice);
 	}
-	
-	public ArrayList<Cancion> getDeAlbum(){
-		ArrayList<Cancion> cancionesDeAlbum = new ArrayList<Cancion>();
-		for(int i=indice; i<maxIndice; i++){
-			cancionesDeAlbum.add(lCancion.get(i));
-		}
-		return cancionesDeAlbum;
-	}
+
 	/**
 	 * Devuelve la lista de canciones
 	 * @return lCancion
@@ -59,7 +72,19 @@ public class ListaCancion {
 		return lCancion;
 	}
 	
-	public void finAlbum(){
-		indice = maxIndice;
+	/**
+	 * Ordena la lista de canciones mas valorada, respecto a la ultima cancion a�adida, retorna el indice donde se almacena
+	 * @param cancion
+	 * @return indice
+	 */
+	private int ordenar(Cancion cancion){
+		int index = -1;
+		for(int i=0; i<lCancion.size(); i++){
+			if(cancion.getPuntuacion() > lCancion.get(i).getPuntuacion()){
+				index = i;
+				break;
+			}
+		}
+		return index;
 	}
 }

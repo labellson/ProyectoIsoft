@@ -1,6 +1,8 @@
 package pModelo;
 import java.io.IOException;
 import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+import java.util.List;
 	/**
 	 * Clase inicial con funcion main, utilizada para iniciar el modelo MVC 
 	 * (Tambien usada para hacer pruebas con todas las clases)
@@ -12,7 +14,6 @@ public class menu {
 	 */
 	public static void main(String[] args){
 		String ruta = "ficheros/datos.txt";
-		
 		try {
 			CargarDatos.getSingelton().cargar(ruta);
 		} catch (IOException e) {
