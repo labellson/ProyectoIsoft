@@ -20,11 +20,18 @@ public class Grupo extends Artista{
 	public void addIntegrantes(Integrante integrante){
 		lIntegrantes.addIntegrantes(integrante);
 	}
-	
+	/**
+	 * Devuelve el integrante de la lista al que le correspondael indice
+	 * @param indice
+	 * @return El integrante de lIntegrante de la posicion indice
+	 */
 	public Integrante getIntentegrantes(int indice){
 		return lIntegrantes.getIntegrantes(indice);
 	}
-	
+	/**
+	 * Devuelve el tamaño de la lista de Integrantes
+	 * @return
+	 */
 	public int getSize(){
 		return lIntegrantes.getSize();
 	}

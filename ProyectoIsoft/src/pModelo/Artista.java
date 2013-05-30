@@ -15,7 +15,12 @@ public abstract class Artista {
 	public String getGenero() {
 		return genero;
 	}
-
+	/**
+	 * Constructor de Artista
+	 * @param nombre Nombre del Artista
+	 * @param bio Biografia del artista
+	 * @param lAlbum Albumes del Artista
+	 */
 	public Artista(String nombre, Biografia bio, ArrayList<Album> lAlbum){
 		this.nombre = nombre;
 		this.bio = bio;
@@ -25,7 +30,7 @@ public abstract class Artista {
 	
 	/**
 	 * Retorna el nombre del artista (solista o grupo)
-	 * @return
+	 * @return nombre
 	 */
 	public String getNombre() {
 		return nombre;
@@ -33,24 +38,29 @@ public abstract class Artista {
 	
 	/**
 	 * Modifica el nombre del artista.
-	 * @param nombre el nuevo nombre del artista
+	 * @param nombre 
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
-	public Biografia getBiografia() {
-		return bio;
-	}
-
+	/**
+	 * Añade una biografia al Artista
+	 * @param bio
+	 */
 	public void setBiografia(Biografia bio) {
 		this.bio = bio;
 	}
-
+	/**
+	 * Devuelve la biografia del Artista
+	 * @return bio
+	 */
 	public Biografia getBio() {
 		return bio;
 	}
-
+	/**
+	 * Devuelve los Albumes del Artista
+	 * @return lAlbum
+	 */
 	public ArrayList<Album> getlAlbum() {
 		return lAlbum;
 	}

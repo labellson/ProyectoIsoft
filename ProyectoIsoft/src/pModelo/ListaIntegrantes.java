@@ -19,11 +19,18 @@ public class ListaIntegrantes {
 	public void addIntegrantes(Integrante integrante){
 		lIntegrantes.add(integrante);
 	}
-	
+	/**
+	 * devuelve el integrante al que le corresponda indice
+	 * @param indice
+	 * @return
+	 */
 	public Integrante getIntegrantes(int indice){
 		return lIntegrantes.get(indice);
 	}
-	
+	/**
+	 * Devuelve el tamaño de la lista de integrantes
+	 * @return
+	 */
 	public int getSize(){
 		return lIntegrantes.size();
 	}

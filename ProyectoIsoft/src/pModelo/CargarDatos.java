@@ -2,20 +2,28 @@ package pModelo;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
+/**
+ * Esta clase se encarga de cargar todos los datos en las clases del diseño. Clase singleton
+ * @author Daniel, Francisco, Iban, Ruben
+ *
+ */
 public class CargarDatos{
 	private static CargarDatos cargarArtistas;
-	private CargarDatos(){
-
-	}
-
+	/**
+	 * Devuelve el objeto cargarArtistas
+	 * @return cargarArtistas
+	 */
 	public static CargarDatos getSingelton(){
 		if (cargarArtistas == null){
 			cargarArtistas = new CargarDatos();
 		}
 		return cargarArtistas;
 	}
-	
+	/**
+	 * Se encarga de cargar los datos leidos del fichero datos.txt
+	 * @param ruta
+	 * @throws IOException
+	 */
 	public void cargar(String ruta) throws IOException{
 		Fichero f = new Fichero(ruta, "'", "\n", ";\n");
 		for(int i=0; i<f.getMF().getSizeBloques(); i++){
@@ -24,7 +32,12 @@ public class CargarDatos{
 			cargarArtista(f,i);
 		}
 	}
-	
+	/**
+	 * Carga la Biografia
+	 * @param f
+	 * @param numArtista
+	 * @throws IOException
+	 */
 	private void cargarBiografia(Fichero f, int numArtista) throws IOException{
 		//Creamos biografia
 		//Comprobamos si es biografia interna o biografia grupo y crearla
@@ -48,11 +61,10 @@ public class CargarDatos{
 		
 	}
 	/**
-	 * Este metodo devolvera un ArrayList<Cancion> que cargara de el fichero datos
+	 * Este metodo cargara un ArrayList<Cancion> que cargara de el fichero datos.txt
 	 * @param f de la clase fichero
 	 * @param numArtista el artista en el que nos encontramos en el array
 	 * @param i indica el offset en el que nos encontramos en el array justo despues de un album
-	 * @return ArrayList <Cancion>
 	 */
 	private void cargarCancion(Fichero f, int numArtista, int i){
 		while(i < f.getBanderas(numArtista).length && f.getBanderas(numArtista)[i].equalsIgnoreCase("Cancion")){ //esCancion
@@ -61,11 +73,10 @@ public class CargarDatos{
 		}
 	}
 	/**
-	 * Este metodo devuelve un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
+	 * Este metodo cargara un ArrayList<Album> con los albumes del artista y cada uno con sus canciones
 	 * @param f Fichero
 	 * @param numArtista el artista en el que nos encontramos en el array
-	 * * @param i indica el offset en el que nos encontramos en el array
-	 * @return ArrayList<Album>
+	 * @param i indica el offset en el que nos encontramos en el array
 	 */
 	private void cargarAlbum(Fichero f, int numArtista, int i){
 		ArrayList<Cancion> listaCancion = new ArrayList<Cancion>();
@@ -82,7 +93,11 @@ public class CargarDatos{
 			//ListaCancion.getSingelton().get().clear();
 		}
 	}
-	
+	/**
+	 * Carga el Artista con todos sus datos (Biografia y Discografia)
+	 * @param f
+	 * @param numArtista
+	 */
 	private void cargarArtista(Fichero f, int numArtista){
 		boolean solista=false;
 		boolean grupo=false;

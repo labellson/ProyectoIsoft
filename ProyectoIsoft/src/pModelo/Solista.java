@@ -12,6 +12,10 @@ public class Solista extends Integrante{
 		super(nombre, posicion, bio, lAlbum);
 		this.nombreArtistico = nombreArtistico;
 	}
+	/**
+	 * Devuelve el nombre artistico del Artista
+	 * @return nombreArtistico
+	 */
 	public String getNombreArtistico() {
 		return nombreArtistico;
 	}

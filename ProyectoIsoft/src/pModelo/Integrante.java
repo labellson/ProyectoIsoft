@@ -15,7 +15,10 @@ public class Integrante extends Artista{
 			this.lPosicion.add(posicion[i]);
 		}
 	}
-	
+	/**
+	 * Devuelve las posiciones del Integrante
+	 * @return lPosicion
+	 */
 	public ArrayList<String> getlPosicion(){
 		return lPosicion;
 	}

@@ -21,10 +21,14 @@ import pModelo.ListaArtista;
 import pModelo.ModeloComboBox;
 import pModelo.Solista;
 
-
+/**
+ * En esta clase se encuentran todos los Handlers de eventos que ocurran en la interfaz grafica y modificarla con los datos del modelo.
+ * @author Daniel, Francisco, Iban, Ruben
+ *
+ */
 public class Principal implements ActionListener, ListSelectionListener{
   pVista.Principal vista;
-  Artista artistActual;
+  Artista artistActual; //Artista actual cargado en la aplicacionx
 	public Principal(){
 		vista = new pVista.Principal();
 		new ModeloComboBox(vista.getComboBox());
@@ -40,6 +44,9 @@ public class Principal implements ActionListener, ListSelectionListener{
 		vista.getList().setSelectedIndex(0);
 		vista.getList_2().setSelectedIndex(0);
 	}
+	/**
+	 * Cuando se escribe o se selecciona el nombre de un artista el evento cambiara en la aplicacion el artista.
+	 */
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == vista.getComboBox()){
 			vista.getList_1().removeListSelectionListener(this);
@@ -74,10 +81,15 @@ public class Principal implements ActionListener, ListSelectionListener{
 			
 			vista.getList().setSelectedIndex(0);
 			//Biografia
-			vista.getBiografia().setText("Nombre:\n"+artistActual.getNombre()+"\n\nLugar de Nacimiento:\n"+artistActual.getBiografia().getLugarNac()+"\n\nFecha de Nacimiento:\n"+artistActual.getBiografia().getFechaNac()+"\n\nDescripcion:\n"+artistActual.getBiografia().getDescripcion());
+			vista.getBiografia().setText("Nombre:\n"+artistActual.getNombre()+"\n\nLugar de Nacimiento:\n"+artistActual.getBio().getLugarNac()+"\n\nFecha de Nacimiento:\n"+artistActual.getBio().getFechaNac()+"\n\nDescripcion:\n"+artistActual.getBio().getDescripcion());
 		}
 	}
-	
+	/**
+	 * Se encarga de tratar los eventos que ocurren al seleccionar un disco, una cancion o un integrante.
+	 * Si se selecciona un disco apareceran sus canciones.
+	 * Si se selecciona una cancion apareceran su duracion y su letra.
+	 * Si se selecciona un Integrante aparecera su Posicion y su biografia de Integrante.
+	 */
 	public void valueChanged(ListSelectionEvent e) {
 		try{
 			if(e.getSource() == vista.getList_1()){
@@ -98,7 +110,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 					for(String posicion : posiciones){
 						dListModel.addElement(posicion);
 					}
-					BiografiaIntegrante bioInt = (BiografiaIntegrante) ((Grupo)artistActual).getIntentegrantes(index).getBiografia();
+					BiografiaIntegrante bioInt = (BiografiaIntegrante) ((Grupo)artistActual).getIntentegrantes(index).getBio();
 					vista.getTextPane_1().setText("Nombre:\n"+bioInt.getNombre()+"\n\nLugar de Nacimiento:\n"+bioInt.getLugarNac()+"\n\nFecha de Nacimiento:\n"+bioInt.getFechaNac()+"\n\nDescripcion:\n"+bioInt.getDescripcion());
 					vista.getList_3().setModel(dListModel);
 				}else{

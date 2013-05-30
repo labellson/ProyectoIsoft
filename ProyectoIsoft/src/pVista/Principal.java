@@ -17,7 +17,11 @@ import javax.swing.JScrollBar;
 import javax.swing.ScrollPaneConstants;
 import java.awt.Color;
 import java.awt.Font;
-
+/**
+ * Ventana principal de la Aplicacion
+ * @author Daniel, Francisco, Iban, Ruben
+ *
+ */
 public class Principal extends JFrame {
 	private JLabel lblNewLabel;
 	private JLabel lblIntegrantes;

@@ -1,4 +1,18 @@
-//Modelo del fichero
+//Cada artista esta ordenado en un bloque.
+//Los Bloques terminan con punto y coma ";".
+//Cada clase es una linea
+//Las clases se definen "NombreClase:Atributo1'Atributo2'Atributo3..."
+//Primero se definira si es un Solista o un grupo
+//Segundo su biografia
+//Por ultimo los albumes y las canciones de estos.
+//Primero se especificara el Album seguido de sus canciones, el cargador seguira leyendo lineas (Canciones) hasta que encuentre otro album o un punto y coma ";".
+//Cuando llegue al ";" creara un nuevo artista
+//Todo se carga en un array de 3 dimensiones
+//La primera posicion es el bloque (Artista)
+//La segunda son las lineas del bloque (Clases "Solista:, Biografia:...")
+//La ultima son los atributos de cada linea (Clase)
+
+//Modelo del fichero (Descripcion de las Clases)
 Solista:nombre,posicion,artistico
 Grupo:nombre
 Integrante:nombre,posicion,grupo
