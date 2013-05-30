@@ -30,12 +30,12 @@ public class ListaCancion {
 		return lCancion.get(indice);
 	}
 	
-	public Cancion getDeAlbum(int indice){
+	public ArrayList<Cancion> getDeAlbum(){
 		ArrayList<Cancion> cancionesDeAlbum = new ArrayList<Cancion>();
 		for(int i=indice; i<maxIndice; i++){
-			
+			cancionesDeAlbum.add(lCancion.get(i));
 		}
-		return lCancion.get(indice);
+		return cancionesDeAlbum;
 	}
 	
 	public ArrayList<Cancion> get(){

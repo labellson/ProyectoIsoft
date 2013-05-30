@@ -72,13 +72,14 @@ public class CargarDatos{
 		while(i < f.getBanderas(numArtista).length){
 			if(f.getBanderas(numArtista)[i].equalsIgnoreCase("Album")){
 				cargarCancion(f,numArtista,i+1);
-				ListaAlbum.getSingelton().addAlbum(new Album(ListaCancion.getSingelton().get(), f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1)));
+				ListaAlbum.getSingelton().addAlbum(new Album(ListaCancion.getSingelton().getDeAlbum(), f.getVariable(numArtista, i, 0), f.getVariable(numArtista, i, 1)));
 				i += listaCancion.size() +1;
 			}else{
 				i++;
 				
 			}
-			ListaCancion.getSingelton().get().clear();
+			ListaCancion.getSingelton().finAlbum();
+			//ListaCancion.getSingelton().get().clear();
 		}
 	}
 	
