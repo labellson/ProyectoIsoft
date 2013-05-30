@@ -1,4 +1,3 @@
-//Obsoleto
 package pModelo;
 
 /**
@@ -15,9 +14,13 @@ public class ModeloFichero {
 	private String nombreBloque[];
 	 
 	/**
-	 * Constructor de la clase ModeloFichero, solo almacena datos
-	 * @param finalVar Cadena de caracteres que separaran una variable de otra en la misma clase
-	 * @param finalClase Cadena de caracteres que separara una clase de otra en el mismo fichero
+	 * Clase necesaria para cargar un fichero, se encarga de almacenar datos importantes para ello
+	 * @param finalVar: String que separa las diferentes variables de una clase
+	 * @param finalClase: String que separa las diferentes clases de un bloque
+	 * @param finalBloque: String que separa los diferentes bloques
+	 * @param formato: Formato de cada bandera especifica
+	 * @param bandera: Lista de banderas que contiene el fichero
+	 * @param sizeBloques: Cantidad de bloques que tiene el fichero
 	 */
 	public ModeloFichero(String finalVar, String finalClase, String finalBloque, String[][] formato, String[] bandera, int sizeBloques){
 		this.finalVar = finalVar;

@@ -22,8 +22,8 @@ public class Fichero {
 	private ModeloFichero mf;
 	
 	/**
-	 * Constructor que se encarga de la primera fase de la carga del fichero, ignora la parte de comentarios y las lineas
-	 * vacias y extrae todo lo demas, dejando el texto aun sin separar en variables
+	 * Constructor que se encarga de gestionar las diferentes fases por las que pasan los datos del fichero, desde la carga
+	 * del texto sin cambios, hasta su conversion en variables.
 	 * @param ruta Cadena de caracteres que menciona la ruta donde se encuentra el archivo a leer 
 	 * @param mf Clase encargada de almacenar valores necesario para iniciar una lectura o escritura, determina el formato
 	 * @param comentario Cadena de caracter que ignorara desde que es encontrada hasta un nuevo salto de linea el texto
@@ -39,6 +39,11 @@ public class Fichero {
 		nombrarBloques();
 	}
 	
+	/**
+	 * Carga el texto del fichero, y lo deja preparado para posteriormente recoger los datos, ignora los comentarios y
+	 * las lineas vacias
+	 * @throws IOException La excepcion es lanzada si el fichero no existe en la ruta expecificada
+	 */
 	private void cargarTexto() throws IOException{
 		BufferedReader br = new BufferedReader(new FileReader (new File (ruta)));
 		String[] buffer;
@@ -51,6 +56,14 @@ public class Fichero {
 		br.close();	
 	}
 	
+	/**
+	 * Se encarga de cargar el encabezado del fichero, el cual sirve para saber como tratar la informacion 
+	 * posterior del fichero, esta informacion sera almacenada en otra clase llamada ModeloFichero
+	 * @param finalVar String que separa las diferentes variables de una clase
+	 * @param finalClase String que separa las diferentes clases de un bloque
+	 * @param finalBloque String que separa los diferentes bloques
+	 * @throws IOException La excepcion es lanzada si no se encuentra un modelo en el fichero
+	 */
 	private void cargarModelo(String finalVar, String finalClase, String finalBloque) throws IOException{
 		if(!texto.contains("}")){
 			throw new RuntimeException("No se encuentra un modelo en los parametros de Fichero ni en el fichero");
@@ -78,6 +91,9 @@ public class Fichero {
 		}
 	}
 	
+	/**
+	 * Se encarga de nombrar cada bloque del fichero
+	 */
 	private void nombrarBloques(){
 		String buffer[] = texto.split(mf.getFinalBloque());
 		for(int i=0; i<buffer.length; i++){
@@ -86,6 +102,11 @@ public class Fichero {
 		mf.setNombreBloque(buffer);
 	}
 	
+	/**
+	 * Se encarga de mandar almacenar correctamente cada variable del fichero en su clase correspondiente y esta en
+	 * su bloque correspondiente mediante el uso de una matriz en 3 dimensiones
+	 * variable[bloque][clase][variable]
+	 */
 	private void crearVariables(){
 		variable = new String[mf.getSizeBloques()][][];
 		String buffer,buffer2;
@@ -107,6 +128,13 @@ public class Fichero {
 		}
 	}
 	
+	/**
+	 * Se encarga de recoger una variable en el bloque y clase o tipo seleccionada.
+	 * @param bloque Bloque donde se encuentra la variable
+	 * @param tipo Tipo o clase donde se encuentra la variable
+	 * @param variable La variable que se quiere recoger
+	 * @return Se retorna la variable seleccionada, si no es encontrada, retorna null y se mostrara un error
+	 */
 	public String getVariable(String bloque, String tipo, String variable){
 		for(int i=0; i<mf.getSizeBloques();i++){
 			if(bloque.equalsIgnoreCase(mf.getNombreBloque()[i])){
@@ -117,6 +145,13 @@ public class Fichero {
 		return null;
 	}
 	
+	/**
+	 * Se encarga de recoger una variable en el bloque y clase o tipo seleccionada.
+	 * @param bloque Bloque donde se encuentra la variable
+	 * @param tipo Tipo o clase donde se encuentra la variable
+	 * @param variable La variable que se quiere recoger
+	 * @return Se retorna la variable seleccionada, si no es encontrada, retorna null y se mostrara un error
+	 */
 	public String getVariable(int bloque, String tipo, String variable){
 		for(int i=0; i<bandera[bloque].length;i++){
 			if(tipo.equalsIgnoreCase(bandera[bloque][i])){
@@ -136,16 +171,37 @@ public class Fichero {
 		return null;
 	}
 	
+	/**
+	 * Se encarga de recoger una variable en el bloque y clase o tipo seleccionada.
+	 * @param bloque Bloque donde se encuentra la variable
+	 * @param tipo Tipo o clase donde se encuentra la variable
+	 * @param variable La variable que se quiere recoger
+	 * @return Se retorna la variable seleccionada
+	 */
 	public String getVariable(int bloque, int clase, int variable){
 		return this.variable[bloque][clase][variable];
 	}
+	
+	/**
+	 * Retorna la lista de clases o tipos que contiene el bloque seleccionado, ej "Artista":, "Cancion":
+	 * @param bloque Bloque donde se encuentran las clases o tipos que se quieren recoger
+	 * @return Se retorna la lista de clases o tipos
+	 */
 	public String[] getBanderas(int bloque){
 		return bandera[bloque];
 	}
+	/**
+	 * Retorna el modelo del fichero
+	 * @return Modelo del Fichero
+	 */
 	public ModeloFichero getMF(){ 
 		return mf; 
 	}
 	
+	/**
+	 * Retorna la ruta del fichero
+	 * @return ruta
+	 */
 	public String getRuta() {
 		return ruta;
 	}
