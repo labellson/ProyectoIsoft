@@ -6,94 +6,94 @@ BiografiaGrupo:fechaNacimiento,lugarNacimiento,descripcion
 BiografiaIntegrante:fechaNacimiento,lugarNacimiento,descripcion
 BiografiaSolista:fechaNacimiento,lugarNacimiento,descripcion
 Album:Nombre,fecha
-Cancion:nombre,duracion,letra}
+Cancion:nombre,duracion,letra,puntuacion}
 
 //***Solistas***
 Solista:Michael Joseph Jackson'Cantante/Compositor/Bailarin/ThrillerMan'Michael Jackson
 BiografiaSolista:29/8/1958'Gary/Indiana/Estados Unidos'Conocido simplemente como Michael Jackson, fue un cantante, compositor y bailarin estadounidense de musica pop y sus variantes. Conocido como el Rey del Pop, Michael Jackson.
 Album:Cerdos Salvajes'16/11/1993
-Cancion:Naranja Electrica'3'Txispas txispas del todo a cien
-Cancion:Villarebuznos'3'El ataque de los borregos
+Cancion:Naranja Electrica'3'Txispas txispas del todo a cien'130
+Cancion:Villarebuznos'3'El ataque de los borregos'404
 Album:Galaxy'11/11/11
-Cancion:Abrakadabra'3'Ideas macabras con las cabras
-Cancion:El cencerro de mi tia'756'Tengo una vaca lechera, no es una vaca cualquiera, me da leche merengada hay que vaca mas salada tolon tolon, tolon tolon...;
+Cancion:Abrakadabra'3'Ideas macabras con las cabras'230
+Cancion:El cencerro de mi tia'756'Tengo una vaca lechera, no es una vaca cualquiera, me da leche merengada hay que vaca mas salada tolon tolon, tolon tolon...'-10;
 
 Solista:Ramon Melendi Espina'Cantante/Guitarra'Melendi
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'En su juventud estudiaba en el IES Alfonso II y conocia al piloto de formula 1 Fernando Alonso a quien dedico una cancion que llevaba por titulo El Nano.Tiene gran gancho entre adolescentes
 Album:El canuto que mas disfruto'15/10/2010
-Cancion:Yo y las drogas'2'Esta es la historia que os voy a contar, erase una vez que se era una hoja de maria
-Cancion:Las drogas y yo'3'Todo es multicolor, dragones sobrevuelan el cielo y los enanos elfos me acompanan al bar
+Cancion:Yo y las drogas'2'Esta es la historia que os voy a contar, erase una vez que se era una hoja de maria'-120
+Cancion:Las drogas y yo'3'Todo es multicolor, dragones sobrevuelan el cielo y los enanos elfos me acompanan al bar'10
 Album:Borracho en el avion'10/10/2006
-Cancion:Poper time'3'Al oeste en madrid crecia vivia sin hacer mucho caso a la policia, trabajaba de jardinero para fumarme todo lo que crecia
-Cancion:Vodka Energy'4'El unico limite que tienes, es los chupitos que te puedas tomar;
+Cancion:Poper time'3'Al oeste en madrid crecia vivia sin hacer mucho caso a la policia, trabajaba de jardinero para fumarme todo lo que crecia'810
+Cancion:Vodka Energy'4'El unico limite que tienes, es los chupitos que te puedas tomar'803;
 
 Solista:David Guetta'Productor'Guetta
 BiografiaSolista:7/11/1967'Paris/Francia'David Guetta es hijo de un restaurador marroqui de confesion judia.7 Inicio su carrera musical a los 17 anos como disc jockey en discotecas locales. Paralelamente estudiaba Derecho.8 Comenzo tocando y mezclando en Broad una discoteca de Les Halles en el centro de Paris. En esa Epoca los DJ mezclaban la musica en las discotecas escondidos del publico
 Album:El que lo peta'12/9/2010
-Cancion:Mis memorias rom'5'Read Only Memory, Read Only Memory.....Read Only Memory
-Cancion:Siroco Radical'4'Pimba Pimba Pimba Pimba
+Cancion:Mis memorias rom'5'Read Only Memory, Read Only Memory.....Read Only Memory'9001
+Cancion:Siroco Radical'4'Pimba Pimba Pimba Pimba'430
 Album:BorderLine'30/05/2000
-Cancion:opa a los chino'3' kodowisau mohonika 
-Cancion:BorderColor'2'RGB.235,175,156, size.8;
+Cancion:opa a los chino'3' kodowisau mohonika '650
+Cancion:BorderColor'2'RGB.235,175,156, size.8'333;
 
 
 Solista:Marshall Bruce Mathers III'Cantante'Eminem
 BiografiaSolista:17/10/1972'Saint Joseph/Estados Unidos'Marshall Bruce Mathers III (17 de octubre de 1972 - Saint Joseph - Misuri) conocido por su nombre artistico Eminem (estilizado a EMINEM) es un MC rapero productor discografico y actor estadounidense. Se hizo popular en 1999 con su album de estudio The Slim Shady LP que gano un premio Grammy por Mejor Album de Rap. Su siguiente album The Marshall Mathers LP se convirtio en el segundo album mas vendido de hip hop en la historia solo detras de Life After Death de The Notorious B.I.G. y el mas rapido en los Estados Unidos.2 3 Eminem gano una mayor popularidad donde se destaca su propio sello discografico Shady Records y llevo a su grupo D12 a un reconocimiento general.
 Album:Me pegaban de pequeño'3/5/1999
-Cancion:Ahora sufriras las consecuencias'4'Pum Pum Pum...eso por pegarme de pequeño
-Cancion:Mochila Firefox'3'Del pita pita Chrome
+Cancion:Ahora sufriras las consecuencias'4'Pum Pum Pum...eso por pegarme de pequeño'130
+Cancion:Mochila Firefox'3'Del pita pita Chrome'320
 Album:Me cago en el Marca'2/12/2010
-Cancion:Fantasmas'3'Tiriri ri ri ri, tiririririri.... Ghosbuster
-Cancion:Area del Rector'6'Rebujito=Exponencial de ro Rebujito al cuadrado;
+Cancion:Fantasmas'3'Tiriri ri ri ri, tiririririri.... Ghosbuster'780
+Cancion:Area del Rector'6'Rebujito=Exponencial de ro Rebujito al cuadrado'210;
 
 Solista:Sonny John Moore'Productor'Bruno Mars
 BiografiaSolista:21/1/1979'Oviedo/Asturias/Espana'Sonny John Moore (n. 15 de enero de 1988 - Los Angeles - California) mas conocido por su nombre artistico Skrillex. Es un productor estadounidense de musica electronica de los generos dubstep brostep y electro house. Exvocalista de la banda de post-hardcore From First to Last.
 Album:The first of Skrillex'12/03/2002
-Cancion:The first of the year'3'Call 911 now
-Cancion:Los elefantes de la cacharreria'5'El circo de los horrores, mas gustoso que un dia fructuoso pam pam pam;
+Cancion:The first of the year'3'Call 911 now'-9000
+Cancion:Los elefantes de la cacharreria'5'El circo de los horrores, mas gustoso que un dia fructuoso pam pam pam'30;
 
 Solista:Peter Gene Hernandez'Cantante/Compositor/Productor musical'Oraculo
 BiografiaSolista:8/10/1985'Honolulu/Hawai/Estados Unidos'Peter Gene Hernandez (nacido el 8 de octubre de 1985) 3 mas conocido por su nombre artistico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la via materna y puertorriquena por la via paterna. Criado en Honolulu - Hawai por una familia de musicos, Mars empezo a hacer musica a una edad temprana (a los 2 anos). Tras actuar en diversos espectaculos musicales en su ciudad natal durante toda su juventud decidio seguir una carrera musical y se traslado a Los Angeles despues de graduarse de la escuela secundaria. Mars comenzo a producir canciones para otros artistas al unirse al equipo de produccion The Smeezingtons.
 Album:Array de dependencias'15/08/2003
-Cancion:Violacion de segmento'2'ArrayIndexOutBoundException
-Cancion:Party Flow'4'Te quiero tocar, ouh yea....Perreo en el party, perreo en el pa pa pa;
+Cancion:Violacion de segmento'2'ArrayIndexOutBoundException'404
+Cancion:Party Flow'4'Te quiero tocar, ouh yea....Perreo en el party, perreo en el pa pa pa'242;
 
 Solista:Rodolfo'Cantante'Chiquilicuatre
 BiografiaSolista:12/12/1960'Jonolulu/Hawai/USA'Nombre artistico Chiquilicuatre.Todo comenzo en el programa de Buenafuente, para demostrar el poder que tiene la television en el pais.
 Album:El txiki txiki'12/12/2012
-Cancion:El txiki txiki'3'El txiki txiki mola mogollon, se baila en la china y tambien en alcorcon, lo bailan los curas, lo bailan los tanos, lo bailan mi mulata con la bragas en las manos. Y el txiki txiki se baila asi, uno, breakingBad, dos El crusaito, tres el MichaelJackson cuatro el roboco;
+Cancion:El txiki txiki'3'El txiki txiki mola mogollon, se baila en la china y tambien en alcorcon, lo bailan los curas, lo bailan los tanos, lo bailan mi mulata con la bragas en las manos. Y el txiki txiki se baila asi, uno, breakingBad, dos El crusaito, tres el MichaelJackson cuatro el roboco'147;
 
 //***Grupos***
 Grupo:Linkin Park
 BiografiaGrupo:3/02/1996'Los Angeles/California/Estados Unidos'Linkin Park es una banda estadounidense de rock procedente de Agoura Hills - California. Formada en 1996
 Album:El patio de mi casa'12/05/2000
-Cancion:Es particular'3'Eh tu, fuera de mi casa pum pum mother fucker
-Cancion:Es reservado'2'Propiedad del Gobierno.....Que pasa tenia sed;
+Cancion:Es particular'3'Eh tu, fuera de mi casa pum pum mother fucker'123
+Cancion:Es reservado'2'Propiedad del Gobierno.....Que pasa tenia sed'321;
 
 Grupo:Metallica
 BiografiaGrupo:10/12/1981'Los Angeles/California/Estados Unidos'Metallica es una banda de thrash metal originaria de Los Angeles pero con base en San Francisco desde febrero de 1983. Fue fundada en 1981 en Los Angeles por el danes Lars Ulrich y James Hetfield a los que se les unirian Lloyd Grant y Ron McGovney
 Album:La meta, tu vida'25/12/2000
-Cancion:Me siento mal'3'Le di la vuelta a la silla y me siento bien
-Cancion:El tiempo'2'El tiempo sin ti, solo seria empo;
+Cancion:Me siento mal'3'Le di la vuelta a la silla y me siento bien'531
+Cancion:El tiempo'2'El tiempo sin ti, solo seria empo'135;
 
 Grupo:AC/DC
 BiografiaGrupo:02/03/1645'Sidney/Nueva Gales del Sur/Australia'AC/DC es un grupo de hard rock que se formo en Sidney (Australia) en 1973 por los hermanos escoceses Malcolm y Angus Young.
 Album:The Fuckers'02/06/1666
-Cancion:Mi amigo Jesucristo'3'La droga el vino, y vino la droga
-Cancion:Una mujer en cada puerto'4'Tiraros a la mar, y la mar se quedo prenada;
+Cancion:Mi amigo Jesucristo'3'La droga el vino, y vino la droga'183
+Cancion:Una mujer en cada puerto'4'Tiraros a la mar, y la mar se quedo prenada'451;
 
 
 Grupo:Extremoduro
 BiografiaGrupo:15/09/1987'Plasencia/Extremadura/Espana'Extremoduro es un grupo espanol de rock fundado en Plasencia en 1987. Ellos mismos han definido su estilo como "rock transgresivo" aunque se le suele catalogar como rock urbano.Es considerada por numerosas revistas de musica como una de las mejores bandas de rock en espanol de la historia.
 Album:DealExtreme'09/06/1999
-Cancion:Extremo y duro'4'Dale mas gasolina, toma mas gasolina ... Dani murio intoxicado
-Cancion:Vacuna'3'Que te vacunen y que tu base de datos haya sido actualizada;
+Cancion:Extremo y duro'4'Dale mas gasolina, toma mas gasolina ... Dani murio intoxicado'521
+Cancion:Vacuna'3'Que te vacunen y que tu base de datos haya sido actualizada'298;
 
 Grupo:Guns N Roses
 BiografiaGrupo:15/08/1985'Los Angeles/California/Estados Unidos'Guns N Roses es una banda estadounidense de hard rock que se formo en Hollywood, Los Angeles (California) en 1985. El grupo, encabezado por el lider y fundador de la banda Axl Rose, ha pasado por una linea de numerosos cambios y controversias desde su creacion.
 Album:Gansos rosas'08/07/2005
-Cancion:Un elefante'3'Un elefante se balanceaba sobre la tela de una arana y como veia que no se caia fueron llamara a otro elefante
-Cancion:The IT crow'3'Pinchando voy, pinchando vengo, vengo, vengo;
+Cancion:Un elefante'3'Un elefante se balanceaba sobre la tela de una arana y como veia que no se caia fueron llamara a otro elefante'387
+Cancion:The IT crow'3'Pinchando voy, pinchando vengo, vengo, vengo'163;
 
 //***Integrantes***
 Integrante:Chester Bennington'Vocalista'linkin park
