@@ -1,5 +1,6 @@
 package pControlador;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 
 import javax.swing.event.ListSelectionListener;
@@ -49,7 +50,9 @@ public class Principal implements ActionListener, ListSelectionListener{
 			DefaultListModel<String> dListModel = new DefaultListModel<String>();
 			if(pModelo.Solista.class == artistActual.getClass()){
 				dListModel.addElement(artistActual.getNombre());
+				vista.getTextPane_1().setBackground(Color.lightGray);
 			}else{
+				vista.getTextPane_1().setBackground(Color.white);
 				for(int i=0; i<((pModelo.Grupo)artistActual).getSize();i++){
 					dListModel.addElement(((pModelo.Grupo)artistActual).getIntentegrantes(i).getNombre());
 				}
@@ -70,7 +73,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 			
 			vista.getList().setSelectedIndex(0);
 			//Biografia
-			vista.getBiografia().setText(artistActual.getBiografia().getDescripcion());
+			vista.getBiografia().setText("Nombre:\n"+artistActual.getNombre()+"\n\nLugar de Nacimiento:\n"+artistActual.getBiografia().getLugarNac()+"\n\nFecha de Nacimiento:\n"+artistActual.getBiografia().getFechaNac()+"\n\nDescripcion:\n"+artistActual.getBiografia().getDescripcion());
 		}
 	}
 	
@@ -102,7 +105,7 @@ public class Principal implements ActionListener, ListSelectionListener{
 					vista.getList_3().setModel(dListModel);
 				}
 			}else if(e.getSource() == vista.getList_2()){
-				vista.getTextPane().setText(artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
+				vista.getTextPane().setText("Duracion:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getDuracion()+" minutos\n\nLetra:\n"+artistActual.getlAlbum().get(vista.getList_1().getSelectedIndex()).getCanciones().get(vista.getList_2().getSelectedIndex()).getLetra());
 			}
 		}catch(Exception exception){
 			exception.printStackTrace();

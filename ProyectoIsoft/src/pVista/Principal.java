@@ -15,6 +15,8 @@ import javax.swing.SpringLayout;
 import javax.swing.JComboBox;
 import javax.swing.JScrollBar;
 import javax.swing.ScrollPaneConstants;
+import java.awt.Color;
+import java.awt.Font;
 
 public class Principal extends JFrame {
 	private JLabel lblNewLabel;
@@ -36,6 +38,7 @@ public class Principal extends JFrame {
 	private JScrollPane scrollPane_5;
 	private JList list_3;
 	private JTextPane textPane;
+	private JTextPane textPane_1;
 
 	/**
 	 * Launch the application.
@@ -107,6 +110,7 @@ public class Principal extends JFrame {
 		contentPane.add(scrollPane_1);
 		
 		biografia = new JTextPane();
+		biografia.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		biografia.setEditable(false);
 		scrollPane_1.setViewportView(biografia);
 		
@@ -142,7 +146,9 @@ public class Principal extends JFrame {
 		sl_contentPane.putConstraint(SpringLayout.EAST, scrollPane_4, 774, SpringLayout.WEST, contentPane);
 		contentPane.add(scrollPane_4);
 		
-		JTextPane textPane_1 = new JTextPane();
+		textPane_1 = new JTextPane();
+		textPane_1.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		textPane_1.setBackground(Color.WHITE);
 		textPane_1.setEditable(false);
 		scrollPane_4.setViewportView(textPane_1);
 		
@@ -174,6 +180,7 @@ public class Principal extends JFrame {
 		contentPane.add(scrollPane_6);
 		
 		textPane = new JTextPane();
+		textPane.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		textPane.setEditable(false);
 		scrollPane_6.setViewportView(textPane);
 		
@@ -219,5 +226,11 @@ public class Principal extends JFrame {
 	}
 	public JTextPane getTextPane(){
 		return textPane;
+	}
+	public JLabel getLblNewLabel_1() {
+		return lblNewLabel_1;
+	}
+	public JTextPane getTextPane_1() {
+		return textPane_1;
 	}
 }
