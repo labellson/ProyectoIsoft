@@ -12,6 +12,7 @@ import javax.swing.ListModel;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 
+import pModelo.BiografiaIntegrante;
 import pModelo.Integrante;
 import pModelo.Artista;
 import pModelo.Cancion;
@@ -92,10 +93,13 @@ public class Principal implements ActionListener, ListSelectionListener{
 			}else if(e.getSource() == vista.getList()){
 				DefaultListModel<String> dListModel = new DefaultListModel<String>();
 				if(artistActual instanceof Grupo){
-					ArrayList <String> posiciones = ((Grupo) artistActual).getIntentegrantes(vista.getList().getSelectedIndex()).getlPosicion();
+					int index = vista.getList().getSelectedIndex();
+					ArrayList <String> posiciones = ((Grupo) artistActual).getIntentegrantes(index).getlPosicion();
 					for(String posicion : posiciones){
 						dListModel.addElement(posicion);
 					}
+					BiografiaIntegrante bioInt = (BiografiaIntegrante) ((Grupo)artistActual).getIntentegrantes(index).getBiografia();
+					vista.getTextPane_1().setText("Nombre:\n"+bioInt.getNombre()+"\n\nLugar de Nacimiento:\n"+bioInt.getLugarNac()+"\n\nFecha de Nacimiento:\n"+bioInt.getFechaNac()+"\n\nDescripcion:\n"+bioInt.getDescripcion());
 					vista.getList_3().setModel(dListModel);
 				}else{
 					ArrayList <String> posiciones = ((Integrante) artistActual).getlPosicion();
